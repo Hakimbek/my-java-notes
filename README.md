@@ -9,6 +9,7 @@ Now there is a better way the **Java** programming language platform. Imagine, i
 
 - Your programming language is *object oriented*, yet ***it's still dead simple[^7]***.
 - Your development cycle is much *faster* because Java technology is interpreted. The compile-link-load-test-crash-debug cycle is ***obsolete[^8]*** --now you just compile and run.
+- Your applications are ***portable[^9]*** across multiple platforms. Write your applications once, and you never need to port them--they will run without modification on multiple operating systems and hardware architectures.
 
 [^1]: Burden - бремя, груз, нагрузка    
   The only thing that raising taxes does is increase the burden on the middle class.  
@@ -40,4 +41,8 @@ Now there is a better way the **Java** programming language platform. Imagine, i
 [^8]: Obsolete - устарелый  
   A large part of the political literature of five years was now completely obsolete.  
   Большая часть всей политической литературы последних пяти лет устарела.
+  
+[^9]: Portable - портативный  
+  She leaned over and switched on a little portable radio which I had not noticed before.  
+  Она нагнулась и включила портативный приемник, - я не заметил его раньше.
 
