@@ -11,6 +11,9 @@ Now there is a better way the **Java** programming language platform. Imagine, i
 - Your development cycle is much *faster* because Java technology is ***interpreted[^8]***. The compile-link-load-test-crash-debug cycle is ***obsolete[^9]***--now you just compile and run.
 - Your applications are ***portable[^10]*** across multiple platforms. Write your applications once, and you never need to port them--they will run without modification on multiple operating systems and hardware architectures.
 - Your applications are ***robust[^11]*** because the Java runtime environment manages memory for you.
+- Your interactive graphical applications have *high* ***performance[^12]*** because multiple concurrent threads of activity in your application are supported by the multithreading built into the Java programming language and runtime platform.
+- Your applications are *adaptable* to changing environments because you can dynamically download code modules from anywhere on the network.
+- Your end users can trust that your applications are *secure*, even though they're downloading code from all over the Internet; the Java runtime environment has built-in protection against viruses and tampering.
 
 [^1]: Burden - бремя, груз, нагрузка    
   The only thing that raising taxes does is increase the burden on the middle class.  
@@ -54,4 +57,8 @@ Now there is a better way the **Java** programming language platform. Imagine, i
 [^11]: Robust - крепкий  
   Well, your health seems robust.  
   Итак, у вас, похоже, крепкое здоровье.
+  
+[^12]: Performance - результативность  
+  He wants me to make an analysis of your performance and capabilities.  
+  Он хочет, чтобы я сделал анализ твоей результативности и способностей.
 
