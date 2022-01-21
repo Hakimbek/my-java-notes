@@ -1,5 +1,5 @@
 # Introduction to Java
-### The Software Developer's ***Burden***[^1]
+### The Software Developer's ***Burden[^1]***
 Imagine you're a software application developer. Your programming language of choice (or the language that's been ***foisted*** on you) is C or C++. These past few years you've seen the growth of multiple incompatible hardware architectures, each supporting multiple incompatible operating systems, with each platform operating with one or more incompatible graphical user interfaces. Now you're supposed to cope with all this and make your applications work in a distributed client-server environment. The growth of the Internet, the World-Wide Web, and "electronic commerce" have introduced new dimensions of complexity into the development process.
 
 ### Burden - бремя, груз, нагрузка
