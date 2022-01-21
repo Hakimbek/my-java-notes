@@ -14,11 +14,11 @@ Imagine you're a software application developer. Your programming language of ch
   It's been quite a while.  
   Это было довольно долго.
   
-[^4]: incompatible - несовместимый  
+[^4]: Incompatible - несовместимый  
   He said the act was completely incompatible with civilized society.  
   Он сказал, что это было совершенно не совместимо с цивилизованным обществом.
 
-[^5]: cope - справляться  
+[^5]: Cope - справляться  
   You can't cope with one woman, how would you cope with two?  
   Ты с одной женщиной не можешь справиться, как ты управишься с двумя?
 
