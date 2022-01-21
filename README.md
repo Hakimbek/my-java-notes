@@ -15,6 +15,8 @@ Now there is a better way the **Java** programming language platform. Imagine, i
 - Your applications are *adaptable* to changing environments because you can dynamically download code modules from anywhere on the network.
 - Your end users can trust that your applications are *secure*, ***even though[^14]*** they're downloading code from all over the Internet; the Java runtime environment has built-in protection against viruses and ***tampering[^15]***.
 
+You don't need to dream about these features. They're here now. The Java programming language platform provides a portable, interpreted, high-performance, simple, object-oriented programming language and supporting run-time environment.
+
 [^1]: Burden - бремя, груз, нагрузка    
   The only thing that raising taxes does is increase the burden on the middle class.  
   Единственное, к чему приведет повышение налогов - это увеличение нагрузки на средний класс.
