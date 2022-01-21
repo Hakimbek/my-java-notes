@@ -1,78 +1,39 @@
-# Introduction to Java
-### The Software Developer's *Burden[^1]*.
-Imagine you're a software application developer. Your programming language of choice (or the language that's been ***foisted[^2]*** on you) is C or C++. You've been at this for ***quite a while[^3]*** and your job doesn't seem to be getting any easier. These past few years you've seen the growth of multiple ***incompatible[^4]*** hardware architectures, each supporting multiple incompatible operating systems, with each platform operating with one or more incompatible graphical user interfaces. Now you're supposed to ***cope[^5]*** with all this and make your applications work in a distributed client-server environment. The growth of the Internet, the World-Wide Web, and "electronic ***commerce[^6]***" have introduced new dimensions of complexity into the development process.
+# Simple, Object Oriented, and Familiar
+***Primary[^1]*** characteristics of the Java programming language include a simple language that can be programmed without ***extensive[^2]*** programmer training while being ***attuned[^3]*** to current software practices. The fundamental concepts of Java technology are ***grasped[^4]*** quickly; programmers can be productive from the very beginning.
 
-The tools you use to develop applications don't seem to help you much. You're still coping with the same old problems; the fashionable new object-oriented techniques seem to have added new problems without solving the old ones. You say to yourself and your friends, *"There has to be a better way"!*
+The Java programming language is designed to be object oriented ***from the ground up[^5]***. Object technology has finally found its way into the programming ***mainstream[^6]*** after a ***gestation period[^7]*** of thirty years. The needs of distributed, client-server based systems ***coincide[^8]*** with the encapsulated, message-passing paradigms of object-based software. To function within increasingly complex, network-based environments, programming systems must adopt object-oriented concepts. Java technology provides a clean and efficient object-based development platform.
 
-### The Better Way is Here Now
-Now there is a better way the **Java** programming language platform. Imagine, if you will, this development world...
+Programmers using the Java programming language can access ***existing[^9]*** libraries of tested objects that provide functionality ranging from basic data types through I/O and network interfaces to graphical user interface toolkits. These libraries can be extended to provide new behavior.
 
-- Your programming language is *object oriented*, yet ***it's still dead simple[^7]***.
-- Your development cycle is much *faster* because Java technology is ***interpreted[^8]***. The compile-link-load-test-crash-debug cycle is ***obsolete[^9]***--now you just compile and run.
-- Your applications are ***portable[^10]*** across multiple platforms. Write your applications once, and you never need to port them--they will run without modification on multiple operating systems and hardware architectures.
-- Your applications are ***robust[^11]*** because the Java runtime environment manages memory for you.
-- Your interactive graphical applications have *high* ***performance[^12]*** because multiple ***concurrent[^13]*** threads of activity in your application are supported by the multithreading built into the Java programming language and runtime platform.
-- Your applications are *adaptable* to changing environments because you can dynamically download code modules from anywhere on the network.
-- Your end users can trust that your applications are *secure*, ***even though[^14]*** they're downloading code from all over the Internet; the Java runtime environment has built-in protection against viruses and ***tampering[^15]***.
+***Even though[^10]*** C++ was rejected as an implementation language, keeping the Java programming language looking like C++ as far as possible results in it being a familiar language, while removing the unnecessary complexities of C++. Having the Java programming language ***retain[^11]*** many of the object-oriented features and the "look and feel" of C++ means that programmers can migrate easily to the Java platform and be productive quickly.
 
-You don't need to dream about these features. They're here now. The Java programming language platform provides a portable, interpreted, high-performance, simple, object-oriented programming language and supporting run-time environment.
 
-[^1]: Burden - бремя, груз, нагрузка    
-  The only thing that raising taxes does is increase the burden on the middle class.  
-  Единственное, к чему приведет повышение налогов - это увеличение нагрузки на средний класс.
+[^1]: Primary - первичный    
+  That's your primary account.  
+  Это ваш первоначальный счёт.
 
-[^2]: Foist - подсовывать, навязывать  
-  We were the victims of a trick, that accursed Garin had foisted another man on to us instead of himself.  
-  Мы стали жертвой обмана, проклятый Гарин подсунул вместо себя кого-то другого.
+[^2]: Extensive - обширный, широкомасштабный  
+  The result of extensive training.  
+  Это результат интенсивных тренировок.
 
-[^3]: quite a while - довольно давно  
-  It's been quite a while.  
-  Это было довольно долго.
+[^3]: Attuned - настроенный  
+  They were attuned to the eternal peace of Eastern sky and sea.  
+  Они настроились на вечный покой восточного неба и моря.
   
-[^4]: Incompatible - несовместимый  
-  He said the act was completely incompatible with civilized society.  
-  Он сказал, что это было совершенно не совместимо с цивилизованным обществом.
+[^4]: Grasped - воспринимать    
+  Can you grasp it?  
+  А ты понимаешь?
 
-[^5]: Cope - справляться  
-  You can't cope with one woman, how would you cope with two?  
-  Ты с одной женщиной не можешь справиться, как ты управишься с двумя?
+[^5]: from the ground up - с нуля  
   
-[^6]: Commerce - торговля  
-  The banks lend money to commerce and industry.  
-  Банки дают деньги торговле и промышленности.
+[^6]: Mainstrem - направление  
   
-[^7]: It's still dead simple  
-  Это все еще чертовски просто
+[^7]: Gestation period - период созревания 
   
-[^8]: interpreted - интерпретированный
-  Be careful, your silence could be interpreted as an admission of guilt.   
-  Будь осторожен, твое молчание могут принять за признание вины.
+[^8]: Coincide - совпадать
   
-[^9]: Obsolete - устарелый  
-  A large part of the political literature of five years was now completely obsolete.  
-  Большая часть всей политической литературы последних пяти лет устарела.
+[^9]: Existing - существующий  
   
-[^10]: Portable - портативный  
-  She leaned over and switched on a little portable radio which I had not noticed before.  
-  Она нагнулась и включила портативный приемник, - я не заметил его раньше.
+[^10]: Even though - Даже не смотря на  
   
-[^11]: Robust - крепкий  
-  Well, your health seems robust.  
-  Итак, у вас, похоже, крепкое здоровье.
-  
-[^12]: Performance - результативность  
-  He wants me to make an analysis of your performance and capabilities.  
-  Он хочет, чтобы я сделал анализ твоей результативности и способностей.
-  
-[^13]: Concurrent - параллельный  
-  He is serving two concurrent prison sentences.  
-  Он одновременно отбывает наказание по двум приговорам.
-  
-[^14]: even though - даже не смотря на  
-  He deceived me, even though I trusted and rewarded him.  
-  Он обманул меня, даже несмотря на то, что я доверял и наградил его.
-  
-[^15]: Tampering - подделка  
-  This is more than product tampering.  
-  Это не просто подделка товара.
-
+[^11]: Retain - сохронять, поддерживать 
