@@ -10,6 +10,6 @@ Imagine you're a software application developer. Your programming language of ch
  We were the victims of a trick, that accursed Garin had foisted another man on to us instead of himself.  
  Мы стали жертвой обмана, проклятый Гарин подсунул вместо себя кого-то другого.
 
-### quite a while - довольно давно
-It's been quite a while.
+[^3]: quite a while - довольно давно  
+It's been quite a while.  
 Это было довольно долго.
