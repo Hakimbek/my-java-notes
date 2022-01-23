@@ -59,3 +59,18 @@ The Boolean data type specifies one bit of information, but its "size" can't be 
 
 ## 2. Non-primitive data types
 The non-primitive data types include **Classes, Interfaces**, and **Arrays**.
+
+# Operators in Java
+Operator in Java is a symbol that is used to perform operations. 
+
+There are many types of operators in Java which are given below:
+
+| Operator Type | Precedence |
+| ------------- | ---------- |
+| Unary | expr++  expr--  ++expr  --expr  +expr  -expr  !expr |
+| Arithmetic | *  /  %  +  - |
+| Shift | <<  >>  >>> |
+| Relational | <  >  <=  >=  instanceof  ==  != |
+| Bitwise | &  ^  | |
+| Logical | &&  || |
+| Ternary | ? : |
