@@ -33,7 +33,7 @@ Data types specify the different sizes and values that can be stored in the vari
 | byte |	0 |	1 byte | -128 to 127 |
 | short |	0 |	2 | byte | -32,768 to 32,767 | 
 | int |	0 |	4 byte | 2,147,483,648 (-2^31) to 2,147,483,647 (2^31 - 1) |
-| long |	0L |	8 byte | -9,223,372,036,854,775,808(-2^63) to 9,223,372,036,854,775,807(2^63 - 1) |
+| long |	0L |	8 byte | -9,223,372,036,854,775,808 (-2^63) to 9,223,372,036,854,775,807 (2^63 - 1) |
 | float |	0.0f |	4 byte |
 | double |	0.0d |	8 byte |
 
