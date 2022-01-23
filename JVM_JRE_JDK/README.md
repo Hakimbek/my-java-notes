@@ -44,8 +44,10 @@ It is the runtime data area in which objects are allocated.
 
 4. Stack
 Java Stack stores frames. It holds local variables and partial results, and plays a part in method invocation and return.
-Each thread has a private JVM stack, created at the same time as thread.
-A new frame is created each time a method is invoked. A frame is destroyed when its method invocation completes.
+
+   Each thread has a private JVM stack, created at the same time as thread.
+
+   A new frame is created each time a method is invoked. A frame is destroyed when its method invocation completes.
 
 5. Program Counter Register
 PC (program counter) register contains the address of the Java virtual machine instruction currently being executed.
