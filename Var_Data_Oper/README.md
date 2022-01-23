@@ -31,7 +31,7 @@ Data types specify the different sizes and values that can be stored in the vari
 | boolean |	false |	1 bit |  |
 | char |	'\u0000' |	2 byte | '\u0000' (or 0) to '\uffff' (or 65,535) |
 | byte |	0 |	1 byte | -128 to 127 |
-| short |	0 |	2 | byte | -32,768 to 32,767 | 
+| short |	0 |	2 | byte | -32,768 to 32,767 |
 | int |	0 |	4 byte | 2,147,483,648 (-2^31) to 2,147,483,647 (2^31 - 1) |
 | long |	0L |	8 byte | -9,223,372,036,854,775,808 (-2^63) to 9,223,372,036,854,775,807 (2^63 - 1) |
 | float |	0.0f |	4 byte |
