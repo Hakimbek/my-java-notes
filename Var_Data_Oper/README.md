@@ -26,16 +26,21 @@ Data types specify the different sizes and values that can be stored in the vari
 ### 1. Primitive data types
  The primitive data types include **boolean, char, byte, short, int, long, float** and **double**.
 
-| Data Type |	Default Value |	Default size |
-| --------- | ------------- | ------------ |
-| boolean |	false |	1 bit |
-| char |	'\u0000' |	2 byte |
-| byte |	0 |	1 byte |
-| short |	0 |	2 | byte |
-| int |	0 |	4 byte |
-| long |	0L |	8 byte |
+| Data Type |	Default Value |	Default size | Range(inclusive) | 
+| --------- | ------------- | ------------ | ----- |
+| boolean |	false |	1 bit |  |
+| char |	'\u0000' |	2 byte | '\u0000' (or 0) to '\uffff' (or 65,535) |
+| byte |	0 |	1 byte | -128 to 127 |
+| short |	0 |	2 | byte | -32,768 to 32,767 | 
+| int |	0 |	4 byte | 2,147,483,648 (-2^31) to 2,147,483,647 (2^31 - 1) |
+| long |	0L |	8 byte | -9,223,372,036,854,775,808(-2^63) to 9,223,372,036,854,775,807(2^63 - 1) |
 | float |	0.0f |	4 byte |
 | double |	0.0d |	8 byte |
+
+### Boolean Data Type
+The Boolean data type is used to store only two possible values: true and false. This data type is used for simple flags that track true/false conditions.
+
+The Boolean data type specifies one bit of information, but its "size" can't be defined precisely.
 
 ### 2. Non-primitive data types
 The non-primitive data types include **Classes, Interfaces**, and **Arrays**.
