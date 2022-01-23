@@ -74,4 +74,4 @@ There are many types of operators in Java which are given below:
 | Bitwise | &  ^  | |
 | Logical | &&  \|\| |
 | Ternary | ? : |
-| Assignment | = += -= *= /= %= &= ^= |= <<= >>= >>>= |
+| Assignment | = += -= *= /= %= &= ^= \|= <<= >>= >>>= |
