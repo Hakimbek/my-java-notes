@@ -1,3 +1,3 @@
 - ## [What is Java?](What_is_Java/README.md)
-- ## [Object-Oriented Programming Concepts](Intro_to_Java/Design_Goals/README.md)
+- ## [JVM, JRE, JDK](Intro_to_Java/Design_Goals/README.md)
   - [Simple, Object Oriented, and Familiar](Intro_to_Java/Simple/README.md)
