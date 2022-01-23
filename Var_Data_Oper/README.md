@@ -7,7 +7,7 @@ Variable is a name of memory location. There are three types of variables in jav
 There are three types of variables in Java:
 
 ### Local variable
-A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
+    A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
 
 A local variable cannot be defined with "static" keyword.
 
