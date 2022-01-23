@@ -7,7 +7,7 @@ Variable is a name of memory location. There are three types of variables in jav
 There are three types of variables in Java:
 
 ### Local variable
-- A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
+A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
 
 A local variable cannot be defined with "static" keyword.
 
@@ -25,6 +25,17 @@ Data types specify the different sizes and values that can be stored in the vari
 
 ### 1. Primitive data types
  The primitive data types include **boolean, char, byte, short, int, long, float** and **double**.
+
+| Data Type |	Default Value |	Default size |
+| --------- | ------------- | ------------ |
+| boolean |	false |	1 bit |
+| char |	'\u0000' |	2 byte |
+| byte |	0 |	1 byte |
+| short |	0 |	2 | byte |
+| int |	0 |	4 byte |
+| long |	0L |	8 byte |
+| float |	0.0f |	4 byte |
+| double |	0.0d |	8 byte |
 
 ### 2. Non-primitive data types
 The non-primitive data types include **Classes, Interfaces**, and **Arrays**.
