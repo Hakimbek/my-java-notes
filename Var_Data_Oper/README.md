@@ -72,5 +72,5 @@ There are many types of operators in Java which are given below:
 | Shift | <<  >>  >>> |
 | Relational | <  >  <=  >=  instanceof  ==  != |
 | Bitwise | &  ^  | |
-| Logical | &&  || |
+| Logical | &&  /|/| |
 | Ternary | ? : |
