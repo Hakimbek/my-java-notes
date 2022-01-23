@@ -44,9 +44,7 @@ It is the runtime data area in which objects are allocated.
 
 4. Stack
 Java Stack stores frames. It holds local variables and partial results, and plays a part in method invocation and return.
-
 Each thread has a private JVM stack, created at the same time as thread.
-
 A new frame is created each time a method is invoked. A frame is destroyed when its method invocation completes.
 
 5. Program Counter Register
@@ -58,9 +56,9 @@ It contains all the native methods used in the application.
 7. Execution Engine
 It contains:
 
-  - A virtual processor
-  - Interpreter: Read bytecode stream then execute the instructions.
-  - Just-In-Time(JIT) compiler: It is used to improve the performance. JIT compiles parts of the byte code that have similar functionality at the same time, and hence reduces the amount of time needed for compilation. Here, the term "compiler" refers to a translator from the instruction set of a Java virtual machine (JVM) to the instruction set of a specific CPU.
+   - A virtual processor
+   - Interpreter: Read bytecode stream then execute the instructions.
+   - Just-In-Time(JIT) compiler: It is used to improve the performance. JIT compiles parts of the byte code that have similar functionality at the same time, and hence reduces the amount of time needed for compilation. Here, the term "compiler" refers to a translator from the instruction set of a Java virtual machine (JVM) to the instruction set of a specific CPU.
 
 8. Java Native Interface
 Java Native Interface (JNI) is a framework which provides an interface to communicate with another application written in another language like C, C++, Assembly etc. Java uses JNI framework to send output to the Console or interact with OS libraries.
