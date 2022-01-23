@@ -1,78 +1,74 @@
-# Introduction to Java
-### The Software Developer's *Burden[^1]*.
-Imagine you're a software application developer. Your programming language of choice (or the language that's been ***foisted[^2]*** on you) is C or C++. You've been at this for ***quite a while[^3]*** and your job doesn't seem to be getting any easier. These past few years you've seen the growth of multiple ***incompatible[^4]*** hardware architectures, each supporting multiple incompatible operating systems, with each platform operating with one or more incompatible graphical user interfaces. Now you're supposed to ***cope[^5]*** with all this and make your applications work in a distributed client-server environment. The growth of the Internet, the World-Wide Web, and "electronic ***commerce[^6]***" have introduced new dimensions of complexity into the development process.
+# What is Java?
+Java is a **programming language** and a **platform**. Java is a *high level, robust, object-oriented* and *secure* programming language.
 
-The tools you use to develop applications don't seem to help you much. You're still coping with the same old problems; the fashionable new object-oriented techniques seem to have added new problems without solving the old ones. You say to yourself and your friends, *"There has to be a better way"!*
+Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
 
-### The Better Way is Here Now
-Now there is a better way the **Java** programming language platform. Imagine, if you will, this development world...
+### Platform
+Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform.
 
-- Your programming language is *object oriented*, yet ***it's still dead simple[^7]***.
-- Your development cycle is much *faster* because Java technology is ***interpreted[^8]***. The compile-link-load-test-crash-debug cycle is ***obsolete[^9]***--now you just compile and run.
-- Your applications are ***portable[^10]*** across multiple platforms. Write your applications once, and you never need to port them--they will run without modification on multiple operating systems and hardware architectures.
-- Your applications are ***robust[^11]*** because the Java runtime environment manages memory for you.
-- Your interactive graphical applications have *high* ***performance[^12]*** because multiple ***concurrent[^13]*** threads of activity in your application are supported by the multithreading built into the Java programming language and runtime platform.
-- Your applications are *adaptable* to changing environments because you can dynamically download code modules from anywhere on the network.
-- Your end users can trust that your applications are *secure*, ***even though[^14]*** they're downloading code from all over the Internet; the Java runtime environment has built-in protection against viruses and ***tampering[^15]***.
+## Features of Java
+The primary objective of Java programming language creation was to make it portable, simple and secure programming language. Apart from this, there are also some excellent features which play an important role in the popularity of this language. The features of Java are also known as Java buzzwords.
 
-You don't need to dream about these features. They're here now. The Java programming language platform provides a portable, interpreted, high-performance, simple, object-oriented programming language and supporting run-time environment.
+A list of the most important features of the Java language is given below.
 
-[^1]: Burden - бремя, груз, нагрузка    
-  The only thing that raising taxes does is increase the burden on the middle class.  
-  Единственное, к чему приведет повышение налогов - это увеличение нагрузки на средний класс.
+### Simple
+Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun Microsystem, Java language is a simple programming language because:
 
-[^2]: Foist - подсовывать, навязывать  
-  We were the victims of a trick, that accursed Garin had foisted another man on to us instead of himself.  
-  Мы стали жертвой обмана, проклятый Гарин подсунул вместо себя кого-то другого.
+- Java syntax is based on C++ (so easier for programmers to learn it after C++).
+- Java has removed many complicated and rarely-used features, for example, explicit pointers, operator overloading, etc.
+- There is no need to remove unreferenced objects because there is an Automatic Garbage Collection in Java.
 
-[^3]: quite a while - довольно давно  
-  It's been quite a while.  
-  Это было довольно долго.
-  
-[^4]: Incompatible - несовместимый  
-  He said the act was completely incompatible with civilized society.  
-  Он сказал, что это было совершенно не совместимо с цивилизованным обществом.
+### Object-oriented
+Java is an object-oriented programming language. Everything in Java is an object. Object-oriented means we organize our software as a combination of different types of objects that incorporate both data and behavior. Object-oriented programming (OOPs) is a methodology that simplifies software development and maintenance by providing some rules.
 
-[^5]: Cope - справляться  
-  You can't cope with one woman, how would you cope with two?  
-  Ты с одной женщиной не можешь справиться, как ты управишься с двумя?
-  
-[^6]: Commerce - торговля  
-  The banks lend money to commerce and industry.  
-  Банки дают деньги торговле и промышленности.
-  
-[^7]: It's still dead simple  
-  Это все еще чертовски просто
-  
-[^8]: interpreted - интерпретированный
-  Be careful, your silence could be interpreted as an admission of guilt.   
-  Будь осторожен, твое молчание могут принять за признание вины.
-  
-[^9]: Obsolete - устарелый  
-  A large part of the political literature of five years was now completely obsolete.  
-  Большая часть всей политической литературы последних пяти лет устарела.
-  
-[^10]: Portable - портативный  
-  She leaned over and switched on a little portable radio which I had not noticed before.  
-  Она нагнулась и включила портативный приемник, - я не заметил его раньше.
-  
-[^11]: Robust - крепкий  
-  Well, your health seems robust.  
-  Итак, у вас, похоже, крепкое здоровье.
-  
-[^12]: Performance - результативность  
-  He wants me to make an analysis of your performance and capabilities.  
-  Он хочет, чтобы я сделал анализ твоей результативности и способностей.
-  
-[^13]: Concurrent - параллельный  
-  He is serving two concurrent prison sentences.  
-  Он одновременно отбывает наказание по двум приговорам.
-  
-[^14]: even though - даже не смотря на  
-  He deceived me, even though I trusted and rewarded him.  
-  Он обманул меня, даже несмотря на то, что я доверял и наградил его.
-  
-[^15]: Tampering - подделка  
-  This is more than product tampering.  
-  Это не просто подделка товара.
+Basic concepts of OOPs are:
 
+- Object
+- Class
+- Inheritance
+- Polymorphism
+- Abstraction
+- Encapsulation
+
+### Platform Independent
+Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs.
+
+There are two types of platforms software-based and hardware-based. Java provides a software-based platform.
+
+The Java platform differs from most other platforms in the sense that it is a software-based platform that runs on top of other hardware-based platforms. It has two components:
+
+1. Runtime Environment
+2. API(Application Programming Interface)
+
+Java code can be executed on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it can be run on multiple platforms, i.e., Write Once and Run Anywhere (WORA).
+
+### Secured
+Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:
+
+### Robust
+The English mining of Robust is strong. Java is robust because:
+
+- It uses strong memory management.
+- There is a lack of pointers that avoids security problems.
+- Java provides automatic garbage collection which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application anymore.
+- There are exception handling and the type checking mechanism in Java. All these points make Java robust.
+
+### Architecture-neutral
+Java is architecture neutral because there are no implementation dependent features, for example, the size of primitive types is fixed.
+
+In C programming, *int* data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory for 64-bit architecture. However, it occupies 4 bytes of memory for both 32 and 64-bit architectures in Java.
+
+### Portable
+Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any implementation.
+
+### High-performance
+Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native code. It is still a little bit slower than a compiled language (e.g., C++). Java is an interpreted language that is why it is slower than compiled languages, e.g., C, C++, etc.
+
+### Distributed
+Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of Java makes us able to access files by calling the methods from any machine on the internet.
+
+### Multi-threaded
+A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.
+
+### Dynamic
+Java is a dynamic language. It supports the dynamic loading of classes. It means classes are loaded on demand. It also supports functions from its native languages, i.e., C and C++.
