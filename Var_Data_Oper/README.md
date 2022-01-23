@@ -37,9 +37,6 @@ Data types specify the different sizes and values that can be stored in the vari
 | float |	0.0f |	4 byte |
 | double |	0.0d |	8 byte |
 
-### Boolean Data Type
-The Boolean data type is used to store only two possible values: true and false. This data type is used for simple flags that track true/false conditions.
-
 The Boolean data type specifies one bit of information, but its "size" can't be defined precisely.
 
 ### 2. Non-primitive data types
