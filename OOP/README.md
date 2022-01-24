@@ -16,15 +16,66 @@ Apart from these concepts, there are some other terms which are used in Object-O
 - Aggregation
 - Composition
 
-### Object
-Any entity that has state and behavior is known as an object. For example, a chair, pen, table, keyboard, bike, etc. It can be physical or logical.
+# Class
+A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
+
+It can't be physical.
+
+A class in Java can contain:
+
+- Fields
+- Methods
+- Constructors
+- Blocks
+- Nested class and interface
+
+# Object
+Any entity that has state and behavior is known as an object. For example, a chair, pen, table, keyboard, bike, etc.
 
 An Object can be defined as an instance of a class. An object contains an address and takes up some space in memory. Objects can communicate without knowing the details of each other's data or code. The only necessary thing is the type of message accepted and the type of response returned by the objects.
 
-### Class
-A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
+An object in Java is the physical as well as a logical entity, whereas, a class in Java is a logical entity only.
 
-### Inheritance
+An object has three characteristics:
+
+### State
+represents the data (value) of an object.
+### Behavior
+represents the behavior (functionality) of an object.
+### Identity
+An object identity is typically implemented via a unique ID. The value of the ID is not visible to the external user. However, it is used internally by the JVM to identify each object uniquely.
+
+### new keyword in Java
+The new keyword is used to allocate memory at runtime. All objects get memory in Heap memory area.
+
+There are many ways to create an object in java. They are:
+
+- By new keyword
+- By newInstance() method
+- By clone() method
+- By deserialization
+- By factory method etc.
+
+### Anonymous object
+Anonymous simply means nameless. An object which has no reference is known as an anonymous object. It can be used at the time of object creation only.
+
+```java
+new Calculation(); //anonymous object  
+```
+
+
+
+### Instance variable in Java
+A variable which is created inside the class but outside the method is known as an instance variable. Instance variable doesn't get memory at compile time. It gets memory at runtime when an object or instance is created. That is why it is known as an instance variable.
+
+### Method in Java
+In Java, a method is like a function which is used to expose the behavior of an object.
+
+Advantage of Method
+- Code Reusability
+- Code Optimization
+
+## Inheritance
 When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
 
 ### Polymorphism
