@@ -28,3 +28,15 @@ Multi-line comments are placed between /* and \*/. Any text between /* and \*/ i
 Documentation comments are usually used to write large programs for a project or software application as it helps to create documentation API. These APIs are needed for reference, i.e., which classes, methods, arguments, etc., are used in the code.
 
 To create documentation API, we need to use the javadoc tool. The documentation comments are placed between /** and \*/.
+
+### javadoc tags
+Some of the commonly used tags in documentation comments:
+
+| Tag |	Syntax | Description |
+| {@docRoot} | {@docRoot} |	to depict relative path to root directory of generated document from any page. |
+| @author |	@author name - text |	To add the author of the class. |
+| @code |	{@code text} |	To show the text in code font without interpreting it as html markup or nested javadoc tag. |
+| @version | @version version-text | To specify "Version" subheading and version-text when -version option is used. |
+| @since | @since release |	To add "Since" heading with since text to generated documentation. |
+| @param | @param parameter-name | description	To add a parameter with given name and description to 'Parameters' section. |
+| @return |	@return description |	Required for every method that returns something (except void) |
