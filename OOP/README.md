@@ -171,7 +171,25 @@ There can be a lot of usage of Java this keyword. In Java, this is a reference v
   - Call to this() must be the first statement in constructor.
 
 # Inheritance
-When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
+Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. It is an important part of OOPs (Object Oriented programming system).
+
+The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also.
+
+Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+
+### Why use inheritance in java
+  - For Method Overriding (so runtime polymorphism can be achieved).
+  - For Code Reusability.
+
+The extends keyword indicates that you are making a new class that derives from an existing class. The meaning of "extends" is to increase the functionality. In the terminology of Java, a class which is inherited is called a parent or superclass, and the new class is called child or subclass.
+
+### Types of inheritance in java
+On the basis of class, there can be three types of inheritance in java: single, multilevel and hierarchical.
+
+In java programming, multiple and hybrid inheritance is supported through interface only. 
+
+### Note
+   - Multiple inheritance is not supported in Java through class.
 
 ### Polymorphism
 If one task is performed in different ways, it is known as polymorphism. For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc.
@@ -204,8 +222,13 @@ Association represents the relationship between the objects. Here, one object ca
 
 Association can be undirectional or bidirectional.
 
-### Aggregation
-Aggregation is a way to achieve Association. Aggregation represents the relationship where one object contains other objects as a part of its state. It represents the weak relationship between objects. It is also termed as a has-a relationship in Java. Like, inheritance represents the is-a relationship. It is another way to reuse objects.
+# Aggregation
+If a class have an entity reference, it is known as Aggregation. Aggregation represents HAS-A relationship.
+Aggregation is a way to achieve Association. Aggregation represents the relationship where one object contains other objects as a part of its state. It represents the weak relationship between objects. It is another way to reuse objects.
+
+### When use Aggregation?
+- Code reuse is also best achieved by aggregation when there is no is-a relationship.
+- Inheritance should be used only if the relationship is-a is maintained throughout the lifetime of the objects involved; otherwise, aggregation is the best choice.
 
 ### Composition
 The composition is also a way to achieve Association. The composition represents the relationship where one object contains other objects as a part of its state. There is a strong relationship between the containing object and the dependent object. It is the state where containing objects do not have an independent existence. If you delete the parent object, all the child objects will be deleted automatically.
