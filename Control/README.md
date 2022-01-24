@@ -16,3 +16,18 @@ Java provides three types of control flow statements.
 3. Jump statements
    - break statement
    - continue statement
+
+# Decision-Making statements:
+As the name suggests, decision-making statements decide which statement to execute and when. Decision-making statements evaluate the Boolean expression and control the program flow depending upon the result of the condition provided. There are two types of decision-making statements in Java, i.e., If statement and switch statement.
+
+## If Statement
+In Java, the "if" statement is used to evaluate a condition. The control of the program is diverted depending upon the specific condition. The condition of the If statement gives a Boolean value, either true or false. In Java, there are four types of if-statements given below.
+
+### Simple if statement
+It is the most basic statement among all control flow statements in Java. It evaluates a Boolean expression and enables the program to enter a block of code if the expression evaluates to true.
+
+```java
+if(condition) {    
+   statement 1; //executes when condition is true   
+}    
+```
