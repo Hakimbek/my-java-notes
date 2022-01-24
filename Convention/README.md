@@ -1,6 +1,22 @@
-- ## [What is Java?](What_is_Java/README.md)
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
-- ## [Variables, Data Types and Operators](Var_Data_Oper/README.md)
-- ## [Java Control Statements](Control/README.md)
-- ## [Comments](Comments/README.md)
-- ## [OOP](OOP/README.md)
+# Java Naming Convention
+Java naming convention is a rule to follow as you decide what to name your identifiers such as class, package, variable, constant, method, etc.
+
+But, it is not forced to follow. So, it is known as convention not rule. These conventions are suggested by several Java communities such as Sun Microsystems and Netscape.
+
+All the classes, interfaces, packages, methods and fields of Java programming language are given according to the Java naming convention. If you fail to follow these conventions, it may generate confusion or erroneous code.
+
+### Advantage of Naming Conventions in Java
+By using standard Java naming conventions, you make your code easier to read for yourself and other programmers. Readability of Java program is very important. It indicates that less time is spent to figure out what the code does.
+
+### Naming Conventions of the Different Identifiers
+The following table shows the popular conventions used for the different identifiers.
+
+| Identifiers Type | Naming Rules |
+| ---------------- | ------------ |
+| Class |	It should start with the uppercase letter. 
+It should be a noun such as Color, Button, System, Thread, etc. Use appropriate words, instead of acronyms. |
+| Interface |	It should start with the uppercase letter. It should be an adjective such as Runnable, Remote, ActionListener. Use appropriate words, instead of acronyms. |
+| Method | It should start with lowercase letter. It should be a verb such as main(), print(), println(). If the name contains multiple words, start it with a lowercase letter followed by an uppercase letter such as actionPerformed(). |
+| Variable | It should start with a lowercase letter such as id, name. It should not start with the special characters like & (ampersand), $ (dollar), _ (underscore). If the name contains multiple words, start it with the lowercase letter followed by an uppercase letter such as firstName, lastName. Avoid using one-character variables such as x, y, z. |
+| Package |	It should be a lowercase letter such as java, lang. If the name contains multiple words, it should be separated by dots (.) such as java.util, java.lang. |
+| Constant | It should be in uppercase letters such as RED, YELLOW. If the name contains multiple words, it should be separated by an underscore(\_) such as MAX_PRIORITY. It may contain digits but not as the first letter. |
