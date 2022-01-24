@@ -131,11 +131,11 @@ An object in Java is the physical as well as a logical entity, whereas, a class 
 An object has three characteristics:
 
 ### State
-represents the data (value) of an object.
+  - represents the data (value) of an object.
 ### Behavior
-represents the behavior (functionality) of an object.
+  - represents the behavior (functionality) of an object.
 ### Identity
-An object identity is typically implemented via a unique ID. The value of the ID is not visible to the external user. However, it is used internally by the JVM to identify each object uniquely.
+  - An object identity is typically implemented via a unique ID. The value of the ID is not visible to the external user. However, it is used internally by the JVM to identify each object uniquely.
 
 ## new keyword in Java
 The new keyword is used to allocate memory at runtime. All objects get memory in Heap memory area.
