@@ -57,10 +57,10 @@ There are two types of constructors in Java: no-arg constructor, and parameteriz
   - A constructor which has a specific number of parameters is called a parameterized constructor.
 
 ### Rule
-If there is no constructor in a class, compiler automatically creates a default constructor.
+  - If there is no constructor in a class, compiler automatically creates a default constructor.
 
 ### Note
-It is called constructor because it constructs the values at the time of object creation. It is not necessary to write a constructor for a class. It is because java compiler creates a default constructor if your class doesn't have any.
+  - It is called constructor because it constructs the values at the time of object creation. It is not necessary to write a constructor for a class. It is because java compiler creates a default constructor if your class doesn't have any.
 
 ### Rules for creating Java constructor
 
