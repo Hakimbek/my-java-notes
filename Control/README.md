@@ -14,5 +14,5 @@ Java provides three types of control flow statements.
    - for loop
    - for-each loop
 3. Jump statements
-  - break statement
-  - continue statement
+   - break statement
+   - continue statement
