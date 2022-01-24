@@ -29,6 +29,16 @@ A class in Java can contain:
 - Blocks
 - Nested class and interface
 
+### Instance variable in Java
+A variable which is created inside the class but outside the method is known as an instance variable. Instance variable doesn't get memory at compile time. It gets memory at runtime when an object or instance is created. That is why it is known as an instance variable.
+
+### Method in Java
+In Java, a method is like a function which is used to expose the behavior of an object.
+
+Advantage of Method
+- Code Reusability
+- Code Optimization
+
 # Object
 Any entity that has state and behavior is known as an object. For example, a chair, pen, table, keyboard, bike, etc.
 
@@ -63,19 +73,7 @@ Anonymous simply means nameless. An object which has no reference is known as an
 new Calculation(); //anonymous object  
 ```
 
-
-
-### Instance variable in Java
-A variable which is created inside the class but outside the method is known as an instance variable. Instance variable doesn't get memory at compile time. It gets memory at runtime when an object or instance is created. That is why it is known as an instance variable.
-
-### Method in Java
-In Java, a method is like a function which is used to expose the behavior of an object.
-
-Advantage of Method
-- Code Reusability
-- Code Optimization
-
-## Inheritance
+# Inheritance
 When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
 
 ### Polymorphism
