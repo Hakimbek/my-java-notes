@@ -95,6 +95,32 @@ There are many ways to copy the values of one object into another in Java. They 
 - By assigning the values of one object into another
 - By clone() method of Object class
 
+## Java static keyword
+The static keyword in Java is used for memory management mainly. We can apply static keyword with variables, methods, blocks and nested classes. The static keyword belongs to the class than an instance of the class.
+
+The static can be:
+
+### Variable (also known as a class variable)
+If you declare any variable as static, it is known as a static variable.
+
+- The static variable can be used to refer to the common property of all objects (which is not unique for each object), for example, the company name of employees, college name of students, etc.
+- The static variable gets memory only once in the class area at the time of class loading.
+- Java static property is shared to all objects.
+
+### Advantages of static variable
+It makes your program memory efficient (i.e., it saves memory).
+
+### Java static method
+If you apply static keyword with any method, it is known as static method.
+
+- A static method belongs to the class rather than the object of a class.
+- A static method can be invoked without the need for creating an instance of a class.
+- A static method can access static data member and can change the value of it.
+
+### Java static block
+- Is used to initialize the static data member.
+- It is executed before the main method at the time of classloading.
+
 # Object
 Any entity that has state and behavior is known as an object. For example, a chair, pen, table, keyboard, bike, etc.
 
@@ -111,7 +137,7 @@ represents the behavior (functionality) of an object.
 ### Identity
 An object identity is typically implemented via a unique ID. The value of the ID is not visible to the external user. However, it is used internally by the JVM to identify each object uniquely.
 
-### new keyword in Java
+## new keyword in Java
 The new keyword is used to allocate memory at runtime. All objects get memory in Heap memory area.
 
 There are many ways to create an object in java. They are:
@@ -122,12 +148,27 @@ There are many ways to create an object in java. They are:
 - By deserialization
 - By factory method etc.
 
-### Anonymous object
+## Anonymous object
 Anonymous simply means nameless. An object which has no reference is known as an anonymous object. It can be used at the time of object creation only.
 
 ```java
 new Calculation(); //anonymous object  
 ```
+
+## this keyword in Java
+There can be a lot of usage of Java this keyword. In Java, this is a reference variable that refers to the current object.
+
+### Usage of Java this keyword
+
+1. this can be used to refer current class instance variable.
+2. this can be used to invoke current class method (implicitly)
+3. this() can be used to invoke current class constructor.
+4. this can be passed as an argument in the method call.
+5. this can be passed as argument in the constructor call.
+6. this can be used to return the current class instance from the method.
+
+### Rule
+  - Call to this() must be the first statement in constructor.
 
 # Inheritance
 When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
