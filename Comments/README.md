@@ -33,6 +33,7 @@ To create documentation API, we need to use the javadoc tool. The documentation 
 Some of the commonly used tags in documentation comments:
 
 | Tag |	Syntax | Description |
+| --- | ------ | ----------- |
 | {@docRoot} | {@docRoot} |	to depict relative path to root directory of generated document from any page. |
 | @author |	@author name - text |	To add the author of the class. |
 | @code |	{@code text} |	To show the text in code font without interpreting it as html markup or nested javadoc tag. |
