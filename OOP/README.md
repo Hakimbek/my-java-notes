@@ -183,13 +183,20 @@ Inheritance represents the IS-A relationship which is also known as a parent-chi
 
 The extends keyword indicates that you are making a new class that derives from an existing class. The meaning of "extends" is to increase the functionality. In the terminology of Java, a class which is inherited is called a parent or superclass, and the new class is called child or subclass.
 
-### Types of inheritance in java
-On the basis of class, there can be three types of inheritance in java: single, multilevel and hierarchical.
+## Types of inheritance in java
 
-In java programming, multiple and hybrid inheritance is supported through interface only. 
+### Single Inheritance Example
+  - When a class inherits another class, it is known as a single inheritance.
+
+### Multilevel Inheritance Example
+  - When there is a chain of inheritance, it is known as multilevel inheritance.
+
+### Hierarchical Inheritance Example
+When two or more classes inherits a single class, it is known as hierarchical inheritance.
 
 ### Note
    - Multiple inheritance is not supported in Java through class.
+   - In java programming, multiple and hybrid inheritance is supported through interface only. 
 
 ### Polymorphism
 If one task is performed in different ways, it is known as polymorphism. For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc.
