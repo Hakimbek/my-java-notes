@@ -23,3 +23,8 @@ Single line comments starts with two forward slashes ( // ). Any text in front o
 The multi-line comment is used to comment multiple lines of code. It can be used to explain a complex code snippet or to comment multiple lines of code at a time (as it will be difficult to use single-line comments there).
 
 Multi-line comments are placed between /* and \*/. Any text between /* and \*/ is not executed by Java.
+
+## Java Documentation Comment
+Documentation comments are usually used to write large programs for a project or software application as it helps to create documentation API. These APIs are needed for reference, i.e., which classes, methods, arguments, etc., are used in the code.
+
+To create documentation API, we need to use the javadoc tool. The documentation comments are placed between /** and \*/.
