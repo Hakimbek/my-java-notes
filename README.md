@@ -22,6 +22,10 @@
 
 - ## Object Orianted Programming
 
+   - ### [Object](OOP/Object/README.md)
+
+   - ### [Class](OOP/Class/README.md)
+
    - ### Polymorphism
      - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
      - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
