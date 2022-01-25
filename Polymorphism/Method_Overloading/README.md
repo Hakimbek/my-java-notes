@@ -139,6 +139,30 @@ class OverloadingCalculation {
 60
 ```
 
+## Example of Method Overloading with Type Promotion if matching found
+
+```java
+class OverloadingCalculation {  
+  void sum(int a, int b){
+     System.out.println("int arg method invoked");
+  }  
+  
+  void sum(long a, long b){
+     System.out.println("long arg method invoked");
+  } 
+  
+  public static void main(String args[]) {  
+     OverloadingCalculation obj=new OverloadingCalculation();  
+     obj.sum(20,20);  //now int arg sum() method gets invoked  
+  }  
+}  
+```
+
+### Output:
+```
+int arg method invoked
+```
+
 ## Example of Method Overloading with Type Promotion in case of ambiguity
 If there are no matching type arguments in the method, and each method promotes similar number of arguments, there will be ambiguity.
 
