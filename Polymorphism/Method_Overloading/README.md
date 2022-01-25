@@ -112,3 +112,53 @@ main with String[]
 # Method Overloading and Type Promotion
 
 ![Type Promotion](/Polymorphism/Method_Overloading/image/char.png)
+
+## Example of Method Overloading with TypePromotion
+
+```java
+class OverloadingCalculation {  
+  void sum(int a, long b){
+     System.out.println(a + b);
+  }  
+  
+  void sum(int a, int b, int c){
+     System.out.println(a + b + c);
+  }  
+  
+  public static void main(String args[]) {  
+     OverloadingCalculation obj = new OverloadingCalculation();  
+     obj.sum(20, 20);  //now second int literal will be promoted to long  
+     obj.sum(20, 20, 20);  
+  }  
+}  
+```
+
+### Output:
+```
+40
+60
+```
+
+## Example of Method Overloading with Type Promotion if matching found
+
+```java
+class OverloadingCalculation {  
+  void sum(int a, int b){
+      System.out.println("int arg method invoked");
+  }  
+  
+  void sum(long a, long b){
+      System.out.println("long arg method invoked");
+  }  
+  
+  public static void main(String args[]) {  
+      OverloadingCalculation obj = new OverloadingCalculation();  
+      obj.sum(20, 20);   //now int arg sum() method gets invoked  
+  }  
+}  
+```
+
+### Output:
+```
+int arg method invoked
+```
