@@ -2,7 +2,7 @@
 - ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
 - ## [Variables, Data Types and Operators](Var_Data_Oper/README.md)
 - ## Java Control Statements
-   - ### [Decision making statements](Control_Statements/Decision_Making_Statements/README.md)
+   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
    - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
    - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
 
