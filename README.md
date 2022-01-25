@@ -38,5 +38,5 @@
 
    - ### Abstraction
      - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Abstract class](OOP/Abstraction/Interface/README.md)
+     - ### [Interface](OOP/Abstraction/Interface/README.md)
    - ### [Misc](OOP/Misc/README.md)
