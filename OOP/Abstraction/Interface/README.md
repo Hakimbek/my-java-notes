@@ -29,10 +29,10 @@ interface <interface_name> {
 ## Note
 The Java compiler adds public and abstract keywords before the interface method. Moreover, it adds public, static and final keywords before data members.
 
-## The relationship between classes and interfaces
+# The relationship between classes and interfaces
 A class extends another class, an interface extends another interface, but a class implements an interface.
 
-## Multiple inheritance in Java by interface
+# Multiple inheritance in Java by interface
 If a class implements multiple interfaces, or an interface extends multiple interfaces, it is known as multiple inheritance.
 
 ## Multiple inheritance is not supported through class in java, but it is possible by an interface, why?
