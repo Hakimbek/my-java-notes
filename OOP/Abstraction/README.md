@@ -1,43 +1,106 @@
 # Abstraction
 Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
 
-In Java, we use abstract class and interface to achieve abstraction.
+# Ways to achieve Abstraction
 
-# Encapsulation
-Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines.
+## 1. Abstract class (0 to 100%)
+A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
 
-A java class is the example of encapsulation. Java bean is the fully encapsulated class because all the data members are private here.
+### Points to Remember
+- An abstract class must be declared with an abstract keyword.
+- It can have abstract and non-abstract methods.
+- It cannot be instantiated.
+- It can have constructors and static methods also.
+- It can have final methods which will force the subclass not to change the body of the method.
 
-# Coupling
-Coupling refers to the knowledge or information or dependency of another class. It arises when classes are aware of each other. If a class has the details information of another class, there is strong coupling. In Java, we use private, protected, and public modifiers to display the visibility level of a class, method, and field. You can use interfaces for the weaker coupling because there is no concrete implementation.
+### Abstract class
+```java
+abstract class A{
 
-# Cohesion
-Cohesion refers to the level of a component which performs a single well-defined task. A single well-defined task is done by a highly cohesive method. The weakly cohesive method will split the task into separate parts. The java.io package is a highly cohesive package because it has I/O related classes and interface. However, the java.util package is a weakly cohesive package because it has unrelated classes and interfaces.
+}  
+```
 
-# Association
-Association represents the relationship between the objects. Here, one object can be associated with one object or many objects. There can be four types of association between the objects:
+### Abstract method
+```java
+abstract void printStatus(); //no method body and abstract  
+```
 
-- One to One
-- One to Many
-- Many to One, and
-- Many to Many
+## Rule
+- If there is an abstract method in a class, that class must be abstract.
+- If you are extending an abstract class that has an abstract method, you must either provide the implementation of the method or make this class abstract.
 
-Association can be undirectional or bidirectional.
+```
+abstract class Bike {  
+  abstract void run();  
+}  
 
-# Aggregation
-If a class have an entity reference, it is known as Aggregation. Aggregation represents HAS-A relationship.
-Aggregation is a way to achieve Association. Aggregation represents the relationship where one object contains other objects as a part of its state. It represents the weak relationship between objects. It is another way to reuse objects.
+class Honda extends Bike {  
+  void run(){
+    System.out.println("running safely");
+  }
+  
+  public static void main(String args[]) {  
+    Bike obj = new Honda();  
+    obj.run();  
+  }  
+}  
+```
 
-### When use Aggregation?
-- Code reuse is also best achieved by aggregation when there is no is-a relationship.
-- Inheritance should be used only if the relationship is-a is maintained throughout the lifetime of the objects involved; otherwise, aggregation is the best choice.
+### Output:
+```
+running safely
+```
 
-### Composition
-The composition is also a way to achieve Association. The composition represents the relationship where one object contains other objects as a part of its state. There is a strong relationship between the containing object and the dependent object. It is the state where containing objects do not have an independent existence. If you delete the parent object, all the child objects will be deleted automatically.
+## 2. Interface (100%)
+An interface in Java is a blueprint of a class. It has static constants and abstract methods.
 
-## Advantage of OOPs over Procedure-oriented programming language
-1. OOPs makes development and maintenance easier, whereas, in a procedure-oriented programming language, it is not easy to manage if code grows as project size increases.
+The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
 
-2. OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywhere.
+In other words, you can say that interfaces can have abstract methods and variables. It cannot have a method body.
 
-3. OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
+Java Interface also represents the *IS-A* relationship.
+
+It cannot be instantiated just like the abstract class.
+
+Since Java 8, we can have default and static methods in an interface.
+
+Since Java 9, we can have private methods in an interface.
+
+### Why use Java interface?
+- It is used to achieve abstraction.
+- By interface, we can support the functionality of multiple inheritance.
+- It can be used to achieve loose coupling.
+
+### How to declare an interface?
+An interface is declared by using the interface keyword. It provides total abstraction; means all the methods in an interface are declared with the empty body, and all the fields are public, static and final by default. A class that implements an interface must implement all the methods declared in the interface.
+
+```java
+interface <interface_name> {  
+    // declare constant fields  
+    // declare methods that abstract   
+    // by default.  
+}  
+```
+
+### Note
+The Java compiler adds public and abstract keywords before the interface method. Moreover, it adds public, static and final keywords before data members.
+
+## Multiple inheritance is not supported through class in java, but it is possible by an interface, why?
+As we have explained in the inheritance chapter, multiple inheritance is not supported in the case of class because of ambiguity. However, it is supported in case of an interface because there is no ambiguity. It is because its implementation is provided by the implementation class. For example:
+
+```java
+interface Printable{  
+void print();  
+}  
+interface Showable{  
+void print();  
+}  
+  
+class TestInterface3 implements Printable, Showable{  
+public void print(){System.out.println("Hello");}  
+public static void main(String args[]){  
+TestInterface3 obj = new TestInterface3();  
+obj.print();  
+ }  
+}  
+```
