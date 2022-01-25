@@ -5,5 +5,28 @@ If a class has multiple methods having same name but different in *parameters*, 
  - Method overloading increases the readability of the program.
 
 ## There are two ways to overload the method in java
-1. By changing number of arguments
-2. By changing the data type
+
+### By changing number of arguments
+
+```java
+class Adder {  
+   static int add(int a, int b) {
+      return a+b;
+   }
+ 
+   static int add(int a, int b, int c) {
+      return a+b+c;
+   }  
+}  
+
+class TestOverloading1 {  
+   public static void main(String[] args) {  
+     System.out.println(Adder.add(11, 11));  
+     System.out.println(Adder.add(11, 11, 11));  
+   }
+} 
+```
+
+`Output: 22 33`
+
+### By changing the data type
