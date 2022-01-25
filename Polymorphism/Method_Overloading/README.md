@@ -4,7 +4,7 @@ If a class has multiple methods having same name but different in *parameters*, 
 ## Advantage of method overloading
  - Method overloading increases the readability of the program.
 
-## There are two ways to overload the method in java
+# There are two ways to overload the method in java
 
 ## 1. By changing number of arguments
 
@@ -109,4 +109,4 @@ class TestOverloading {
 main with String[]
 ```
 
-## Method Overloading and Type Promotion
+# Method Overloading and Type Promotion
