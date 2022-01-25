@@ -19,7 +19,7 @@ A class which is declared as abstract is known as an abstract class. It can have
 ### Abstract class
 
 ```java
-abstract class A{
+abstract class A {
 
 }  
 ```
