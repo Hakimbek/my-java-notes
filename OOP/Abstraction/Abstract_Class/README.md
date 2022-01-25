@@ -1,43 +1,58 @@
 # Abstraction
 Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
 
-In Java, we use abstract class and interface to achieve abstraction.
+## Ways to achieve Abstraction
+1. Abstract class (0 to 100%)
+2. Interface (100%)
 
-# Encapsulation
-Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines.
+# Abstract class in Java
 
-A java class is the example of encapsulation. Java bean is the fully encapsulated class because all the data members are private here.
+A class which is declared as abstract is known as an abstract class. It can have abstract and non-abstract methods. It needs to be extended and its method implemented. It cannot be instantiated.
 
-# Coupling
-Coupling refers to the knowledge or information or dependency of another class. It arises when classes are aware of each other. If a class has the details information of another class, there is strong coupling. In Java, we use private, protected, and public modifiers to display the visibility level of a class, method, and field. You can use interfaces for the weaker coupling because there is no concrete implementation.
+## Points to Remember
+- An abstract class must be declared with an abstract keyword.
+- It can have abstract and non-abstract methods.
+- It cannot be instantiated.
+- It can have constructors and static methods also.
+- It can have final methods which will force the subclass not to change the body of the method.
 
-# Cohesion
-Cohesion refers to the level of a component which performs a single well-defined task. A single well-defined task is done by a highly cohesive method. The weakly cohesive method will split the task into separate parts. The java.io package is a highly cohesive package because it has I/O related classes and interface. However, the java.util package is a weakly cohesive package because it has unrelated classes and interfaces.
+### Abstract class
 
-# Association
-Association represents the relationship between the objects. Here, one object can be associated with one object or many objects. There can be four types of association between the objects:
+```java
+abstract class A{
 
-- One to One
-- One to Many
-- Many to One, and
-- Many to Many
+}  
+```
 
-Association can be undirectional or bidirectional.
+# Abstract Method in Java
+A method which is declared as abstract and does not have implementation is known as an abstract method.
 
-# Aggregation
-If a class have an entity reference, it is known as Aggregation. Aggregation represents HAS-A relationship.
-Aggregation is a way to achieve Association. Aggregation represents the relationship where one object contains other objects as a part of its state. It represents the weak relationship between objects. It is another way to reuse objects.
+### Abstract method
 
-### When use Aggregation?
-- Code reuse is also best achieved by aggregation when there is no is-a relationship.
-- Inheritance should be used only if the relationship is-a is maintained throughout the lifetime of the objects involved; otherwise, aggregation is the best choice.
+```java
+abstract void printStatus();//no method body and abstract  
+```
 
-### Composition
-The composition is also a way to achieve Association. The composition represents the relationship where one object contains other objects as a part of its state. There is a strong relationship between the containing object and the dependent object. It is the state where containing objects do not have an independent existence. If you delete the parent object, all the child objects will be deleted automatically.
+```java
+abstract class Bike {  
+    abstract void run();  
+}  
 
-## Advantage of OOPs over Procedure-oriented programming language
-1. OOPs makes development and maintenance easier, whereas, in a procedure-oriented programming language, it is not easy to manage if code grows as project size increases.
+class Honda extends Bike {  
+    void run(){System.out.println("running safely");}  
+    
+    public static void main(String args[]) {  
+        Bike obj = new Honda();  
+        obj.run();  
+    }   
+}  
+```
 
-2. OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywhere.
+### Output:
+```
+running safely
+```
 
-3. OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
+## Rule
+- If there is an abstract method in a class, that class must be abstract.
+- If you are extending an abstract class that has an abstract method, you must either provide the implementation of the method or make this class abstract.
