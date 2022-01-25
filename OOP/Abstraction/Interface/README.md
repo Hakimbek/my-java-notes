@@ -58,3 +58,77 @@ class TestInterface implements Printable, Showable {
     }  
 }  
 ```
+
+### Output:
+```
+Hello
+```
+
+# Java 8 Default Method in Interface
+Since Java 8, we can have method body in interface. But we need to make it default method. Let's see an example:
+
+```java
+interface Drawable {  
+    void draw();  
+    
+    default void msg() {
+        System.out.println("default method");
+    }  
+}  
+
+class Rectangle implements Drawable {  
+    public void draw(){
+        System.out.println("drawing rectangle");
+    }  
+}  
+
+class TestInterfaceDefault {  
+    public static void main(String args[]) {  
+        Drawable d = new Rectangle();  
+        d.draw();  
+        d.msg();  
+    }
+} 
+```
+
+### Output:
+```
+drawing rectangle
+default method
+```
+
+# Java 8 Static Method in Interface
+Since Java 8, we can have static method in interface. Let's see an example:
+
+```java
+interface Drawable {  
+    void draw();  
+    
+    static int cube(int x) {
+        return x * x * x;
+    }  
+}  
+
+class Rectangle implements Drawable {  
+    public void draw(){
+        System.out.println("drawing rectangle");
+    }  
+}  
+  
+class TestInterfaceStatic {  
+    public static void main(String args[]) {  
+        Drawable d = new Rectangle();  
+        d.draw();  
+        System.out.println(Drawable.cube(3));  
+    }
+}  
+```
+
+# What is marker or tagged interface?
+An interface which has no member is known as a marker or tagged interface, for example, Serializable, Cloneable, Remote, etc. They are used to provide some essential information to the JVM so that JVM may perform some useful operation.
+
+```java
+public interface Serializable {
+
+} 
+```
