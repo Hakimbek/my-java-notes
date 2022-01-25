@@ -111,4 +111,4 @@ main with String[]
 
 # Method Overloading and Type Promotion
 
-![Type Promotion](/Polymorphism/Method_Overloading/image/byte.png)
+![Type Promotion](/Polymorphism/Method_Overloading/image/char.png)
