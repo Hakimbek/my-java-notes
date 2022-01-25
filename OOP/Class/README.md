@@ -66,12 +66,12 @@ There are two types of constructors in Java: no-arg constructor, and parameteriz
   - It is called constructor because it constructs the values at the time of object creation. It is not necessary to write a constructor for a class. It is because java compiler creates a default constructor if your class doesn't have any.
   - We can use access modifiers while declaring a constructor. It controls the object creation. In other words, we can have private, protected, public or default constructor in Java.
 
-### Constructor Overloading in Java
+## Constructor Overloading in Java
 In Java, a constructor is just like a method but without return type. It can also be overloaded like Java methods.
 
 Constructor overloading in Java is a technique of having more than one constructor with different parameter lists. They are arranged in a way that each constructor performs a different task. They are differentiated by the compiler by the number of parameters in the list and their types.
 
-### Difference between constructor and method in Java
+## Difference between constructor and method in Java
 
 | Java Constructor | Java Method |
 | ---------------- | ----------- |
