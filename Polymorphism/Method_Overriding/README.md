@@ -83,3 +83,27 @@ welcome to covariant return type
 - In the method overriding, the covariant return type provides the liberty to have more to the point return types.
 
 - Covariant return type helps in preventing the run-time *ClassCastExceptions* on returns.
+
+
+## Note
+Runtime polymorphism can't be achieved by data members.
+
+```java
+class Bike {  
+  int speedlimit = 90;  
+}  
+
+class Honda extends Bike {  
+  int speedlimit = 150;  
+  
+  public static void main(String args[]) {  
+    Bike obj = new Honda3();  
+    System.out.println(obj.speedlimit);  //90  
+  } 
+}
+```
+
+### Output:
+```
+90
+```
