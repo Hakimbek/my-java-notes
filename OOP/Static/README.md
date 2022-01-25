@@ -20,6 +20,10 @@ If you apply static keyword with any method, it is known as static method.
 - A static method can be invoked without the need for creating an instance of a class.
 - A static method can access static data member and can change the value of it.
 
+### Restrictions for the static method
+- The static method can not use non static data member or call non-static method directly.
+- this and super cannot be used in static context.
+
 ## 3. Java static block
 - Is used to initialize the static data member.
 - It is executed before the main method at the time of classloading.
