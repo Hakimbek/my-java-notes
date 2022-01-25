@@ -10,6 +10,6 @@
    - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
    - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
    - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-   - ### [Super Keyword in Java](Polymorphism/Super_Keyword/README.md)
+   - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
    - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
    - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
