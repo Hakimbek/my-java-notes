@@ -4,11 +4,11 @@
 
 - ## [Variables](Variables/README.md)
 
-- ## [Data_Types](Variables/README.md)
+- ## [Data_Types](Data_Types/README.md)
 
-- ## [Operators](Variables/README.md)
+- ## [Operators](Operators/README.md)
 
-- ## [Keywords](Variables/README.md)
+- ## [Keywords](Keywords/README.md)
 
 - ## Java Control Statements
    - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
