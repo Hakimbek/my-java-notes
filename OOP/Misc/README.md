@@ -1,13 +1,3 @@
-# Abstraction
-Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
-
-In Java, we use abstract class and interface to achieve abstraction.
-
-# Encapsulation
-Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines.
-
-A java class is the example of encapsulation. Java bean is the fully encapsulated class because all the data members are private here.
-
 # Coupling
 Coupling refers to the knowledge or information or dependency of another class. It arises when classes are aware of each other. If a class has the details information of another class, there is strong coupling. In Java, we use private, protected, and public modifiers to display the visibility level of a class, method, and field. You can use interfaces for the weaker coupling because there is no concrete implementation.
 
