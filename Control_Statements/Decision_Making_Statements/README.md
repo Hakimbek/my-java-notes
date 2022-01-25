@@ -20,7 +20,7 @@ Java provides three types of control flow statements.
 # Decision-Making statements:
 As the name suggests, decision-making statements decide which statement to execute and when. Decision-making statements evaluate the Boolean expression and control the program flow depending upon the result of the condition provided. There are two types of decision-making statements in Java, i.e., If statement and switch statement.
 
-## If Statement
+# If Statement
 In Java, the "if" statement is used to evaluate a condition. The control of the program is diverted depending upon the specific condition. The condition of the If statement gives a Boolean value, either true or false. In Java, there are four types of if-statements given below.
 
 1. Simple if statement
@@ -30,7 +30,7 @@ In Java, the "if" statement is used to evaluate a condition. The control of the 
 
 Let's understand the if-statements one by one.
 
-### Simple if statement
+## Simple if statement
 It is the most basic statement among all control flow statements in Java. It evaluates a Boolean expression and enables the program to enter a block of code if the expression evaluates to true.
 
 ```java
@@ -38,7 +38,7 @@ if(condition) {
    statement 1; //executes when condition is true   
 }    
 ```
-### if-else statement
+## if-else statement
 The if-else statement is an extension to the if-statement, which uses another block of code, i.e., else block. The else block is executed if the condition of the if-block is evaluated as false.
 
 ```java
@@ -48,7 +48,7 @@ if(condition) {
    statement 2; //executes when condition is false   
 }  
 ```
-### if-else-if ladder:
+## if-else-if ladder:
 The if-else-if statement contains the if-statement followed by multiple else-if statements. In other words, we can say that it is the chain of if-else statements that create a decision tree where the program may enter in the block of code where the condition is true. We can also define an else statement at the end of the chain.
 
 ```java
@@ -61,7 +61,7 @@ if(condition 1) {
 }  
 ```
 
-### Nested if-statement
+## Nested if-statement
 In nested if-statements, the if statement can contain a if or if-else statement inside another if or else-if statement.
 
 ```java
