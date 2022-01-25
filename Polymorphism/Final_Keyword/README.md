@@ -81,3 +81,15 @@ Compile Time Error
 Yes, final method is inherited but you cannot override it.
 
 ## What is blank or uninitialized final variable?
+What is blank or uninitialized final variable?
+A final variable that is not initialized at the time of declaration is known as blank final variable.
+
+If you want to create a variable that is initialized at the time of creating object and once initialized may not be changed, it is useful. 
+
+It can be initialized only in constructor.
+
+## Static blank final variable
+A static final variable that is not initialized at the time of declaration is known as static blank final variable. It can be initialized only in static block.
+
+## Can we declare a constructor final?
+No, because constructor is never inherited.
