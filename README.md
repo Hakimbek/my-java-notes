@@ -20,7 +20,7 @@
  
 - ## [Java Naming Convention](Convention/README.md)
 
-- ## [OOP](OOP/README.md)
+- ## Object Orianted Programming
 
 - ## Polymorphism
    - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
