@@ -24,7 +24,8 @@
    - ### [Class](OOP/Class/README.md)
    - ### [Object](OOP/Object/README.md)
    - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Inheritance]()
+   - ### [Static](OOP/Static/README.md)
+   - ### [Inheritance](OOP/Inheritance/README.md)
    - ### Polymorphism
      - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
      - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
