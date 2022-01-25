@@ -1,133 +1,83 @@
-# Super Keyword in Java
-The super keyword in Java is a reference variable which is used to refer immediate parent class object.
+# Final Keyword in Java
+The final keyword in java is used to restrict the user. The java final keyword can be used in many context. Final can be:
 
-Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by super reference variable.
-
-# Usage of Java super Keyword
-
-## 1. super can be used to refer immediate parent class instance variable.
+## 1. Java final variable
+If you make any variable as final, you cannot change the value of final variable(It will be constant).
 
 ```java
-class Animal {  
-    String color = "white";  
+class Bike {  
+    final int speedlimit = 90;  //final variable  
+    
+    void run() {  
+        speedlimit=400;  
+    }  
+    
+    public static void main(String args[]) {  
+        Bike obj = new  Bike();  
+        obj.run();  
+    }  
 }
+```
 
-class Dog extends Animal {  
-    String color = "black";  
+### Output:
+```
+Compile Time Error
+```
 
-    void printColor() {  
-        System.out.println(color);  //prints color of Dog class  
-        System.out.println(super.color);  //prints color of Animal class  
+## 2. Java final method
+If you make any method as final, you cannot override it.
+
+```java
+class Bike {  
+    final void run(){
+        System.out.println("running");
     }  
 }  
-
-class TestSuper {  
+     
+class Honda extends Bike {  
+    void run() {
+        System.out.println("running safely with 100kmph");
+    }  
+     
     public static void main(String args[]) {  
-        Dog d = new Dog();  
-        d.printColor();  
-    }
+        Honda honda = new Honda();  
+        honda.run();     
+    }  
 }  
 ```
 
 ### Output:
 ```
-black
-white
+Compile Time Error
 ```
 
-
-## 2. super can be used to invoke immediate parent class method.
+## 3. Java final class
+If you make any class as final, you cannot extend it.
 
 ```java
-class Animal {  
-    void eat() {
-        System.out.println("eating...");
-    }  
-}  
+final class Bike{
 
-class Dog extends Animal {  
-    void eat() {
-        System.out.println("eating bread...");
-    }
+}  
+  
+class Honda extends Bike {  
+    void run() {
+        System.out.println("running safely with 100kmph");
+    }  
     
-    void bark() {
-        System.out.println("barking...");
-    }
-    
-    void work(){  
-        super.eat();  
-        bark();  
+    public static void main(String args[]) {  
+        Honda honda = new Honda();  
+        honda.run();  
     }  
 }  
-
-class TestSuper {  
-    public static void main(String args[]) {  
-        Dog d = new Dog();  
-        d.work();  
-    }
-}  
 ```
+
 
 ### Output:
 ```
-eating...
-barking...
+Compile Time Error
 ```
 
-## 3. super() can be used to invoke immediate parent class constructor.
+## Is final method inherited?
+Yes, final method is inherited but you cannot override it.
 
-```java
-class Animal {  
-    Animal(){
-        System.out.println("animal is created");
-    }  
-}  
-
-class Dog extends Animal {  
-    Dog() {  
-        super();  
-        System.out.println("dog is created");  
-    }  
-}  
-
-class TestSuper {  
-    public static void main(String args[]) {  
-        Dog d = new Dog();  
-    }
-}  
-```
-
-### Output:
-```
-animal is created
-dog is created
-```
-
-## Note
-As we know well that default constructor is provided by compiler automatically if there is no constructor. But, it also adds *super()* as the first statement.
-
-```java
-class Animal {  
-    Animal(){
-        System.out.println("animal is created");
-    }  
-}  
-
-class Dog extends Animal {  
-    Dog() {  
-        System.out.println("dog is created");  
-    }  
-}  
-
-class TestSuper {  
-    public static void main(String args[]) {  
-        Dog d = new Dog();  
-    }
-}  
-```
-
-### Output:
-```
-animal is created
-dog is created
-```
+## What is blank or uninitialized final variable?
