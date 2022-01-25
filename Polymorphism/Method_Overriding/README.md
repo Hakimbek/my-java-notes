@@ -43,3 +43,36 @@ No, a static method cannot be overridden. It is because the static method is bou
 
 ## Can we override java main method?
 No, because the main is a static method.
+
+# Covariant Return Type
+The covariant return type specifies that the return type may vary in the same direction as the subclass.
+
+Before Java5, it was not possible to override any method by changing the return type. But now, since Java5, it is possible to override method by changing the return type if subclass overrides any method whose return type is Non-Primitive but it changes its return type to subclass type.
+
+```java
+class A {    
+    A get() {
+        return this;
+    }    
+}    
+    
+class B extends A {    
+    @Override  
+    B get() {
+        return this;
+    }   
+    
+    void message() { 
+        System.out.println("welcome to covariant return type");
+    }    
+    
+    public static void main(String args[]) {    
+        new B1().get().message();    
+    }    
+}    
+```
+
+### Output:
+```
+welcome to covariant return type
+```
