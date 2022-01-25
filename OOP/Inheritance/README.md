@@ -5,31 +5,26 @@ The idea behind inheritance in Java is that you can create new classes that are 
 
 Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
 
-### Why use inheritance in java
+## Why use inheritance in java
   - For Method Overriding (so runtime polymorphism can be achieved).
   - For Code Reusability.
 
 The extends keyword indicates that you are making a new class that derives from an existing class. The meaning of "extends" is to increase the functionality. In the terminology of Java, a class which is inherited is called a parent or superclass, and the new class is called child or subclass.
 
-## Types of inheritance in java
+# Types of inheritance in java
 
-### Single Inheritance Example
-  - When a class inherits another class, it is known as a single inheritance.
+## Single Inheritance Example
+  When a class inherits another class, it is known as a single inheritance.
 
-### Multilevel Inheritance Example
-  - When there is a chain of inheritance, it is known as multilevel inheritance.
+## Multilevel Inheritance Example
+  When there is a chain of inheritance, it is known as multilevel inheritance.
 
-### Hierarchical Inheritance Example
+## Hierarchical Inheritance Example
 When two or more classes inherits a single class, it is known as hierarchical inheritance.
 
-### Note
+## Note
    - Multiple inheritance is not supported in Java through class.
    - In java programming, multiple and hybrid inheritance is supported through interface only. 
-
-# Polymorphism
-If one task is performed in different ways, it is known as polymorphism. For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc.
-
-In Java, we use method overloading and method overriding to achieve polymorphism.
 
 # Abstraction
 Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
