@@ -82,5 +82,29 @@ class TestOverloading {
 
 ### Output:
 ```
-Compile Time Error: method add(int,int) is already defined in class Adder
+Compile Time Error: method add(int, int) is already defined in class Adder
+```
+
+## Can we overload java main() method?
+You can have any number of main methods in a class by method overloading. But JVM calls *main()* method which receives string array as arguments only.
+
+```java
+class TestOverloading {  
+   public static void main(String[] args){
+       System.out.println("main with String[]");
+   }
+   
+   public static void main(String args){
+       System.out.println("main with String");
+   }
+   
+   public static void main(){
+       System.out.println("main without args");
+   }  
+}  
+```
+
+Output:
+```
+main with String[]
 ```
