@@ -5,11 +5,10 @@ But, it is not forced to follow. So, it is known as convention not rule. These c
 
 All the classes, interfaces, packages, methods and fields of Java programming language are given according to the Java naming convention. If you fail to follow these conventions, it may generate confusion or erroneous code.
 
-### Advantage of Naming Conventions in Java
+## Advantage of Naming Conventions in Java
 By using standard Java naming conventions, you make your code easier to read for yourself and other programmers. Readability of Java program is very important. It indicates that less time is spent to figure out what the code does.
 
-### Naming Conventions of the Different Identifiers
-The following table shows the popular conventions used for the different identifiers.
+## Naming Conventions of the Different Identifiers
 
 | Identifiers Type | Naming Rules |
 | ---------------- | ------------ |
@@ -21,7 +20,5 @@ It should be a noun such as Color, Button, System, Thread, etc. Use appropriate 
 | Package |	It should be a lowercase letter such as java, lang. If the name contains multiple words, it should be separated by dots (.) such as java.util, java.lang. |
 | Constant | It should be in uppercase letters such as RED, YELLOW. If the name contains multiple words, it should be separated by an underscore(\_) such as MAX_PRIORITY. It may contain digits but not as the first letter. |
 
-### CamelCase in Java naming conventions
-Java follows camel-case syntax for naming the class, interface, method, and variable.
-
-If the name is combined with two words, the second word will start with uppercase letter always such as actionPerformed(), firstName, ActionEvent, ActionListener, etc.
+## CamelCase in Java naming conventions
+Java follows camel-case syntax for naming the class, interface, method, and variable. If the name is combined with two words, the second word will start with uppercase letter always such as actionPerformed(), firstName, ActionEvent, ActionListener, etc.
