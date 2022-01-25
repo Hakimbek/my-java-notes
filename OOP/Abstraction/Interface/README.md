@@ -1,43 +1,60 @@
-# Abstraction
-Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
+# Interface in Java
+An interface in Java is a blueprint of a class. It has static constants and abstract methods.
 
-In Java, we use abstract class and interface to achieve abstraction.
+The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
 
-# Encapsulation
-Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines.
+In other words, you can say that interfaces can have abstract methods and variables. It cannot have a method body.
 
-A java class is the example of encapsulation. Java bean is the fully encapsulated class because all the data members are private here.
+Java Interface also represents the IS-A relationship.
 
-# Coupling
-Coupling refers to the knowledge or information or dependency of another class. It arises when classes are aware of each other. If a class has the details information of another class, there is strong coupling. In Java, we use private, protected, and public modifiers to display the visibility level of a class, method, and field. You can use interfaces for the weaker coupling because there is no concrete implementation.
+It cannot be instantiated just like the abstract class.
 
-# Cohesion
-Cohesion refers to the level of a component which performs a single well-defined task. A single well-defined task is done by a highly cohesive method. The weakly cohesive method will split the task into separate parts. The java.io package is a highly cohesive package because it has I/O related classes and interface. However, the java.util package is a weakly cohesive package because it has unrelated classes and interfaces.
+Since Java 8, we can have default and static methods in an interface.
 
-# Association
-Association represents the relationship between the objects. Here, one object can be associated with one object or many objects. There can be four types of association between the objects:
+Since Java 9, we can have private methods in an interface.
 
-- One to One
-- One to Many
-- Many to One, and
-- Many to Many
+## Why use Java interface?
+- It is used to achieve abstraction.
+- By interface, we can support the functionality of multiple inheritance.
+- It can be used to achieve loose coupling.
 
-Association can be undirectional or bidirectional.
+```java
+interface <interface_name> {  
+    // declare constant fields  
+    // declare methods that abstract   
+    // by default.  
+}  
+```
 
-# Aggregation
-If a class have an entity reference, it is known as Aggregation. Aggregation represents HAS-A relationship.
-Aggregation is a way to achieve Association. Aggregation represents the relationship where one object contains other objects as a part of its state. It represents the weak relationship between objects. It is another way to reuse objects.
+## Note
+The Java compiler adds public and abstract keywords before the interface method. Moreover, it adds public, static and final keywords before data members.
 
-### When use Aggregation?
-- Code reuse is also best achieved by aggregation when there is no is-a relationship.
-- Inheritance should be used only if the relationship is-a is maintained throughout the lifetime of the objects involved; otherwise, aggregation is the best choice.
+## The relationship between classes and interfaces
+A class extends another class, an interface extends another interface, but a class implements an interface.
 
-### Composition
-The composition is also a way to achieve Association. The composition represents the relationship where one object contains other objects as a part of its state. There is a strong relationship between the containing object and the dependent object. It is the state where containing objects do not have an independent existence. If you delete the parent object, all the child objects will be deleted automatically.
+## Multiple inheritance in Java by interface
+If a class implements multiple interfaces, or an interface extends multiple interfaces, it is known as multiple inheritance.
 
-## Advantage of OOPs over Procedure-oriented programming language
-1. OOPs makes development and maintenance easier, whereas, in a procedure-oriented programming language, it is not easy to manage if code grows as project size increases.
+## Multiple inheritance is not supported through class in java, but it is possible by an interface, why?
+As we have explained in the inheritance chapter, multiple inheritance is not supported in the case of class because of ambiguity. However, it is supported in case of an interface because there is no ambiguity. It is because its implementation is provided by the implementation class. For example:
 
-2. OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywhere.
+```java
+interface Printable {  
+   void print();  
+}  
 
-3. OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
+interface Showable {  
+    void print();  
+}  
+  
+class TestInterface implements Printable, Showable {  
+    public void print(){
+        System.out.println("Hello");
+    }  
+    
+    public static void main(String args[]) {  
+        TestInterface obj = new TestInterface();  
+        obj.print();  
+    }  
+}  
+```
