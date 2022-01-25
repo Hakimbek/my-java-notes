@@ -6,7 +6,7 @@ If a class has multiple methods having same name but different in *parameters*, 
 
 ## There are two ways to overload the method in java
 
-### By changing number of arguments
+### 1. By changing number of arguments
 
 ```java
 class Adder {  
