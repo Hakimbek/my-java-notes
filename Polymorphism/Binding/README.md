@@ -21,7 +21,7 @@ class Dog {
 }  
 ```
 
-## 3. Dynamic Binding (also known as Late Binding).
+## 2. Dynamic Binding (also known as Late Binding).
 When type of the object is determined at run-time, it is known as dynamic binding.
 
 ```java
