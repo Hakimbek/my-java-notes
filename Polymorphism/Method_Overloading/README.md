@@ -1,7 +1,5 @@
-- ## [What is Java?](What_is_Java/README.md)
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
-- ## [Variables, Data Types and Operators](Var_Data_Oper/README.md)
-- ## [Java Control Statements](Control/README.md)
-- ## [Comments](Comments/README.md)
-- ## [Java Naming Convention](Convention/README.md)
-- ## [OOP](OOP/README.md)
+# Method Overloading in Java
+If a class has multiple methods having same name but different in *parameters*, it is known as Method Overloading.
+
+## Advantage of method overloading
+ - Method overloading increases the readability of the program.
