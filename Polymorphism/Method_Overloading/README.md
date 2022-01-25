@@ -11,11 +11,11 @@ If a class has multiple methods having same name but different in *parameters*, 
 ```java
 class Adder {  
    static int add(int a, int b) {
-      return a+b;
+      return a + b;
    }
  
    static int add(int a, int b, int c) {
-      return a+b+c;
+      return a + b + c;
    }  
 }  
 
