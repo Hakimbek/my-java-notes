@@ -1,9 +1,42 @@
-# Difference between method Overloading and method Overriding
+# Super Keyword in Java
+The super keyword in Java is a reference variable which is used to refer immediate parent class object.
 
-| No. |	Method Overloading |	Method Overriding |
-| --- | ------------------ | ----------------- |
-| 1 |	Method overloading is used to increase the readability of the program. |	Method overriding is used to provide the specific implementation of the method that is already provided by its super class. |
-| 2 |	Method overloading is performed within class. |	Method overriding occurs in two classes that have *IS-A* (inheritance) relationship. |
-| 3 |	In case of method overloading, parameter must be different. |	In case of method overriding, parameter must be same. |
-| 4 |	Method overloading is the example of compile time polymorphism. |	Method overriding is the example of run time polymorphism. |
-| 5 |	In java, method overloading can't be performed by changing return type of the method only. Return type can be same or different in method overloading. But you must have to change the parameter. |	Return type must be same or covariant in method overriding. |
+Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by super reference variable.
+
+## Usage of Java super Keyword
+
+### 1. super can be used to refer immediate parent class instance variable.
+
+```java
+class Animal {  
+    String color = "white";  
+}
+
+class Dog extends Animal {  
+    String color = "black";  
+
+    void printColor() {  
+        System.out.println(color);  //prints color of Dog class  
+        System.out.println(super.color);  //prints color of Animal class  
+    }  
+}  
+
+class TestSuper {  
+    public static void main(String args[]) {  
+        Dog d = new Dog();  
+        d.printColor();  
+    }
+}  
+```
+
+### Output:
+```
+black
+white
+```
+
+
+### 2. super can be used to invoke immediate parent class method.
+
+
+### 3. super() can be used to invoke immediate parent class constructor.
