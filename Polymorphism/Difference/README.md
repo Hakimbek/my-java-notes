@@ -1,4 +1,4 @@
-# Difference between method overloading and method overriding in java
+# Difference between method Overloading and method Overriding
 
 | No. |	Method Overloading |	Method Overriding |
 | --- | ------------------ | ----------------- |
