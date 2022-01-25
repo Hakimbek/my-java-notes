@@ -13,3 +13,5 @@
    - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
    - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
    - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
+   - ### [Casting](Polymorphism/Casting/README.md)
+   - ### [Binding](Polymorphism/Binding/README.md)
