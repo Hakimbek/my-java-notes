@@ -24,6 +24,11 @@ speed is 100
 speed is 100
 ```
 
+There are three places in java where you can perform operations:
+- method
+- constructor
+- block
+
 ## Rules for instance initializer block
 - The instance initializer block is created when instance of the class is created.
 - The instance initializer block is invoked after the parent class constructor is invoked (i.e. after super() constructor call).
