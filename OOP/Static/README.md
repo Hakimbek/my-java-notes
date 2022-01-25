@@ -31,3 +31,6 @@ creates an object first then call main() method that will lead the problem of ex
 # 3. Java static block
 - Is used to initialize the static data member.
 - It is executed before the main method at the time of classloading.
+
+## Can we execute a program without main() method?
+No, one of the ways was the static block, but it was possible till JDK 1.6. Since JDK 1.7, it is not possible to execute a Java class without the main method
