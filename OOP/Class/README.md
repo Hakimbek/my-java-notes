@@ -50,19 +50,19 @@ It calls a default constructor if there is no constructor available in the class
 
 There are two types of constructors in Java: no-arg constructor, and parameterized constructor.
 
-### Java Default Constructor
+## Java Default Constructor
   - A constructor is called "Default Constructor" when it doesn't have any parameter.
 
-### Java Parameterized Constructor
+## Java Parameterized Constructor
   - A constructor which has a specific number of parameters is called a parameterized constructor.
 
-### Rule
+## Rule
   - If there is no constructor in a class, compiler automatically creates a default constructor.
   - Constructor name must be the same as its class name
   - A Constructor must have no explicit return type
   - A Java constructor cannot be abstract, static, final, and synchronized
 
-### Note
+## Note
   - It is called constructor because it constructs the values at the time of object creation. It is not necessary to write a constructor for a class. It is because java compiler creates a default constructor if your class doesn't have any.
   - We can use access modifiers while declaring a constructor. It controls the object creation. In other words, we can have private, protected, public or default constructor in Java.
 
@@ -81,7 +81,7 @@ Constructor overloading in Java is a technique of having more than one construct
 | The Java compiler provides a default constructor if you don't have any constructor in a class. | The method is not provided by the compiler in any case. |
 | The constructor name must be same as the class name. | The method name may or may not be same as the class name. |
 
-### Java Copy Constructor
+## Java Copy Constructor
 There is no copy constructor in Java. However, we can copy the values from one object to another like copy constructor in C++.
 
 There are many ways to copy the values of one object into another in Java. They are:
