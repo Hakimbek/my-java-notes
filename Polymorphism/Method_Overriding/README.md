@@ -76,3 +76,10 @@ class B extends A {
 ```
 welcome to covariant return type
 ```
+
+## Advantages of Covariant Return Type
+- Covariant return type assists to stay away from the confusing type casts in the class hierarchy and makes the code more usable, readable, and maintainable.
+
+- In the method overriding, the covariant return type provides the liberty to have more to the point return types.
+
+- Covariant return type helps in preventing the run-time *ClassCastExceptions* on returns.
