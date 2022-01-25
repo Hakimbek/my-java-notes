@@ -27,6 +27,8 @@ class TestOverloading1 {
 } 
 ```
 
-`Output: 22 33`
+`Output: 
+22
+33`
 
 ### By changing the data type
