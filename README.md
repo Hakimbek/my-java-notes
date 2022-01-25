@@ -39,4 +39,5 @@
    - ### Abstraction
      - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
      - ### [Interface](OOP/Abstraction/Interface/README.md)
+     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
    - ### [Misc](OOP/Misc/README.md)
