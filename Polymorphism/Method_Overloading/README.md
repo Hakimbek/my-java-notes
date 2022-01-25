@@ -108,3 +108,5 @@ class TestOverloading {
 ```
 main with String[]
 ```
+
+## Method Overloading and Type Promotion
