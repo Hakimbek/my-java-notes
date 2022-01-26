@@ -64,3 +64,4 @@
 - ### Exception Handling
    - ### [Exceptions](Exception/Exceptions/README.md)
    - ### [Try-catch block](Exception/Try_catch/README.md)
+   - ### [Throw and Throws](Exception/Throw/README.md)
