@@ -1,53 +1,66 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Call by Value and Call by Reference in Java
+There is only call by value in java, not call by reference. If we call a method passing a value, it is known as call by value. The changes being done in the called method, is not affected in the calling method.
 
-- ## [Variables](Variables/README.md)
+## Example of call by value in java
+```java
+class Operation {  
+  int data = 50;  
+  
+  void change(int data) {  
+     data = data + 100;  //changes will be in the local variable only  
+  }  
+     
+  public static void main(String args[]) {  
+     Operation op = new Operation();  
+  
+     System.out.println("before change " + op.data);  
+     op.change(500);  
+     System.out.println("after change " + op.data);  
+  }  
+}  
+```
 
-- ## [Data_Types](Data_Types/README.md)
+### Output:
+```
+before change 50
+after change 50		
+```
 
-- ## [Operators](Operators/README.md)
+## Another Example of call by value in java
+In case of call by reference original value is changed if we made changes in the called method.
+```java
+class Operation {  
+   int data = 50;  
+  
+   void change(Operation op) {  
+      op.data = op.data + 100;  //changes will be in the instance variable  
+   }  
+     
+    
+   public static void main(String args[]) {  
+      Operation op = new Operation();  
+  
+      System.out.println("before change " + op.data);  
+      op.change(op); //passing object  
+      System.out.println("after change " + op.data);  
+   }  
+}  
+```
 
-- ## [Keywords](Keywords/README.md)
+### Output:
+```
+before change 50
+after change 150		
+```
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+# Java Strictfp Keyword
+Java strictfp keyword ensures that you will get the same result on every platform if you perform operations in the floating-point variable. The precision may differ from platform to platform that is why java programming language have provided the strictfp keyword, so that you get same result on every platform. So, now you have better control over the floating-point arithmetic.
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+The strictfp keyword cannot be applied on abstract methods, variables or constructors.
 
-- ## [Arrays](Arrays/README.md)
+# Java Command Line Arguments
+The java command-line argument is an argument i.e. passed at the time of running the java program.
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+The arguments passed from the console can be received in the java program and it can be used as an input.
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
-
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
+So, it provides a convenient way to check the behavior of the program for the different values. You can pass N (1,2,3 and so on) numbers of arguments from the command prompt.
