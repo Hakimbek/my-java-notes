@@ -17,3 +17,22 @@ java.util package: The java.util package provides the utility classes to deal wi
 Java collection framework works with objects only. All classes of the collection framework (ArrayList, LinkedList, Vector, HashSet, LinkedHashSet, TreeSet, PriorityQueue, ArrayDeque, etc.) deal with objects only.
 
 The eight classes of the java.lang package are known as wrapper classes in Java. The list of eight wrapper classes are given below:
+
+| Primitive Type | Wrapper class |
+| -------------- | ------------- |
+| boolean |	Boolean |
+| char | Character |
+| byte | Byte |
+| short |	Short |
+| int |	Integer |
+| long |	Long |
+| float |	Float |
+| double |	Double |
+
+# Autoboxing
+The automatic conversion of primitive data type into its corresponding wrapper class is known as autoboxing, for example, byte to Byte, char to Character, int to Integer, long to Long, float to Float, boolean to Boolean, double to Double, and short to Short.
+
+Since Java 5, we do not need to use the valueOf() method of wrapper classes to convert the primitive into objects.
+
+# Unboxing
+The automatic conversion of wrapper type into its corresponding primitive type is known as unboxing. It is the reverse process of autoboxing. Since Java 5, we do not need to use the intValue() method of wrapper classes to convert the wrapper type into primitives.
