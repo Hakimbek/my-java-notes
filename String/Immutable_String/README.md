@@ -97,3 +97,17 @@ Suppose s1 and s2 are two String objects. If:
 - s1 == s2 : The method returns 0.
 - s1 > s2 : The method returns a positive value.
 - s1 < s2 : The method returns a negative value.
+
+# String Concatenation in Java
+In Java, String concatenation forms a new String that is the combination of multiple strings. There are two ways to concatenate strings in Java:
+
+## 1. String Concatenation by + (String concatenation) operator
+Java String concatenation operator (+) is used to add strings.
+
+In Java, String concatenation is implemented through the StringBuilder (or StringBuffer) class and it's append method. String concatenation operator produces a new String by appending the second operand onto the end of the first operand. The String concatenation operator can concatenate not only String but primitive values also. 
+
+### Note
+  - After a string literal, all the + will be treated as string concatenation operator.
+
+## 2. String Concatenation by concat() method
+The String concat() method concatenates the specified string to the end of current string.
