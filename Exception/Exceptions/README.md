@@ -32,6 +32,7 @@ Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMach
 # Java Exception Keywords
 
 | Keyword |	Description |
+| ------- | ----------- |
 | try |	The "try" keyword is used to specify a block where we should place an exception code. It means we can't use try block alone. The try block must be followed by either catch or finally. |
 | catch |	The "catch" block is used to handle the exception. It must be preceded by try block which means we can't use catch block alone. It can be followed by finally block later. |
 | finally |	The "finally" block is used to execute the necessary code of the program. It is executed whether an exception is handled or not.
