@@ -19,7 +19,7 @@ The CharSequence interface is used to represent the sequence of characters. Stri
 
 The Java String is immutable which means it cannot be changed. Whenever we change any string, a new instance is created. For mutable strings, you can use StringBuffer and StringBuilder classes.
 
-## How to create a string object?
+# How to create a string object?
 
 ## 1. String Literal
 Java String literal is created by using double quotes. For Example:
