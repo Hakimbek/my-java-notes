@@ -48,3 +48,6 @@
      - ### [Package](OOP/Encapsulation/Package/README.md)
      - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
    - ### [Misc](OOP/Misc/README.md)
+
+- ## [Object class](Object_Class/README.md)
+- ## [Math class](Math/README.md)
