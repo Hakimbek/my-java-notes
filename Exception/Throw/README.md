@@ -1,6 +1,63 @@
 # Java throw Exception
 In Java, exceptions allows us to write good quality codes where the errors are checked at the compile time instead of runtime and we can create custom exceptions making the code recovery and debugging easier.
 
+# Java throws keyword
+The Java throws keyword is used to declare an exception. It gives an information to the programmer that there may occur an exception. So, it is better for the programmer to provide the exception handling code so that the normal flow of the program can be maintained.
+
+Exception Handling is mainly used to handle the checked exceptions. If there occurs any unchecked exception such as NullPointerException, it is programmers' fault that he is not checking the code before it being used.
+
+## Advantage of Java throws keyword
+Now Checked Exception can be propagated (forwarded in call stack).
+
+### Syntax of Java throws
+```java
+return_type method_name() throws exception_class_name {  
+     //method code  
+}  
+```
+
+# Java throws Example
+```java
+class Testthrows {  
+    void m() throws IOException {  
+        throw new IOException("device error");  //checked exception  
+    }  
+    
+    void n() throws IOException {   
+        m();  
+    }  
+    
+    void p() {  
+        try {  
+            n();  
+        } catch(Exception e) {
+            System.out.println("exception handled");
+        }  
+    }
+    
+    public static void main(String args[]) {  
+        Testthrows1 obj = new Testthrows1();  
+        obj.p();  
+        System.out.println("normal flow...");  
+    }  
+}  
+```
+
+### Output:
+```
+exception handled
+normal flow...
+```
+
+## Rule
+If we are calling a method that declares an exception, we must either caught or declare the exception.
+
+# There are two cases
+## Case 1: Handle Exception Using try-catch block
+## Case 2: Declare Exception
+- In case we declare the exception, if exception does not occur, the code will be executed fine.
+- In case we declare the exception and the exception occurs, it will be thrown at runtime because throws does not handle the exception.
+
 # Java throw keyword
 The Java throw keyword is used to throw an exception explicitly.
 
