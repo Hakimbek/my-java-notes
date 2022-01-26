@@ -61,6 +61,7 @@ Java StringBuilder class is used to create mutable (modifiable) String. The Java
 # Difference between String and StringBuffer
 
 | No. |	String | StringBuffer |
+| --- | ------ | ------------ |
 | 1 |	The String class is immutable. | The StringBuffer class is mutable. |
 | 2 |	String is slow and consumes more memory when we concatenate too many strings because every time it creates new instance. | StringBuffer is fast and consumes less memory when we concatenate strings. |
 | 3 |	String class overrides the equals() method of Object class. So you can compare the contents of two strings by equals() method. | StringBuffer class doesn't override the equals() method of Object class. |
@@ -70,6 +71,7 @@ Java StringBuilder class is used to create mutable (modifiable) String. The Java
 # Difference between StringBuffer and StringBuilder
 
 | No. |	StringBuffer | StringBuilder |
+| --- | ------------ | ------------- |
 | 1 |	StringBuffer is synchronized i.e. thread safe. It means two threads can't call the methods of StringBuffer simultaneously. | StringBuilder is non-synchronized i.e. not thread safe. It means two threads can call the methods of StringBuilder simultaneously. |
 | 2 |	StringBuffer is less efficient than StringBuilder. | StringBuilder is more efficient than StringBuffer. |
 | 3 |	StringBuffer was introduced in Java 1.0 |	StringBuilder was introduced in Java 1.5 |
