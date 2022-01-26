@@ -7,12 +7,12 @@ Unlike C/C++, we can get the length of the array using the length member. In C/C
 
 In Java, array is an object of a dynamically generated class. Java array inherits the Object class, and implements the Serializable as well as Cloneable interfaces. We can store primitive values or objects in an array in Java. Like C/C++, we can also create single dimentional or multidimentional arrays in Java.
 
-## Advantages
-### Code Optimization
+# Advantages
+## Code Optimization
 It makes the code optimized, we can retrieve or sort the data efficiently.
-### Random access
+## Random access
 We can get any data located at an index position.
 
-## Disadvantages
-### Size Limit
+# Disadvantages
+## Size Limit
 We can store only the fixed size of elements in the array. It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically.
