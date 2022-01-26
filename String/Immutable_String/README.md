@@ -73,5 +73,27 @@ As we have seen in class loading, immutable String objects avoid further errors 
 ## Heap Space
 The immutability of String helps to minimize the usage in the heap memory. When we try to declare a new String object, the JVM checks whether the value already exists in the String pool or not. If it exists, the same value is assigned to the new object. This feature allows Java to use the heap space efficiently.
 
-# Why String class is Final in Java?
+## Why String class is Final in Java?
 The reason behind the String class being final is because no one can override the methods of the String class. So that it can provide the same features to the new String objects as well as to the old ones.
+
+# Java String compare
+We can compare String in Java on the basis of content and reference.
+
+There are three ways to compare String in Java:
+
+## 1. By Using equals() Method
+The String class equals() method compares the original content of the string. It compares values of string for equality. String class provides the following two methods:
+- public boolean equals(Object another) compares this string to the specified object.
+- public boolean equalsIgnoreCase(String another) compares this string to another string, ignoring case.
+
+## 2. By Using == operator
+The == operator compares references not values.
+
+## 3. By Using compareTo() method
+The String class compareTo() method compares values lexicographically and returns an integer value that describes if first string is less than, equal to or greater than second string.
+
+Suppose s1 and s2 are two String objects. If:
+
+- s1 == s2 : The method returns 0.
+- s1 > s2 : The method returns a positive value.
+- s1 < s2 : The method returns a negative value.
