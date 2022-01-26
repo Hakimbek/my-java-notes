@@ -7,3 +7,6 @@ The access modifiers in Java specifies the accessibility or scope of a field, me
 
 # Private
 The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+
+### Role of Private Constructor
+  - If you make any class constructor private, you cannot create the instance of that class from outside the class. 
