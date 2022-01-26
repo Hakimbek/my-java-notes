@@ -21,7 +21,7 @@ The Java String is immutable which means it cannot be changed. Whenever we chang
 
 ## How to create a string object?
 
-### 1. String Literal
+## 1. String Literal
 Java String literal is created by using double quotes. For Example:
 
 ```java
