@@ -44,10 +44,10 @@ Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMach
 ```java
 public class JavaExceptionExample {  
   public static void main(String args[]) {  
-      try{  
+      try {  
           //code that may raise exception  
           int data=100/0;  
-      } catch(ArithmeticException e){
+      } catch(ArithmeticException e) {
           System.out.println(e);
       }  
       
