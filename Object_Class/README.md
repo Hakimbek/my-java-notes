@@ -1,49 +1,22 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Object class in Java
+The Object class is the parent class of all the classes in java by default. In other words, it is the topmost class of java.
 
-- ## [Variables](Variables/README.md)
+The Object class is beneficial if you want to refer any object whose type you don't know. Notice that parent class reference variable can refer the child class object, know as upcasting.
 
-- ## [Data_Types](Data_Types/README.md)
+The Object class provides some common behaviors to all the objects such as object can be compared, object can be cloned, object can be notified etc.
 
-- ## [Operators](Operators/README.md)
+## Methods of Object class
 
-- ## [Keywords](Keywords/README.md)
-
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
-
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
-
-- ## [Arrays](Arrays/README.md)
-
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
-
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+| Method |	Description |
+| ------ | ----------- |
+| public final Class getClass() |	returns the Class class object of this object. The Class class can further be used to get the metadata of this class. |
+| public int hashCode() |	returns the hashcode number for this object. |
+| public boolean equals(Object obj) |	compares the given object to this object. |
+| protected Object clone() | throws CloneNotSupportedException	creates and returns the exact copy (clone) of this object. |
+| public String toString() |	returns the string representation of this object. |
+| public final void notify() |	wakes up single thread, waiting on this object's monitor. |
+| public final void notifyAll() |	wakes up all the threads, waiting on this object's monitor. |
+| public final void wait(long timeout) throws InterruptedException	| causes the current thread to wait for the specified milliseconds, until another thread notifies (invokes notify() or notifyAll() method). |
+| public final void wait(long timeout, int nanos) throws InterruptedException |	causes the current thread to wait for the specified milliseconds and nanoseconds, until another thread notifies (invokes notify() or notifyAll() method). |
+| public final void wait() throws InterruptedException |	causes the current thread to wait, until another thread notifies (invokes notify() or notifyAll() method). |
+| protected void finalize() throws Throwable |	is invoked by the garbage collector before object is being garbage collected.
