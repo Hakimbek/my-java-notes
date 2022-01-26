@@ -20,6 +20,8 @@
  
 - ## [Java Naming Convention](Convention/README.md)
 
+- ## [Arrays](Arrays/README.md)
+
 - ## Object Orianted Programming
    - ### [Class](OOP/Class/README.md)
    - ### [Object](OOP/Object/README.md)
