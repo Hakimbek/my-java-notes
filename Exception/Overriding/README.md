@@ -1,68 +1,122 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Exception Handling with Method Overriding in Java
+There are many rules if we talk about method overriding with exception handling.
 
-- ## [Variables](Variables/README.md)
+## Rule 1
+If the superclass method does not declare an exception, subclass overridden method cannot declare the checked exception.
 
-- ## [Data_Types](Data_Types/README.md)
+```java
+class Parent {
+    // defining the method   
+    void msg() {  
+       System.out.println("parent method");  
+    }    
+}    
+    
+public class TestExceptionChild extends Parent {    
+   // overriding the method in child class  
+   // gives compile time error  
+   void msg() throws IOException {    
+      System.out.println("TestExceptionChild");    
+   }  
+  
+   public static void main(String args[]) {    
+      Parent p = new TestExceptionChild();    
+      p.msg();    
+   }    
+}    
+```
 
-- ## [Operators](Operators/README.md)
+### Output:
+```
+Error
+```
 
-- ## [Keywords](Keywords/README.md)
+```java
+class Parent {
+    // defining the method   
+    void msg() {  
+       System.out.println("parent method");  
+    }    
+}    
+    
+public class TestExceptionChild extends Parent {    
+   // overriding the method in child class  
+   // gives compile time error  
+   void msg() throws ArithmeticException {    
+      System.out.println("TestExceptionChild");    
+   }  
+  
+   public static void main(String args[]) {    
+      Parent p = new TestExceptionChild();    
+      p.msg();    
+   }    
+}    
+```
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+### Output:
+```
+child method
+```
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+## Rule 2
+If the superclass method declares an exception, subclass overridden method can declare the same subclass exception or no exception but cannot declare parent exception.
 
-- ## [Arrays](Arrays/README.md)
+```java
+class Parent {    
+   void msg() throws ArithmeticException {  
+      System.out.println("parent method");  
+   }    
+}    
+    
+public class TestExceptionChild extends Parent {    
+   void msg() throws Exception {  
+      System.out.println("child method");  
+   }    
+    
+   public static void main(String args[]) {    
+      Parent p = new TestExceptionChild2();    
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+      try {    
+         p.msg();    
+      } catch (Exception e){
+     
+      }   
+      
+   }    
+}     
+```
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+### Output:
+```
+Error
+```
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
+```java
+class Parent {    
+    void msg() throws Exception {  
+      System.out.println("parent method");  
+   }    
+}    
+    
+public class TestExceptionChild extends Parent {    
+   void msg() throws Exception {  
+      System.out.println("child method");  
+   }    
+    
+   public static void main(String args[]) {    
+      Parent p = new TestExceptionChild2();    
 
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ### [Java Regex](Regex/README.md)
+      try {    
+         p.msg();    
+      } catch (Exception e){
+     
+      }   
+      
+   }    
+}     
+```
 
-- ### Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
+### Output:
+```
+child method
+```
