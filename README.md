@@ -57,3 +57,4 @@
 - ## String
    - ### [Immutable String](String/Immutable_String/README.md)
    - ### [String Builder, String Buffer](String/Builder/README.md)
+   - ### [Immutable class](String/Buffer/README.md)
