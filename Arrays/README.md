@@ -47,7 +47,7 @@ arrayRefVar = new datatype[size];
 ### ArrayIndexOutOfBoundsException
   - The Java Virtual Machine (JVM) throws an ArrayIndexOutOfBoundsException if length of the array in negative, equal to the array size or greater than the array size while traversing the array.
 
-# Multidimensional Array
+## Multidimensional Array
 In such case, data is stored in row and column based index (also known as matrix form).
 
 ### Syntax to Declare Multidimensional Array in Java
