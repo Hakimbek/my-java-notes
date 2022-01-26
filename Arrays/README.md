@@ -20,3 +20,29 @@ In Java, array is an object of a dynamically generated class. Java array inherit
 ## Types of Array in java
 - Single Dimensional Array
 - Multidimensional Array
+
+### Syntax to Declare an Array in Java
+
+```java
+dataType[] arr; (or)  
+dataType []arr; (or)  
+dataType arr[];  
+```
+
+### Instantiation of an Array in Java
+
+```java
+arrayRefVar = new datatype[size];  
+```
+
+## Passing Array to a Method in Java
+We can pass the java array to method so that we can reuse the same logic on any array.
+
+## Anonymous Array in Java
+Java supports the feature of an anonymous array, so you don't need to declare the array while passing an array to the method.
+
+## Returning Array from the Method
+We can also return an array from the method in Java.
+
+## ArrayIndexOutOfBoundsException
+The Java Virtual Machine (JVM) throws an ArrayIndexOutOfBoundsException if length of the array in negative, equal to the array size or greater than the array size while traversing the array.
