@@ -14,3 +14,5 @@ Exception Handling is a mechanism to handle runtime errors such as ClassNotFound
 The core advantage of exception handling is to maintain the normal flow of the application. An exception normally disrupts the normal flow of the application; that is why we need to handle exceptions.
 
 # Hierarchy of Java Exception classes
+
+![Throwable](/Excaption/image/Throwable.png)
