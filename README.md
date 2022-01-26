@@ -66,3 +66,5 @@
    - ### [Try-catch block](Exception/Try_catch/README.md)
    - ### [Throw and Throws](Exception/Throw/README.md)
    - ### [Final, Finally and Finalize](Exception/fff/README.md)
+   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
+   - ### [Custom Exceptions](Exception/Custom/README.md)
