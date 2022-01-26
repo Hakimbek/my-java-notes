@@ -1,33 +1,15 @@
-# Coupling
-Coupling refers to the knowledge or information or dependency of another class. It arises when classes are aware of each other. If a class has the details information of another class, there is strong coupling. In Java, we use private, protected, and public modifiers to display the visibility level of a class, method, and field. You can use interfaces for the weaker coupling because there is no concrete implementation.
+# Encapsulation in Java
+Encapsulation in Java is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
 
-# Cohesion
-Cohesion refers to the level of a component which performs a single well-defined task. A single well-defined task is done by a highly cohesive method. The weakly cohesive method will split the task into separate parts. The java.io package is a highly cohesive package because it has I/O related classes and interface. However, the java.util package is a weakly cohesive package because it has unrelated classes and interfaces.
+We can create a fully encapsulated class in Java by making all the data members of the class private. Now we can use setter and getter methods to set and get the data in it.
 
-# Association
-Association represents the relationship between the objects. Here, one object can be associated with one object or many objects. There can be four types of association between the objects:
+The Java Bean class is the example of a fully encapsulated class.
 
-- One to One
-- One to Many
-- Many to One, and
-- Many to Many
+## Advantage of Encapsulation in Java
+By providing only a setter or getter method, you can make the class read-only or write-only. In other words, you can skip the getter or setter methods.
 
-Association can be undirectional or bidirectional.
+It provides you the control over the data. Suppose you want to set the value of id which should be greater than 100 only, you can write the logic inside the setter method. You can write the logic not to store the negative numbers in the setter methods.
 
-# Aggregation
-If a class have an entity reference, it is known as Aggregation. Aggregation represents HAS-A relationship.
-Aggregation is a way to achieve Association. Aggregation represents the relationship where one object contains other objects as a part of its state. It represents the weak relationship between objects. It is another way to reuse objects.
+It is a way to achieve data hiding in Java because other class will not be able to access the data through the private data members.
 
-### When use Aggregation?
-- Code reuse is also best achieved by aggregation when there is no is-a relationship.
-- Inheritance should be used only if the relationship is-a is maintained throughout the lifetime of the objects involved; otherwise, aggregation is the best choice.
-
-### Composition
-The composition is also a way to achieve Association. The composition represents the relationship where one object contains other objects as a part of its state. There is a strong relationship between the containing object and the dependent object. It is the state where containing objects do not have an independent existence. If you delete the parent object, all the child objects will be deleted automatically.
-
-## Advantage of OOPs over Procedure-oriented programming language
-1. OOPs makes development and maintenance easier, whereas, in a procedure-oriented programming language, it is not easy to manage if code grows as project size increases.
-
-2. OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywhere.
-
-3. OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
+The encapsulate class is easy to test. So, it is better for unit testing.
