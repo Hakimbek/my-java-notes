@@ -12,7 +12,7 @@ The Object class provides some common behaviors to all the objects such as objec
 | public final Class getClass() |	returns the Class class object of this object. The Class class can further be used to get the metadata of this class. |
 | public int hashCode() |	returns the hashcode number for this object. |
 | public boolean equals(Object obj) |	compares the given object to this object. |
-| protected Object clone() | throws CloneNotSupportedException	creates and returns the exact copy (clone) of this object. |
+| protected Object clone() throws CloneNotSupportedException |	creates and returns the exact copy (clone) of this object. |
 | public String toString() |	returns the string representation of this object. |
 | public final void notify() |	wakes up single thread, waiting on this object's monitor. |
 | public final void notifyAll() |	wakes up all the threads, waiting on this object's monitor. |
