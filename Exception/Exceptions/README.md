@@ -15,4 +15,4 @@ The core advantage of exception handling is to maintain the normal flow of the a
 
 # Hierarchy of Java Exception classes
 
-![Throwable](/Excaption/image/Throwable.png)
+![Throwable](/Exception/image/Throwable.png)
