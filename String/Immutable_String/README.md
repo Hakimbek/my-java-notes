@@ -1,54 +1,42 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java String
+In Java, string is basically an object that represents sequence of char values. An array of characters works same as Java string. For example:
 
-- ## [Variables](Variables/README.md)
+```java
+char[] ch={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't'};  
+String s = new String(ch);  
+```
+is same as:
+```java
+String s = "javatpoint";  
+```
 
-- ## [Data_Types](Data_Types/README.md)
+Java String class provides a lot of methods to perform operations on strings such as compare(), concat(), equals(), split(), length(), replace(), compareTo(), intern(), substring() etc.
 
-- ## [Operators](Operators/README.md)
+The *java.lang.String* class implements *Serializable, Comparable* and *CharSequence* interfaces.
 
-- ## [Keywords](Keywords/README.md)
+# CharSequence Interface
+The CharSequence interface is used to represent the sequence of characters. String, StringBuffer and StringBuilder classes implement it. It means, we can create strings in Java by using *String, StringBuilder* and *StringBuffer* classes.
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+The Java String is immutable which means it cannot be changed. Whenever we change any string, a new instance is created. For mutable strings, you can use StringBuffer and StringBuilder classes.
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+## How to create a string object?
 
-- ## [Arrays](Arrays/README.md)
+### 1. String Literal
+Java String literal is created by using double quotes. For Example:
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+```java
+String s = "welcome";  
+```
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+Each time you create a string literal, the JVM checks the "string constant pool" first. If the string already exists in the pool, a reference to the pooled instance is returned. If the string doesn't exist in the pool, a new string instance is created and placed in the pool. For example:
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
+```java
+String s1 = "Welcome";  
+String s2 = "Welcome";  //It doesn't create a new instance  
+```
+
+### Note
+  - String objects are stored in a special memory area known as the "string constant pool".
+
+## Why Java uses the concept of String literal?
+To make Java more memory efficient (because no new objects are created if it exists already in the string constant pool).
