@@ -103,7 +103,8 @@ The quantifiers specify the number of occurrences of a character.
 # Regex Metacharacters
 The regular expression metacharacters work as shortcodes.
 
-| Regex |	Description |
+| Regex | Description |
+| ----- | ------------- |
 | . |	Any character (may or may not match terminator) |
 | \d |	Any digits, short of [0-9] |
 | \D |	Any non-digit, short for [^0-9] |
