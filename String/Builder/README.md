@@ -1,54 +1,59 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java StringBuffer Class
+Java StringBuffer class is used to create mutable (modifiable) String objects. The StringBuffer class in Java is the same as String class except it is mutable i.e. it can be changed.
 
-- ## [Variables](Variables/README.md)
+## Note
+Java StringBuffer class is thread-safe i.e. multiple threads cannot access it simultaneously. So it is safe and will result in an order.
 
-- ## [Data_Types](Data_Types/README.md)
+## Important Constructors of StringBuffer Class
 
-- ## [Operators](Operators/README.md)
+| Constructor |	Description |
+| ----------- | ----------- |
+| StringBuffer() |	It creates an empty String buffer with the initial capacity of 16. |
+| StringBuffer(String str) |	It creates a String buffer with the specified string.. |
+| StringBuffer(int capacity) |	It creates an empty String buffer with the specified capacity as length. |
 
-- ## [Keywords](Keywords/README.md)
+## Important methods of StringBuffer class
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+| Modifier and Type |	Method	Description |
+| ----------------- | ------------------ |
+| public synchronized StringBuffer	append(String s) |	It is used to append the specified string with this string. The append() method is overloaded like append(char), append(boolean), append(int), append(float), append(double) etc. |
+| public synchronized StringBuffer	insert(int offset, String s) |	It is used to insert the specified string with this string at the specified position. The insert() method is overloaded like insert(int, char), insert(int, boolean), insert(int, int), insert(int, float), insert(int, double) etc. |
+| public synchronized StringBuffer	replace(int startIndex, int endIndex, String str) |	It is used to replace the string from specified startIndex and endIndex. |
+| public synchronized StringBuffer	delete(int startIndex, int endIndex) |	It is used to delete the string from specified startIndex and endIndex. |
+| public synchronized StringBuffer	reverse() |	is used to reverse the string. |
+| public int	capacity() |	It is used to return the current capacity. |
+| public void	ensureCapacity(int minimumCapacity) |	It is used to ensure the capacity at least equal to the given minimum. |
+| public char	charAt(int index) |	It is used to return the character at the specified position. |
+| public int	length() |	It is used to return the length of the string i.e. total number of characters. |
+| public String	substring(int beginIndex) |	It is used to return the substring from the specified beginIndex. |
+| public String	substring(int beginIndex, int endIndex) |	It is used to return the substring from the specified beginIndex and endIndex. |
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+## What is a mutable String?
+A String that can be modified or changed is known as mutable String. StringBuffer and StringBuilder classes are used for creating mutable strings.
 
-- ## [Arrays](Arrays/README.md)
+# Java StringBuilder Class
+Java StringBuilder class is used to create mutable (modifiable) String. The Java StringBuilder class is same as StringBuffer class except that it is non-synchronized. It is available since JDK 1.5.
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+## Important Constructors of StringBuilder class
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+| Constructor |	Description |
+| ----------- | ----------- |
+| StringBuilder() |	It creates an empty String Builder with the initial capacity of 16. |
+| StringBuilder(String str) |	It creates a String Builder with the specified string. |
+| StringBuilder(int length) |	It creates an empty String Builder with the specified capacity as length. |
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
+## Important methods of StringBuilder class
+
+| Method |	Description |
+| ------ | ----------- |
+| public StringBuilder append(String s) |	It is used to append the specified string with this string. The append() method is overloaded like append(char), append(boolean), append(int), append(float), append(double) etc. |
+| public StringBuilder insert(int offset, String s) |	It is used to insert the specified string with this string at the specified position. The insert() method is overloaded like insert(int, char), insert(int, boolean), insert(int, int), insert(int, float), insert(int, double) etc. |
+| public StringBuilder replace(int startIndex, int endIndex, String str) |	It is used to replace the string from specified startIndex and endIndex. |
+| public StringBuilder delete(int startIndex, int endIndex) |	It is used to delete the string from specified startIndex and endIndex. |
+| public StringBuilder reverse() |	It is used to reverse the string. |
+| public int capacity() |	It is used to return the current capacity. |
+| public void ensureCapacity(int minimumCapacity) |	It is used to ensure the capacity at least equal to the given minimum. |
+| public char charAt(int index) |	It is used to return the character at the specified position. |
+| public int length() |	It is used to return the length of the string i.e. total number of characters. |
+| public String substring(int beginIndex) |	It is used to return the substring from the specified beginIndex. |
+| public String substring(int beginIndex, int endIndex) |	It is used to return the substring from the specified beginIndex and endIndex. |
