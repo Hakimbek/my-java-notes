@@ -1,65 +1,70 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java try block
+Java try block is used to enclose the code that might throw an exception. It must be used within the method.
 
-- ## [Variables](Variables/README.md)
+If an exception occurs at the particular statement in the try block, the rest of the block code will not execute. So, it is recommended not to keep the code in try block that will not throw an exception.
 
-- ## [Data_Types](Data_Types/README.md)
+Java try block must be followed by either catch or finally block.
 
-- ## [Operators](Operators/README.md)
+### Syntax of Java try-catch
+```java
+try {    
+   //code that may throw an exception    
+} catch(Exception_class_Name ref) {
 
-- ## [Keywords](Keywords/README.md)
+}    
+```
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+### Syntax of try-finally block
+```java
+try {    
+   //code that may throw an exception    
+} finally {
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+}    
+```
 
-- ## [Arrays](Arrays/README.md)
+# Java catch block
+Java catch block is used to handle the Exception by declaring the type of exception within the parameter. The declared exception must be the parent class exception ( i.e., Exception) or the generated exception type. However, the good approach is to declare the generated type of exception.
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+The catch block must be used after the try block only. You can use multiple catch block with a single try block.
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+The JVM firstly checks whether the exception is handled or not. If exception is not handled, JVM provides a default exception handler that performs the following tasks:
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
+- Prints out exception description.
+- Prints the stack trace (Hierarchy of methods where the exception occurred).
+- Causes the program to terminate.
 
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ### [Java Regex](Regex/README.md)
+But if the application programmer handles the exception, the normal flow of the application is maintained, i.e., rest of the code is executed.
 
-- ### Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
+# Java Multi-catch block
+A try block can be followed by one or more catch blocks. Each catch block must contain a different exception handler. So, if you have to perform different tasks at the occurrence of different exceptions, use java multi-catch block.
+
+## Points to remember
+- At a time only one exception occurs and at a time only one catch block is executed.
+- All catch blocks must be ordered from most specific to most general, i.e. catch for ArithmeticException must come before catch for Exception.
+
+# Java Nested try block
+In Java, using a try block inside another try block is permitted. It is called as nested try block. Every statement that we enter a statement in try block, context of that exception is pushed onto the stack.
+
+For example, the inner try block can be used to handle ArrayIndexOutOfBoundsException while the outer try block can handle the ArithemeticException (division by zero).
+
+## Why use nested try block
+Sometimes a situation may arise where a part of a block may cause one error and the entire block itself may cause another error. In such cases, exception handlers have to be nested.
+
+# Java finally block
+Java finally block is a block used to execute important code such as closing the connection, etc.
+
+Java finally block is always executed whether an exception is handled or not. Therefore, it contains all the necessary statements that need to be printed regardless of the exception occurs or not.
+
+The finally block follows the try-catch block.
+
+## Why use Java finally block?
+- finally block in Java can be used to put "cleanup" code such as closing a file, closing connection, etc.
+- The important statements to be printed can be placed in the finally block.
+
+## Rule
+For each try block there can be zero or more catch blocks, but only one finally block.
+
+## Note
+- The finally block will not be executed if the program exits (either by calling System.exit() or by causing a fatal error that causes the process to abort).
+- If you don't handle the exception, before terminating the program, JVM executes finally block (if any).
