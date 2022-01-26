@@ -10,3 +10,6 @@ The access level of a private modifier is only within the class. It cannot be ac
 
 ### Role of Private Constructor
   - If you make any class constructor private, you cannot create the instance of that class from outside the class. 
+
+### Note
+  - A class cannot be private or protected except nested class.
