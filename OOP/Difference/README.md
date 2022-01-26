@@ -1,6 +1,7 @@
 # Difference between Object and Class
 
 | No. |	Object |	Class |
+| --- | ------ | ------ |
 | 1 |	Object is an instance of a class. |	Class is a blueprint or template from which objects are created. |
 | 2 |	Object is a real world entity such as pen, laptop, mobile, bed, keyboard, mouse, chair etc. |	Class is a group of similar objects. |
 | 3 |	Object is a physical entity. |	Class is a logical entity. |
