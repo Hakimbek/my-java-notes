@@ -68,3 +68,10 @@ For each try block there can be zero or more catch blocks, but only one finally 
 ## Note
 - The finally block will not be executed if the program exits (either by calling System.exit() or by causing a fatal error that causes the process to abort).
 - If you don't handle the exception, before terminating the program, JVM executes finally block (if any).
+
+# Java Exception Propagation
+An exception is first thrown from the top of the stack and if it is not caught, it drops down the call stack to the previous method. If not caught there, the exception again drops down to the previous method, and so on until they are caught or until they reach the very bottom of the call stack. This is called exception propagation.
+
+## Note
+By default Unchecked Exceptions are forwarded in calling chain (propagated).
+By default, Checked Exceptions are not forwarded in calling chain (propagated).
