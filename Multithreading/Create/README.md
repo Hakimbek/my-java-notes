@@ -1,75 +1,62 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java Threads | How to create a thread in Java
+There are two ways to create a thread:
 
-- ## [Variables](Variables/README.md)
+# Thread class
+Thread class provide constructors and methods to create and perform operations on a thread.Thread class extends Object class and implements Runnable interface.
 
-- ## [Data_Types](Data_Types/README.md)
+## Commonly used Constructors of Thread class:
+- Thread()
+- Thread(String name)
+- Thread(Runnable r)
+- Thread(Runnable r,String name)
 
-- ## [Operators](Operators/README.md)
+```java
+class Multi extends Thread {  
+  public void run() {  
+    System.out.println("thread is running...");  
+  } 
+  
+  public static void main(String args[]) {  
+     Multi t = new Multi();  
+     t.start();  
+  }  
+}  
+```
 
-- ## [Keywords](Keywords/README.md)
+### Output:
+```
+thread is running...
+```
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+# Runnable interface:
+The Runnable interface should be implemented by any class whose instances are intended to be executed by a thread. Runnable interface have only one method named run().
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+```java
+public void run(): // is used to perform action for a thread.
+```
 
-- ## [Arrays](Arrays/README.md)
+```java
+class Multi implements Runnable {  
+  public void run() {  
+     System.out.println("thread is running...");  
+  }  
+  
+  public static void main(String args[]){  
+     Multi m = new Multi();  
+     Thread t = new Thread(m);   // Using the constructor Thread(Runnable r)  
+     t.start();  
+  }  
+}  
+```
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+### Output:
+```
+thread is running...
+```
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+# Starting a thread:
+The start() method of Thread class is used to start a newly created thread. It performs the following tasks:
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
-
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
-
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
-
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
+- A new thread starts(with new callstack).
+- The thread moves from New state to the Runnable state.
+- When the thread gets a chance to execute, its target run() method will run.
