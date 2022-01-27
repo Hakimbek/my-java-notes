@@ -75,4 +75,4 @@
    - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
    - ### [How to create Thread in Java](Multithreading/Create/README.md)
    - ### Methods
-     - ### [sleep()](Multithreading/Method/Sleep/README.md)
+     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
