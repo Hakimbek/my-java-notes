@@ -76,3 +76,5 @@
    - ### [How to create Thread in Java](Multithreading/Create/README.md)
    - ### Methods
      - ### [sleep()](Multithreading/Methods/Sleep/README.md)
+     - ### [sleep()](Multithreading/Methods/Run/README.md)
+     - ### [sleep()](Multithreading/Methods/Join/README.md)
