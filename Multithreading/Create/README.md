@@ -60,3 +60,12 @@ The start() method of Thread class is used to start a newly created thread. It p
 - A new thread starts(with new callstack).
 - The thread moves from New state to the Runnable state.
 - When the thread gets a chance to execute, its target run() method will run.
+
+# Thread Scheduler in Java
+A component of Java that decides which thread to run or execute and which thread to wait is called a thread scheduler in Java. In Java, a thread is only chosen by a thread scheduler if it is in the runnable state. However, if there is more than one thread in the runnable state, it is up to the thread scheduler to pick one of the threads and ignore the other ones. There are some criteria that decide which thread will execute first. There are two factors for scheduling a thread i.e. Priority and Time of arrival.
+
+## Priority
+Priority of each thread lies between 1 to 10. If a thread has a higher priority, it means that thread has got a better chance of getting picked up by the thread scheduler.
+
+## Time of Arrival
+Suppose two threads of the same priority enter the runnable state, then priority cannot be the factor to pick a thread from these two threads. In such a case, arrival time of thread is considered by the thread scheduler. A thread that arrived first gets the preference over the other threads.
