@@ -79,3 +79,4 @@
      - ### [run()](Multithreading/Methods/Run/README.md)
      - ### [join()](Multithreading/Methods/Join/README.md)
      - ### [setName()](Multithreading/Methods/Name/README.md)
+- ## [Garbage Collection](GC/README.md)
