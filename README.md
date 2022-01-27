@@ -59,9 +59,9 @@
    - ### [String Builder, String Buffer](String/Builder/README.md)
    - ### [String Methods](String/Methods/README.md)
    - ### [Immutable class](String/Buffer/README.md)
-- ### [Java Regex](Regex/README.md)
+- ## [Java Regex](Regex/README.md)
 
-- ### Exception Handling
+- ## Exception Handling
    - ### [Exceptions](Exception/Exceptions/README.md)
    - ### [Try-catch block](Exception/Try_catch/README.md)
    - ### [Throw and Throws](Exception/Throw/README.md)
