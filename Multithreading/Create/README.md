@@ -69,3 +69,26 @@ Priority of each thread lies between 1 to 10. If a thread has a higher priority,
 
 ## Time of Arrival
 Suppose two threads of the same priority enter the runnable state, then priority cannot be the factor to pick a thread from these two threads. In such a case, arrival time of thread is considered by the thread scheduler. A thread that arrived first gets the preference over the other threads.
+
+# Can we start a thread twice
+No. After starting a thread, it can never be started again. If you does so, an IllegalThreadStateException is thrown. In such case, thread will run once but for second time, it will throw exception.
+
+```java
+public class TestThreadTwice extends Thread {  
+  public void run() {  
+    System.out.println("running...");  
+  }  
+  
+  public static void main(String args[]) {  
+    TestThreadTwice t = new TestThreadTwice1();  
+    t.start();  
+    t.start();  
+  }  
+}  
+```
+
+### Output:
+```
+running
+Exception in thread "main" java.lang.IllegalThreadStateException
+```
