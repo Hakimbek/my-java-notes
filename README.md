@@ -73,3 +73,4 @@
 - ## Mutithreading
    - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
    - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
+   - ### [How to create Thread in Java](Multithreading/Create/README.md)
