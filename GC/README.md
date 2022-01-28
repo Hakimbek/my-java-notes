@@ -60,3 +60,31 @@ In nutshell, the shutdown hook can be used to perform cleanup resources or save 
 - System.exit(int) method is invoked
 - user logoff
 - user shutdown etc.
+
+```java
+class MyThread extends Thread {    
+    public void run() {    
+        System.out.println("shut down hook task completed..");    
+    }    
+}    
+    
+public class TestShutdown {    
+    public static void main(String[] args)throws Exception {    
+    
+        Runtime r = Runtime.getRuntime();    
+        r.addShutdownHook(new MyThread());    
+        
+        System.out.println("Now main sleeping... press ctrl+c to exit");      
+        try {
+            Thread.sleep(3000);
+        } catch (Exception e) {
+        
+        }    
+    }    
+}    
+```
+### Output:
+```
+Now main sleeping... press ctrl+c to exit
+shut down hook task completed.
+```
