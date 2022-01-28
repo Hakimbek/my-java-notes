@@ -244,3 +244,102 @@ class TestSynchronization {
 400
 500
 ```
+
+# Static Synchronization
+If you make any static method as synchronized, the lock will be on the class not on object.
+
+## Example of static synchronization by Using the anonymous class
+
+```java
+class Table {  
+   synchronized static void printTable(int n) {  
+      for(int i = 1; i <= 10; i++){  
+         System.out.println(n * i);  
+         try {  
+            Thread.sleep(400);  
+         } catch(Exception e) {
+            System.out.println(e);
+         }  
+      }  
+   }  
+}  
+  
+public class TestSynchronization {  
+   public static void main(String[] args) {  
+      
+       Thread t1=new Thread(){  
+           public void run(){  
+               Table.printTable(1);  
+           }  
+       };  
+      
+       Thread t2=new Thread(){  
+           public void run(){  
+               Table.printTable(10);  
+           }  
+       };  
+      
+       Thread t3=new Thread(){  
+           public void run(){  
+               Table.printTable(100);  
+           }  
+       };  
+      
+       Thread t4=new Thread(){  
+           public void run(){  
+               Table.printTable(1000);  
+           }  
+       };  
+    
+       t1.start();  
+       t2.start();  
+       t3.start();  
+       t4.start();  
+   }  
+}  
+```
+
+### Output:
+
+```
+1
+       2
+       3
+       4
+       5
+       6
+       7
+       8
+       9
+       10
+       10       
+       20
+       30
+       40
+       50
+       60
+       70
+       80
+       90
+       100
+       100
+       200
+       300
+       400
+       500
+       600
+       700
+       800
+       900
+       1000
+       1000
+       2000
+       3000
+       4000
+       5000
+       6000
+       7000
+       8000
+       9000
+       10000
+```
