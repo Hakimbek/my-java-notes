@@ -82,4 +82,5 @@
      - ### [priority](Multithreading/Priority/README.md)
      - ### [deamon](Multithreading/Deamon/README.md)
      - ### [pool](Multithreading/Pool/README.md)
+- ## [Synchronization](Synchronization/README.md)
 - ## [Garbage Collection](GC/README.md)
