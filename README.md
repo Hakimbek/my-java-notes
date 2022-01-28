@@ -80,4 +80,6 @@
      - ### [join()](Multithreading/Methods/Join/README.md)
      - ### [name](Multithreading/Methods/Name/README.md)
      - ### [priority](Multithreading/Priority/README.md)
+     - ### [deamon](Multithreading/Deamon/README.md)
+     - ### [pool](Multithreading/Pool/README.md)
 - ## [Garbage Collection](GC/README.md)
