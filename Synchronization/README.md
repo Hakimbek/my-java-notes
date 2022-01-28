@@ -1,85 +1,247 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Synchronization in Java
+Synchronization in Java is the capability to control the access of multiple threads to any shared resource.
 
-- ## [Variables](Variables/README.md)
+Java Synchronization is better option where we want to allow only one thread to access the shared resource.
 
-- ## [Data_Types](Data_Types/README.md)
+## Why use Synchronization?
+1. To prevent thread interference.
+2. To prevent consistency problem.
 
-- ## [Operators](Operators/README.md)
+# Types of Synchronization
+1. Process Synchronization
+2. Thread Synchronization
 
-- ## [Keywords](Keywords/README.md)
+Here, we will discuss only thread synchronization.
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+# Thread Synchronization
+There are two types of thread synchronization mutual exclusive and inter-thread communication.
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+## Mutual Exclusive
+ - ### Synchronized method.
+ - ### Synchronized block.
+ - ### Static synchronization.
+## Cooperation (Inter-thread communication in java)
 
-- ## [Arrays](Arrays/README.md)
+# Mutual Exclusive
+Mutual Exclusive helps keep threads from interfering with one another while sharing data. It can be achieved by using the following three ways:
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+- By Using Synchronized Method
+- By Using Synchronized Block
+- By Using Static Synchronization
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
+## Understanding the problem without Synchronization
+
+```java
+class Table {  
+   void printTable(int n) { //method not synchronized  
+      for(int i = 1; i <= 5; i++){  
+         System.out.println(n * i);  
+         try {  
+            Thread.sleep(400);  
+         } catch(Exception e){
+            System.out.println(e);
+         }  
+      }  
+  
+   }  
+}  
+  
+class MyThread1 extends Thread {  
+   Table t;  
+
+   MyThread1(Table t) {  
+      this.t = t;  
+   }  
    
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+   public void run() {  
+      t.printTable(5);  
+   }   
+  
+}  
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
+class MyThread2 extends Thread{  
+   Table t;  
 
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
+   MyThread2(Table t){  
+      this.t = t;  
+   }  
+   
+   public void run() {  
+      t.printTable(100);  
+   }  
+}  
+  
+class TestSynchronization {  
+   public static void main(String args[]){  
+      Table obj = new Table(); //only one object  
+      MyThread1 t1=new MyThread1(obj);  
+      MyThread2 t2=new MyThread2(obj);  
+      t1.start();  
+      t2.start();  
+   }  
+}  
+```
 
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
+### Output:
 
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Garbage Collection](GC/README.md)
+```
+ 5
+ 100
+ 10
+ 200
+ 15
+ 300
+ 20
+ 400
+ 25
+ 500
+```
+
+# Java Synchronized Method
+If you declare any method as synchronized, it is known as synchronized method.
+
+Synchronized method is used to lock an object for any shared resource.
+
+When a thread invokes a synchronized method, it automatically acquires the lock for that object and releases it when the thread completes its task.
+
+```java
+```java
+class Table {  
+   synchronized void printTable(int n) { //method not synchronized  
+      for(int i = 1; i <= 5; i++){  
+         System.out.println(n * i);  
+         try {  
+            Thread.sleep(400);  
+         } catch(Exception e){
+            System.out.println(e);
+         }  
+      }  
+  
+   }  
+}  
+  
+class MyThread1 extends Thread {  
+   Table t;  
+
+   MyThread1(Table t) {  
+      this.t = t;  
+   }  
+   
+   public void run() {  
+      t.printTable(5);  
+   }   
+  
+}  
+
+class MyThread2 extends Thread{  
+   Table t;  
+
+   MyThread2(Table t){  
+      this.t = t;  
+   }  
+   
+   public void run() {  
+      t.printTable(100);  
+   }  
+}  
+  
+class TestSynchronization {  
+   public static void main(String args[]){  
+      Table obj = new Table(); //only one object  
+      MyThread1 t1=new MyThread1(obj);  
+      MyThread2 t2=new MyThread2(obj);  
+      t1.start();  
+      t2.start();  
+   }  
+}  
+```
+### Output:
+```
+5
+10
+15
+20
+25
+100
+200
+300
+400
+500
+```
+
+# Synchronized Block in Java
+Synchronized block can be used to perform synchronization on any specific resource of the method. Suppose we have 50 lines of code in our method, but we want to synchronize only 5 lines, in such cases, we can use synchronized block. If we put all the codes of the method in the synchronized block, it will work same as the synchronized method.
+
+## Points to Remember
+- Synchronized block is used to lock an object for any shared resource.
+- Scope of synchronized block is smaller than the method.
+- A Java synchronized block doesn't allow more than one JVM, to provide access control to a shared resource.
+- The system performance may degrade because of the slower working of synchronized keyword.
+- Java synchronized block is more efficient than Java synchronized method.
+
+```java
+class Sender   
+{   
+  public void SenderMsg(String msg)  
+  {   
+    System.out.println("\nSending a Message: "  + msg);  
+    try  
+    {   
+      Thread.sleep(800);   
+    }   
+    catch (Exception e)   
+    {   
+      System.out.println("Thread interrupted.");   
+    }   
+    System.out.println("\n" +msg+ "Sent");  
+  }  
+}   
+// A Sender class for sending a message using Threads   
+class SenderWThreads extends Thread   
+{   
+  private String msg;   
+  Sender sd;   
+  
+  // Receiver method to receive a message object and a message to be sent   
+  SenderWThreads(String m, Sender obj)  
+  {   
+    msg = m;  
+    sd = obj;   
+  }   
+  
+  public void run()   
+  {   
+    // Checks that only one thread sends a message at a time.   
+    synchronized(sd)   
+    {   
+      // synchronizing the sender object   
+      sd.SenderMsg(msg);  
+    }   
+  }   
+}   
+// Driver Code   
+public class ShynchronizedMultithreading  
+{   
+  public static void main(String args[])   
+  {   
+    Sender sender = new Sender();   
+    SenderWThreads sender1 = new SenderWThreads( "Hola " , sender);  
+SenderWThreads sender2 =  new SenderWThreads( "Welcome to Javatpoint website ", sender);  
+  
+    // Start two threads of SenderWThreads type   
+    sender1.start();   
+    sender2.start();   
+  
+    // wait for threads to end   
+    try  
+    {   
+      sender1.join();   
+      sender2.join();   
+    }   
+    catch(Exception e)   
+    {   
+      System.out.println("Interrupted");   
+    }   
+  }   
+}  
+```
