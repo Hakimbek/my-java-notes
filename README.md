@@ -78,6 +78,6 @@
      - ### [sleep()](Multithreading/Methods/Sleep/README.md)
      - ### [run()](Multithreading/Methods/Run/README.md)
      - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name)](Multithreading/Methods/Name/README.md)
+     - ### [name](Multithreading/Methods/Name/README.md)
      - ### [priority](Multithreading/Priority/README.md)
 - ## [Garbage Collection](GC/README.md)
