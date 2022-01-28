@@ -1,85 +1,36 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Inter-thread Communication in Java
+Inter-thread communication or Co-operation is all about allowing synchronized threads to communicate with each other.
 
-- ## [Variables](Variables/README.md)
+Cooperation (Inter-thread communication) is a mechanism in which a thread is paused running in its critical section and another thread is allowed to enter (or lock) in the same critical section to be executed.It is implemented by following methods of Object class:
 
-- ## [Data_Types](Data_Types/README.md)
+- wait()
+- notify()
+- notifyAll()
 
-- ## [Operators](Operators/README.md)
+# 1) wait() method
+The wait() method causes current thread to release the lock and wait until either another thread invokes the notify() method or the notifyAll() method for this object, or a specified amount of time has elapsed.
 
-- ## [Keywords](Keywords/README.md)
+The current thread must own this object's monitor, so it must be called from the synchronized method only otherwise it will throw exception.
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+| Method |	Description |
+| ------ | ----------- |
+| public final void wait() throws InterruptedException |	It waits until object is notified. |
+| public final void wait(long timeout) throws InterruptedException |	It waits for the specified amount of time. |
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+# 2) notify() method
+The notify() method wakes up a single thread that is waiting on this object's monitor. If any threads are waiting on this object, one of them is chosen to be awakened. The choice is arbitrary and occurs at the discretion of the implementation.
 
-- ## [Arrays](Arrays/README.md)
+# 3) notifyAll() method
+Wakes up all threads that are waiting on this object's monitor.
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+# Why wait(), notify() and notifyAll() methods are defined in Object class not Thread class?
+It is because they are related to lock and object has a lock.
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+# Difference between wait and sleep?
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
-
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
-
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
-
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Garbage Collection](GC/README.md)
+| wait() |	sleep() |
+| ------ | ------- |
+| The wait() method releases the lock. |	The sleep() method doesn't release the lock. |
+| It is a method of Object class |	It is a method of Thread class |
+| It is the non-static method |	It is the static method |
+| It should be notified by notify() or notifyAll() methods |	After the specified amount of time, sleep is completed. |
