@@ -34,7 +34,7 @@ Mutual Exclusive helps keep threads from interfering with one another while shar
 ```java
 class Table {  
    void printTable(int n) { //method not synchronized  
-      for(int i = 1; i <= 5; i++){  
+      for(int i = 1; i <= 5; i++) {  
          System.out.println(n * i);  
          try {  
             Thread.sleep(400);  
@@ -107,7 +107,7 @@ When a thread invokes a synchronized method, it automatically acquires the lock 
 ```java
 class Table {  
    synchronized void printTable(int n) {
-      for(int i = 1; i <= 5; i++){  
+      for(int i = 1; i <= 5; i++) {  
          System.out.println(n * i);  
          try {  
             Thread.sleep(400);  
@@ -182,7 +182,7 @@ Synchronized block can be used to perform synchronization on any specific resour
 class Table {  
    void printTable(int n) {
       synchronized(this){ //synchronized block    
-         for(int i = 1; i <= 5; i++){  
+         for(int i = 1; i <= 5; i++) {  
             System.out.println(n * i);  
             try {  
                Thread.sleep(400);  
