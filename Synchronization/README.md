@@ -302,7 +302,7 @@ public class TestSynchronization {
 ### Output:
 
 ```
-1
+       1
        2
        3
        4
