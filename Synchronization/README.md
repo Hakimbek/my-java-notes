@@ -267,26 +267,26 @@ class Table {
 public class TestSynchronization {  
    public static void main(String[] args) {  
       
-       Thread t1=new Thread(){  
-           public void run(){  
+       Thread t1 = new Thread() {  
+           public void run() {  
                Table.printTable(1);  
            }  
        };  
       
-       Thread t2=new Thread(){  
-           public void run(){  
+       Thread t2 = new Thread() {  
+           public void run() {  
                Table.printTable(10);  
            }  
        };  
       
-       Thread t3=new Thread(){  
-           public void run(){  
+       Thread t3 = new Thread() {  
+           public void run() {  
                Table.printTable(100);  
            }  
        };  
       
-       Thread t4=new Thread(){  
-           public void run(){  
+       Thread t4 = new Thread() {  
+           public void run() {  
                Table.printTable(1000);  
            }  
        };  
