@@ -1,82 +1,101 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java Thread Pool
+Java Thread pool represents a group of worker threads that are waiting for the job and reused many times.
 
-- ## [Variables](Variables/README.md)
+In the case of a thread pool, a group of fixed-size threads is created. A thread from the thread pool is pulled out and assigned a job by the service provider. After completion of the job, the thread is contained in the thread pool again.
 
-- ## [Data_Types](Data_Types/README.md)
+## Thread Pool Methods
+### newFixedThreadPool(int s)
+  - The method creates a thread pool of the fixed size s.
 
-- ## [Operators](Operators/README.md)
+### newCachedThreadPool()
+  - The method creates a new thread pool that creates the new threads when needed but will still use the previously created thread whenever they are available to use.
 
-- ## [Keywords](Keywords/README.md)
+### newSingleThreadExecutor()
+  - The method creates a new thread.
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+# Advantage of Java Thread Pool
+Better performance It saves time because there is no need to create a new thread.
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+# Real time usage
+It is used in Servlet and JSP where the container creates a thread pool to process the request.
 
-- ## [Arrays](Arrays/README.md)
+### WorkerThread.java
+```java
+class WorkerThread implements Runnable {  
+    private String message;  
+    
+    public WorkerThread(String s) {  
+        this.message = s;  
+    }  
+    
+     public void run() {  
+        System.out.println(Thread.currentThread().getName() + " (Start) message = " + message);  
+        processMessage(); //call processMessage method that sleeps the thread for 2 seconds  
+        System.out.println(Thread.currentThread().getName() + " (End)");  //prints thread name  
+    }
+    
+    private void processMessage() {  
+        try {  
+           Thread.sleep(2000);  
+        } catch (InterruptedException e) { 
+           e.printStackTrace(); 
+        }  
+    }  
+}  
+```
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+### TestThreadPool.java
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+```java
+public class TestThreadPool {  
+     public static void main(String[] args) {  
+        ExecutorService executor = Executors.newFixedThreadPool(5); //creating a pool of 5 threads  
+        
+        for (int i = 0; i < 10; i++) {  
+            Runnable worker = new WorkerThread("" + i);  
+            executor.execute(worker); //calling execute method of ExecutorService  
+        }
+        
+        executor.shutdown();  
+        while (!executor.isTerminated()) {   }  
+  
+        System.out.println("Finished all threads");  
+    }  
+ }  
+```
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
+### Output:
+```
+pool-1-thread-1 (Start) message = 0
+pool-1-thread-2 (Start) message = 1
+pool-1-thread-3 (Start) message = 2
+pool-1-thread-5 (Start) message = 4
+pool-1-thread-4 (Start) message = 3
+pool-1-thread-2 (End)
+pool-1-thread-2 (Start) message = 5
+pool-1-thread-1 (End)
+pool-1-thread-1 (Start) message = 6
+pool-1-thread-3 (End)
+pool-1-thread-3 (Start) message = 7
+pool-1-thread-4 (End)
+pool-1-thread-4 (Start) message = 8
+pool-1-thread-5 (End)
+pool-1-thread-5 (Start) message = 9
+pool-1-thread-2 (End)
+pool-1-thread-1 (End)
+pool-1-thread-4 (End)
+pool-1-thread-3 (End)
+pool-1-thread-5 (End)
+Finished all threads
+```
 
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
+# Risks involved in Thread Pools
 
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
+## Deadlock
+It is a known fact that deadlock can come in any program that involves multithreading, and a thread pool introduces another scenario of deadlock. Consider a scenario where all the threads that are executing are waiting for the results from the threads that are blocked and waiting in the queue because of the non-availability of threads for the execution.
 
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [setName()](Multithreading/Methods/Name/README.md)
-- ## [Garbage Collection](GC/README.md)
+## Thread Leakage
+Leakage of threads occurs when a thread is being removed from the pool to execute a task but is not returning to it after the completion of the task. For example, when a thread throws the exception and the pool class is not able to catch this exception, then the thread exits and reduces the thread pool size by 1. If the same thing repeats a number of times, then there are fair chances that the pool will become empty, and hence, there are no threads available in the pool for executing other requests.
+
+## Resource Thrashing
+A lot of time is wasted in context switching among threads when the size of the thread pool is very large. Whenever there are more threads than the optimal number may cause the starvation problem, and it leads to resource thrashing.
