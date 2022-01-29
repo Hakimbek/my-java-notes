@@ -40,3 +40,47 @@ Creates an instance of a URL by parsing the given spec within a specified contex
 Creates an instance of a URL by parsing the given spec with the specified handler within a given context.
 
 # Commonly used methods of Java URL class
+
+| Method | Description |
+| ------ | ----------- |
+| public String getProtocol() |	it returns the protocol of the URL. |
+| public String getHost() |	it returns the host name of the URL. |
+| public String getPort() |	it returns the Port Number of the URL. |
+| public String getFile() |	it returns the file name of the URL. |
+| public String getAuthority() |	it returns the authority of the URL. |
+| public String toString() |	it returns the string representation of the URL. |
+| public String getQuery() |	it returns the query string of the URL. |
+| public String getDefaultPort() | it returns the default port of the URL. |
+| public URLConnection openConnection() |	it returns the instance of URLConnection i.e. associated with this URL. |
+| public boolean equals(Object obj) |	it compares the URL with the given object. |
+| public Object getContent() | it returns the content of the URL. |
+| public String getRef() | it returns the anchor or reference of the URL. |
+| public URI toURI() | it returns a URI of the URL. |
+
+# Example of Java URL class
+
+```java
+public class URLDemo {  
+    public static void main(String[] args) {  
+        try {  
+            URL url=new URL("http://www.javatpoint.com/java-tutorial");  
+  
+            System.out.println("Protocol: " + url.getProtocol());  
+            System.out.println("Host Name: " + url.getHost());  
+            System.out.println("Port Number: " + url.getPort());  
+            System.out.println("File Name: " + url.getFile());  
+  
+        } catch(Exception e) {
+            System.out.println(e);
+        }  
+    }  
+}  
+```
+
+### Output:
+```
+Protocol: http
+Host Name: www.javatpoint.com
+Port Number: -1
+File Name: /java-tutorial
+```
