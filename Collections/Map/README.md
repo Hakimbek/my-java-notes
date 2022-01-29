@@ -67,4 +67,4 @@ Java Hashtable class implements a hashtable, which maps keys to values. It inher
 | We can make the HashMap as synchronized by calling this code Map m = Collections.synchronizedMap(hashMap); |	Hashtable is internally synchronized and can't be unsynchronized. |
 | HashMap is traversed by Iterator. |	Hashtable is traversed by Enumerator and Iterator. |
 | Iterator in HashMap is fail-fast. |	Enumerator in Hashtable is not fail-fast. |
-8) HashMap inherits AbstractMap class.	Hashtable inherits Dictionary class.
+| HashMap inherits AbstractMap class. |	Hashtable inherits Dictionary class. |
