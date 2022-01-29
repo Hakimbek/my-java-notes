@@ -25,6 +25,8 @@ Java application uses an output stream to write data to a destination; it may be
 | public void flush() throws IOException |	flushes the current output stream. |
 | public void close() throws IOException |	is used to close the current output stream. |
 
+![Output](/IO/image/2.png)
+
 
 # InputStream
 Java application uses an input stream to read data from a source; it may be a file, an array, peripheral device or socket.
@@ -35,3 +37,5 @@ Java application uses an input stream to read data from a source; it may be a fi
 | public abstract int read() throws IOException |	reads the next byte of data from the input stream. It returns -1 at the end of the file. |
 | public int available() throws IOException |	returns an estimate of the number of bytes that can be read from the current input stream. |
 | public void close() throws IOException |	is used to close the current input stream. |
+
+![Intput](/IO/image/1.png)
