@@ -1,99 +1,49 @@
-# Java
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java File Class
+The File class is an abstract representation of file and directory pathname. A pathname can be either absolute or relative.
 
-- ## [Variables](Variables/README.md)
+## Constructors
+| Constructor |	Description |
+| ----------- | ----------- |
+| File(File parent, String child) |	It creates a new File instance from a parent abstract pathname and a child pathname string. |
+| File(String pathname) |	It creates a new File instance by converting the given pathname string into an abstract pathname. |
+| File(String parent, String child) |	It creates a new File instance from a parent pathname string and a child pathname string. |
+| File(URI uri) |	It creates a new File instance by converting the given file: URI into an abstract pathname. |
 
-- ## [Data_Types](Data_Types/README.md)
+## Useful Methods
+| Method |	Description |
+| ------ | ----------- |
+| static File	createTempFile(String prefix, String suffix) |	It creates an empty file in the default temporary-file directory, using the given prefix and suffix to generate its name. |
+| boolean	createNewFile() |	It atomically creates a new, empty file named by this abstract pathname if and only if a file with this name does not yet exist. |
+| boolean	canWrite() |	It tests whether the application can modify the file denoted by this abstract pathname.String[] |
+| boolean	canExecute() |	It tests whether the application can execute the file denoted by this abstract pathname. |
+| boolean	canRead() |	It tests whether the application can read the file denoted by this abstract pathname. |
+| boolean	isAbsolute() |	It tests whether this abstract pathname is absolute. |
+| boolean	isDirectory() |	It tests whether the file denoted by this abstract pathname is a directory. |
+| boolean	isFile() |	It tests whether the file denoted by this abstract pathname is a normal file. |
+| String	getName() |	It returns the name of the file or directory denoted by this abstract pathname. |
+| String	getParent() |	It returns the pathname string of this abstract pathname's parent, or null if this pathname does not name a parent directory. |
+| Path	toPath() |	It returns a java.nio.file.Path object constructed from the this abstract path. |
+| URI	toURI() |	It constructs a file: URI that represents this abstract pathname. |
+| File[]	listFiles() |	It returns an array of abstract pathnames denoting the files in the directory denoted by this abstract pathname |
+| long	getFreeSpace() |	It returns the number of unallocated bytes in the partition named by this abstract path name. |
+| String[]	list(FilenameFilter filter) |	It returns an array of strings naming the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter. |
+| boolean	mkdir() |	It creates the directory named by this abstract pathname. |
 
-- ## [Operators](Operators/README.md)
-
-- ## [Keywords](Keywords/README.md)
-
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
-
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
-
-- ## [Arrays](Arrays/README.md)
-
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
-
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
-
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
-
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
-
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
-
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Synchronization](Synchronization/README.md)
-   - ### Methods
-     - ### [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
-- ## [Garbage Collection](GC/README.md)
-
-- ## Java Networking
-   - ### [Networking Concepts](Network/Consept/README.md)
-   - ### [URL class](Network/URL/README.md)
-   - ### [URLConnection class](Network/Connection/README.md)
-   - ### [HttpURLConnection class](Network/HTTP/README.md)
- 
-- ## Java I/O
-   - ### [Java Input/Output](IO/JavaIO/README.md)
-   - ### [File Input/Output Stream](IO/FileIOStream/README.md)
-   - ### [Buffered Input/Output Stream](IO/BufferedIOStream/README.md)
+```java
+public class FileDemo {  
+    public static void main(String[] args) {  
+  
+        try {  
+            File file = new File("javaFile123.txt");  
+            if (file.createNewFile()) {  
+                System.out.println("New File is created!");  
+            } else {  
+                System.out.println("File already exists.");  
+            }  
+        } catch (IOException e) {  
+            e.printStackTrace();  
+        }  
+  
+    }  
+}  
+```
