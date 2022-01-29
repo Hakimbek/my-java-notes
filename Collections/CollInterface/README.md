@@ -1,4 +1,4 @@
-# ava Collection Interface
+# Java Collection Interface
 Collection is a group of objects, which are known as elements. It is the root interface in the collection hierarchy. This interface is basically used to pass around the collections and manipulate them where the maximum generality is desired.
 
 There are many methods defined in the Collection interface. These are as follows:
