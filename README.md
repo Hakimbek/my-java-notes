@@ -105,7 +105,6 @@
   
 - ## Java Collections
    - ### [Collection Framework](Collections/CollectionFramework/README.md)
-   - ### [Collection Interface](Collections/CollInterface/README.md)
    - ### [List](Collections/List/README.md)
    - ### [Set](Collections/Set/README.md)
    - ### [Queue, Deque](Collections/Queue/README.md)
