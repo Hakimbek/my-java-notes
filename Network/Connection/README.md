@@ -15,11 +15,13 @@ URL is an abbreviation for Uniform Resource Locator. An URL is a form of string 
 
 # Constructors
 | Constructor |	Description |
+| ----------- | ----------- |
 | protected URLConnection(URL url) |	It constructs a URL connection to the specified URL. |
 
 # URLConnection Class Methods
 
-| Method |	Description |
+| Method | Description |
+| ------ | ------------ |
 | void addRequestProperty(String key, String value) |	It adds a general request property specified by a key-value pair |
 | void connect() |	It opens a communications link to the resource referenced by this URL, if such a connection has not already been established. |
 | boolean getAllowUserInteraction() |	It returns the value of the allowUserInteraction field for the object. |
@@ -46,18 +48,18 @@ URL is an abbreviation for Uniform Resource Locator. An URL is a form of string 
 | Map<String, List<String>> getHeaderFields() |	It returns the unmodifiable Map of the header field. |
 | long getIfModifiedSince() |	It returns the value of the object's ifModifiedSince field. |
 | InputStream getInputStream() |	It returns an input stream that reads from the open condition. |
-long getLastModified()	It returns the value of the last-modified header field.
-OutputStream getOutputStream()	It returns an output stream that writes to the connection.
-Permission getPermission()	It returns a permission object representing the permission necessary to make the connection represented by the object.
-int getReadTimeout()	It returns setting for read timeout.
-Map<String, List<String>> getRequestProperties()	It returns the value of the named general request property for the connection.
-URL getURL()	It returns the value of the URLConnection's URL field.
-boolean getUseCaches()	It returns the value of the URLConnection's useCaches field.
-Static String guessContentTypeFromName(String fname)	It tries to determine the content type of an object, based on the specified file component of a URL.
-static String guessContentTypeFromStream(InputStream is)	It tries to determine the type of an input stream based on the characters at the beginning of the input stream.
-void setAllowUserInteraction(boolean allowuserinteraction)	It sets the value of the allowUserInteraction field of this URLConnection.
-static void setContentHandlerFactory(ContentHandlerFactory fac)	It sets the ContentHandlerFactory of an application.
-static void setDefaultAllowUserInteraction(boolean defaultallowuserinteraction)	It sets the default value of the allowUserInteraction field for all future URLConnection objects to the specified value.
-void steDafaultUseCaches(boolean defaultusecaches)	It sets the default value of the useCaches field to the specified value.
-void setDoInput(boolean doinput)	It sets the value of the doInput field for this URLConnection to the specified value.
-void setDoOutput(boolean dooutput)	It sets the value of the doOutput field for the URLConnection to the specified value.
+| long getLastModified() |	It returns the value of the last-modified header field. |
+| OutputStream getOutputStream() |	It returns an output stream that writes to the connection. |
+| Permission getPermission() |	It returns a permission object representing the permission necessary to make the connection represented by the object. |
+| int getReadTimeout() |	It returns setting for read timeout. |
+| Map<String, List<String>> getRequestProperties() |	It returns the value of the named general request property for the connection. |
+| URL getURL() |	It returns the value of the URLConnection's URL field. |
+| boolean getUseCaches() |	It returns the value of the URLConnection's useCaches field. |
+| Static String guessContentTypeFromName(String fname) |	It tries to determine the content type of an object, based on the specified file component of a URL. |
+| static String guessContentTypeFromStream(InputStream is) |	It tries to determine the type of an input stream based on the characters at the beginning of the input stream. |
+| void setAllowUserInteraction(boolean allowuserinteraction) |	It sets the value of the allowUserInteraction field of this URLConnection. |
+|static void setContentHandlerFactory(ContentHandlerFactory fac) |	It sets the ContentHandlerFactory of an application. |
+| static void setDefaultAllowUserInteraction(boolean defaultallowuserinteraction) |	It sets the default value of the allowUserInteraction field for all future URLConnection objects to the specified value. |
+| void steDafaultUseCaches(boolean defaultusecaches) |	It sets the default value of the useCaches field to the specified value. |
+| void setDoInput(boolean doinput) |	It sets the value of the doInput field for this URLConnection to the specified value. |
+| void setDoOutput(boolean dooutput) |	It sets the value of the doOutput field for the URLConnection to the specified value. |
