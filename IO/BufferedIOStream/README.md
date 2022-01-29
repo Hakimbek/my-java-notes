@@ -68,9 +68,9 @@ public class BufferedInputStreamExample {
        }    
        bin.close();    
        fin.close();    
-      } atch(Exception e) 
+     } catch(Exception e) 
          System.out.println(e);
-      }    
+     }    
    }    
 }  
 ```
