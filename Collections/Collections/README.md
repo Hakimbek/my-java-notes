@@ -207,3 +207,26 @@ class Simple{
    }  
 }  
 ```
+
+# Another example
+```java
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Student> students = new ArrayList<>(Arrays.asList(
+                new Student("Hakim", 22, 5),
+                new Student("Ali", 10, 5),
+                new Student("Orif", 50, 4),
+                new Student("Kamol", 1, 7),
+                new Student("Karim", 5, 1),
+                new Student("Bilol", 15, 6),
+                new Student("Ibrohim", 3, 5),
+                new Student("Mariam", 22, 2),
+                new Student("Bekzod", 13, 1)
+        ));
+
+        Collections.sort(students, new NameComparator().thenComparing(new AgeComparator()));
+
+        students.forEach(System.out::println);
+    }
+}
+```
