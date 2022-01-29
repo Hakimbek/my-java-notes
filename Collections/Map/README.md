@@ -45,3 +45,26 @@ The important points about Java TreeMap class are:
 | ------- | ------- |
 | HashMap can contain one null key. |	TreeMap cannot contain any null key. |
 | HashMap maintains no order. |	TreeMap maintains ascending order. |
+
+# Java Hashtable class
+Java Hashtable class implements a hashtable, which maps keys to values. It inherits Dictionary class and implements the Map interface.
+
+## Points to remember
+- A Hashtable is an array of a list. Each list is known as a bucket. The position of the bucket is identified by calling the hashcode() method. A Hashtable contains values based on the key.
+- Java Hashtable class contains unique elements.
+- Java Hashtable class doesn't allow null key or value.
+- Java Hashtable class is synchronized.
+- The initial default capacity of Hashtable class is 11 whereas loadFactor is 0.75.
+
+# Difference between HashMap and Hashtable
+
+| HashMap |	Hashtable |
+| ------- | --------- |
+| HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code. |	Hashtable is synchronized. It is thread-safe and can be shared with many threads. |
+| HashMap allows one null key and multiple null values. |	Hashtable doesn't allow any null key or value. |
+| HashMap is a new class introduced in JDK 1.2. |	Hashtable is a legacy class. |
+| HashMap is fast. |	Hashtable is slow. |
+| We can make the HashMap as synchronized by calling this code Map m = Collections.synchronizedMap(hashMap); |	Hashtable is internally synchronized and can't be unsynchronized. |
+| HashMap is traversed by Iterator. |	Hashtable is traversed by Enumerator and Iterator. |
+| Iterator in HashMap is fail-fast. |	Enumerator in Hashtable is not fail-fast. |
+8) HashMap inherits AbstractMap class.	Hashtable inherits Dictionary class.
