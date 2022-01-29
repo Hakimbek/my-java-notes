@@ -10,9 +10,9 @@ A stream is a sequence of data. In Java, a stream is composed of bytes. It's cal
 
 In Java, 3 streams are created for us automatically. All these streams are attached with the console.
 
-### 1) System.out: standard output stream
-### 2) System.in: standard input stream
-### 3) System.err: standard error stream
+1. System.out: standard output stream 
+2. System.in: standard input stream
+3. System.err: standard error stream
 
 # OutputStream
 Java application uses an output stream to write data to a destination; it may be a file, an array, peripheral device or socket.
