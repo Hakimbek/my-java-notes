@@ -63,3 +63,21 @@ URL is an abbreviation for Uniform Resource Locator. An URL is a form of string 
 | void steDafaultUseCaches(boolean defaultusecaches) |	It sets the default value of the useCaches field to the specified value. |
 | void setDoInput(boolean doinput) |	It sets the value of the doInput field for this URLConnection to the specified value. |
 | void setDoOutput(boolean dooutput) |	It sets the value of the doOutput field for the URLConnection to the specified value. |
+  
+```java
+public class URLConnectionExample {    
+    public static void main(String[] args) {    
+        try {    
+            URL url = new URL("http://www.javatpoint.com/java-tutorial");    
+            URLConnection urlcon = url.openConnection();    
+            InputStream stream = urlcon.getInputStream();    
+            int i;    
+            while((i = stream.read()) != -1) {    
+                System.out.print((char) i);    
+            }    
+        } catch(Exception e) {
+            System.out.println(e);
+        }    
+    }    
+}    
+```
