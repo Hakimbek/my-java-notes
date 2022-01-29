@@ -1,93 +1,50 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java HttpURLConnection class
+The Java HttpURLConnection class is http specific URLConnection. It works for HTTP protocol only. By the help of HttpURLConnection class, you can retrieve information of any HTTP URL such as header information, status code, response code etc.
 
-- ## [Variables](Variables/README.md)
+### The java.net.HttpURLConnection is subclass of URLConnection class.
 
-- ## [Data_Types](Data_Types/README.md)
+# HttpURLConnection Class Constructor
 
-- ## [Operators](Operators/README.md)
+| Constructor |	Description |
+| ----------- | ----------- |
+| protected HttpURLConnection(URL u) |	It constructs the instance of HttpURLConnection class. |
 
-- ## [Keywords](Keywords/README.md)
+# Java HttpURLConnection Methods
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+| Method |	Description |
+| ------ | ----------- |
+| void disconnect() |	It shows that other requests from the server are unlikely in the near future. |
+| InputStream getErrorStream() |	It returns the error stream if the connection failed but the server sent useful data. |
+| Static boolean getFollowRedirects() |	It returns a boolean value to check whether or not HTTP redirects should be automatically followed. |
+| String getHeaderField(int n) |	It returns the value of nth header file. |
+| long getHeaderFieldDate(String name, long Default) |	It returns the value of the named field parsed as a date. |
+| String getHeaderFieldKey(int n) |	It returns the key for the nth header file. |
+| boolean getInstanceFollowRedirects() |	It returns the value of HttpURLConnection's instance FollowRedirects field. |
+| Permission getPermission() |	It returns the SocketPermission object representing the permission to connect to the destination host and port. |
+| String getRequestMethod() |	It gets the request method. |
+| int getResponseCode() |	It gets the response code from an HTTP response message. |
+| String getResponseMessage() |	It gets the response message sent along with the response code from a server. |
+| void setChunkedStreamingMode(int chunklen) |	The method is used to enable streaming of a HTTP request body without internal buffering, when the content length is not known in advance. |
+| void setFixedLengthStreamingMode(int contentlength) |	The method is used to enable streaming of a HTTP request body without internal buffering, when the content length is known in advance. |
+| void setFixedLengthStreamingMode(long contentlength) |	The method is used to enable streaming of a HTTP request body without internal buffering, when the content length is not known in advance. |
+| static void setFollowRedirects(boolean set) |	It sets whether HTTP redirects (requests with response code) should be automatically followed by HttpURLConnection class. |
+| void setInstanceFollowRedirects(boolean followRedirects) |	It sets whether HTTP redirects (requests with response code) should be automatically followed by instance of HttpURLConnection class. |
+| void setRequestMethod(String method) |	Sets the method for the URL request, one of: GET POST HEAD OPTIONS PUT DELETE TRACE are legal, subject to protocol restrictions. |
+| abstract boolean usingProxy() |	It shows if the connection is going through a proxy. |
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
-
-- ## [Arrays](Arrays/README.md)
-
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
-
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
-
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
-
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
-
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
-
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Synchronization](Synchronization/README.md)
-   - ### Methods
-     - ### [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
-- ## [Garbage Collection](GC/README.md)
-
-- ## Java Networking
-   - ### [Networking Concepts](Network/Consept/README.md)
-   - ### [URL class](Network/URL/README.md)
-   - ### [URLConnection class](Network/Connection/README.md)
+```java
+public class HttpURLConnectionDemo {    
+  public static void main(String[] args) {    
+    try {    
+      URL url = new URL("http://www.javatpoint.com/java-tutorial");    
+      HttpURLConnection huc = (HttpURLConnection) url.openConnection();  
+      for(int i = 1; i <= 8; i++) {  
+         System.out.println(huc.getHeaderFieldKey(i) + " = " + huc.getHeaderField(i));  
+      }  
+      huc.disconnect();   
+    } catch(Exception e) { 
+      System.out.println(e);
+    }    
+  }    
+}    
+```
