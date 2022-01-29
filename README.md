@@ -105,3 +105,5 @@
   
 - ## Java Collections
    - ### [Collection Framework](Collections/CollectionFramework/README.md)
+   - ### [List](Collections/List/README.md)
+   - ### [Set](Collections/Set/README.md)
