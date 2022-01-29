@@ -97,5 +97,7 @@
    - ### [Java Input/Output](IO/JavaIO/README.md)
    - ### [File Input/Output Stream](IO/FileIOStream/README.md)
    - ### [Buffered Input/Output Stream](IO/BufferedIOStream/README.md)
-   - ### [Writer, Reader](IO/WriterReader/README.md)
+   - ### [Writer/Reader](IO/WriterReader/README.md)
+   - ### [File Writer/Reader](IO/FileWR/README.md)
+   - ### [Buffered Writer/Reader](IO/BufferedWR/README.md)
   
