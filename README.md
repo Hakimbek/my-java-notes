@@ -111,4 +111,4 @@
    - ### [Map](Collections/Map/README.md)
    - ### [Collections class](Collections/Collections/README.md)
    - ### [Stack](Collections/Stack/README.md)
-   - ### [Iterator](Collections/Itrator/README.md)
+   - ### [Iterator](Collections/Iterator/README.md)
