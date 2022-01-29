@@ -107,3 +107,5 @@
    - ### [Collection Framework](Collections/CollectionFramework/README.md)
    - ### [List](Collections/List/README.md)
    - ### [Set](Collections/Set/README.md)
+   - ### [Queue, Deque](Collections/Queue/README.md)
+   - ### [Map](Collections/Map/README.md)
