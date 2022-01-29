@@ -59,7 +59,7 @@ The important points about BufferedInputStream are:
 ```java
 public class BufferedInputStreamExample {    
    public static void main(String args[]) {    
-     try{    
+     try {    
        FileInputStream fin = new FileInputStream("D:\\testout.txt");    
        BufferedInputStream bin = new BufferedInputStream(fin);    
        int i;    
