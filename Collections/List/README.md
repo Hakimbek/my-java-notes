@@ -52,4 +52,4 @@ In the case of a doubly linked list, we can add or remove elements from both sid
 | ArrayList internally uses a dynamic array to store the elements. |	LinkedList internally uses a doubly linked list to store the elements. |
 | Manipulation with ArrayList is slow because it internally uses an array. If any element is removed from the array, all the bits are shifted in memory. |	Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list, so no bit shifting is required in memory. |
 | An ArrayList class can act as a list only because it implements List only. |	LinkedList class can act as a list and queue both because it implements List and Deque interfaces. |
-4) ArrayList is better for storing and accessing data.	LinkedList is better for manipulating data.
+| ArrayList is better for storing and accessing data. |	LinkedList is better for manipulating data. |
