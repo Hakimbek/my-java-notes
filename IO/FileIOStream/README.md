@@ -1,93 +1,63 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java FileOutputStream Class
+Java FileOutputStream is an output stream used for writing data to a file.
 
-- ## [Variables](Variables/README.md)
+If you have to write primitive values into a file, use FileOutputStream class. You can write byte-oriented as well as character-oriented data through FileOutputStream class. But, for character-oriented data, it is preferred to use FileWriter
+than FileOutputStream.
 
-- ## [Data_Types](Data_Types/README.md)
+| Method |	Description |
+| ------ | ----------- |
+| protected void finalize() |	It is used to clean up the connection with the file output stream. |
+| void write(byte[] ary) |	It is used to write ary.length bytes from the byte array to the file output stream. |
+| void write(byte[] ary, int off, int len) |	It is used to write len bytes from the byte array starting at offset off to the file output stream. |
+| void write(int b) |	It is used to write the specified byte to the file output stream. |
+| FileChannel getChannel() |	It is used to return the file channel object associated with the file output stream. |
+| FileDescriptor getFD() |	It is used to return the file descriptor associated with the stream. |
+| void close() |	It is used to closes the file output stream. |
 
-- ## [Operators](Operators/README.md)
+```java
+public class FileOutputStreamExample {  
+    public static void main(String args[]) {    
+           try {    
+               FileOutputStream fout = new FileOutputStream("D:\\testout.txt");    
+               String s = "Welcome to javaTpoint.";    
+               byte b[] = s.getBytes();  //converting string into byte array     
+               fout.close();    
+               System.out.println("success...");    
+            } catch(Exception e){
+               System.out.println(e);
+            }    
+      }    
+} 
+```
 
-- ## [Keywords](Keywords/README.md)
+# Java FileInputStream Class
+Java FileInputStream class obtains input bytes from a file. It is used for reading byte-oriented data (streams of raw bytes) such as image data, audio, video etc. You can also read character-stream data. But, for reading streams of characters, it is recommended to use FileReader class.
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+| Method |	Description |
+| ------ | ----------- |
+| int available() |	It is used to return the estimated number of bytes that can be read from the input stream. |
+| int read() |	It is used to read the byte of data from the input stream. |
+| int read(byte[] b) |	It is used to read up to b.length bytes of data from the input stream. |
+| int read(byte[] b, int off, int len) |	It is used to read up to len bytes of data from the input stream. |
+| long skip(long x) |	It is used to skip over and discards x bytes of data from the input stream. |
+| FileChannel getChannel() |	It is used to return the unique FileChannel object associated with the file input stream. |
+| FileDescriptor getFD() |	It is used to return the FileDescriptor object. |
+| protected void finalize() |	It is used to ensure that the close method is call when there is no more reference to the file input stream. |
+| void close() |	It is used to closes the stream. |
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
-
-- ## [Arrays](Arrays/README.md)
-
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
-
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
-
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
-
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
-
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
-
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Synchronization](Synchronization/README.md)
-   - ### Methods
-     - ### [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
-- ## [Garbage Collection](GC/README.md)
-
-- ## Java Networking
-   - ### [Networking Concepts](Network/Consept/README.md)
-   - ### [URL class](Network/URL/README.md)
-   - ### [URLConnection class](Network/Connection/README.md)
+```java
+public class DataStreamExample {  
+     public static void main(String args[]) {    
+          try {    
+             FileInputStream fin = new FileInputStream("D:\\testout.txt");    
+             int i = 0;    
+             while((i = fin.read()) != -1){    
+               System.out.print((char) i);    
+             }    
+             fin.close();    
+          } catch(Exception e) {
+             System.out.println(e);
+          }    
+     }    
+}  
+```
