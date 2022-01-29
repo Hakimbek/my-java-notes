@@ -1,99 +1,79 @@
-# Java
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java Writer
+It is an abstract class for writing to character streams. The methods that a subclass must implement are write(char[], int, int), flush(), and close(). Most subclasses will override some of the methods defined here to provide higher efficiency, functionality or both.
 
-- ## [Variables](Variables/README.md)
+## Constructor
+| Constructor |	Description |
+| ----------- | ----------- |
+| protected	Writer() |	It creates a new character-stream writer whose critical sections will synchronize on the writer itself. |
+| protected	Writer(Object lock) |	It creates a new character-stream writer whose critical sections will synchronize on the given object |
 
-- ## [Data_Types](Data_Types/README.md)
+## Methods
+| Method |	Description |
+| ------ | ----------- |
+| Writer	append(char c) |	It appends the specified character to this writer. |
+| Writer	append(CharSequence csq) |	It appends the specified character sequence to this writer |
+| Writer	append(CharSequence csq, int start, int end) |	It appends a subsequence of the specified character sequence to this writer. |
+| abstract void	close() |	It closes the stream, flushing it first. |
+| abstract void	flush() |	It flushes the stream. |
+| void	write(char[] cbuf) |	It writes an array of characters. |
+| abstract void	write(char[] cbuf, int off, int len) |	It writes a portion of an array of characters. |
+| void	write(int c) |	It writes a single character. |
+| void	write(String str) |	It writes a string. |
+| void	write(String str, int off, int len) |	It writes a portion of a string. |
 
-- ## [Operators](Operators/README.md)
+```java
+public class WriterExample {  
+    public static void main(String[] args) {  
+        try {  
+            Writer w = new FileWriter("output.txt");  
+            String content = "I love my country";  
+            w.write(content);  
+            w.close();  
+            System.out.println("Done");  
+        } catch (IOException e) {  
+            e.printStackTrace();  
+        }  
+    }  
+}  
+```
 
-- ## [Keywords](Keywords/README.md)
+# Java Reader
+Java Reader is an abstract class for reading character streams. The only methods that a subclass must implement are read(char[], int, int) and close(). Most subclasses, however, will override some of the methods to provide higher efficiency, additional functionality, or both.
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+## Constructor
+|	Constructor |	Description |
+| ----------- | ----------- |
+| protected	Reader() |	It creates a new character-stream reader whose critical sections will synchronize on the reader itself. |
+| protected	Reader(Object lock) |	It creates a new character-stream reader whose critical sections will synchronize on the given object. |
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+## Methods
+| Method |	Description |
+| ------ | ----------- |
+| abstract void	close() |	It closes the stream and releases any system resources associated with it. |
+| void	mark(int readAheadLimit) |	It marks the present position in the stream. |
+| boolean	markSupported() |	It tells whether this stream supports the mark() operation. |
+| int	read() |	It reads a single character. |
+| int	read(char[] cbuf) |	It reads characters into an array. |
+| abstract int	read(char[] cbuf, int off, int len) |	It reads characters into a portion of an array. |
+| int	read(CharBuffer target) |	It attempts to read characters into the specified character buffer. |
+| boolean	ready() |	It tells whether this stream is ready to be read. |
+| void	reset() |	It resets the stream. |
+| long	skip(long n) |	It skips characters. |
 
-- ## [Arrays](Arrays/README.md)
-
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
-
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
-
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
-
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
-
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
-
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Synchronization](Synchronization/README.md)
-   - ### Methods
-     - ### [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
-- ## [Garbage Collection](GC/README.md)
-
-- ## Java Networking
-   - ### [Networking Concepts](Network/Consept/README.md)
-   - ### [URL class](Network/URL/README.md)
-   - ### [URLConnection class](Network/Connection/README.md)
-   - ### [HttpURLConnection class](Network/HTTP/README.md)
- 
-- ## Java I/O
-   - ### [Java Input/Output](IO/JavaIO/README.md)
-   - ### [File Input/Output Stream](IO/FileIOStream/README.md)
-   - ### [Buffered Input/Output Stream](IO/BufferedIOStream/README.md)
+```java
+public class ReaderExample {  
+    public static void main(String[] args) {  
+        try {  
+            Reader reader = new FileReader("file.txt");  
+            int data = reader.read();  
+            while (data != -1) {  
+                System.out.print((char) data);  
+                data = reader.read();  
+            }  
+            reader.close();  
+        } catch (Exception ex) {  
+            System.out.println(ex.getMessage());  
+        }  
+    }  
+}  
+```
