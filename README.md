@@ -110,3 +110,4 @@
    - ### [Queue, Deque](Collections/Queue/README.md)
    - ### [Map](Collections/Map/README.md)
    - ### [Collections class](Collections/Collections/README.md)
+   - ### [Iterator](Collections/Iterator/README.md)
