@@ -19,6 +19,7 @@ Java application uses an output stream to write data to a destination; it may be
 
 ## Useful methods of OutputStream
 | Method |	Description |
+| ------ | ------------ |
 | public void write(int) throws IOException |	is used to write a byte to the current output stream. |
 | public void write(byte[]) throws IOException |	is used to write an array of byte to the current output stream. |
 | public void flush() throws IOException |	flushes the current output stream. |
@@ -29,7 +30,8 @@ Java application uses an output stream to write data to a destination; it may be
 Java application uses an input stream to read data from a source; it may be a file, an array, peripheral device or socket.
 
 ## Useful methods of InputStream
-| Method |	Description |
+| Method | Description |
+| ------ | ------------ |
 | public abstract int read() throws IOException |	reads the next byte of data from the input stream. It returns -1 at the end of the file. |
 | public int available() throws IOException |	returns an estimate of the number of bytes that can be read from the current input stream. |
 | public void close() throws IOException |	is used to close the current input stream. |
