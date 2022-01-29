@@ -96,3 +96,4 @@
 - ## Java I/O
    - ### [Java Input/Output](IO/JavaIO/README.md)
    - ### [File Input/Output Stream](IO/FileIOStream/README.md)
+   - ### [Buffered Input/Output Stream](IO/BufferedIOStream/README.md)
