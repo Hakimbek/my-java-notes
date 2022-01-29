@@ -1,107 +1,55 @@
-# Java
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java List
+List in Java provides the facility to maintain the ordered collection. It contains the index-based methods to insert, update, delete and search the elements. It can have the duplicate elements also. We can also store the null elements in the list.
 
-- ## [Variables](Variables/README.md)
+The List interface is found in the java.util package and inherits the Collection interface. It is a factory of ListIterator interface. Through the ListIterator, we can iterate the list in forward and backward directions. The implementation classes of List interface are ArrayList, LinkedList, Stack and Vector. The ArrayList and LinkedList are widely used in Java programming. The Vector class is deprecated since Java 5.
 
-- ## [Data_Types](Data_Types/README.md)
+# Java ArrayList
+Java ArrayList class uses a dynamic array for storing the elements. It is like an array, but there is no size limit. We can add or remove elements anytime. So, it is much more flexible than the traditional array.
 
-- ## [Operators](Operators/README.md)
+The important points about Java ArrayList class are:
+- Java ArrayList class can contain duplicate elements.
+- Java ArrayList class maintains insertion order.
+- Java ArrayList class is non synchronized.
+- Java ArrayList allows random access because array works at the index basis.
+- In ArrayList, manipulation is little bit slower than the LinkedList in Java because a lot of shifting needs to occur if any element is removed from the array list.
 
-- ## [Keywords](Keywords/README.md)
+## Constructors of ArrayList
+| Constructor |	Description |
+| ----------- | ----------- |
+| ArrayList() |	It is used to build an empty array list. |
+| ArrayList(Collection<? extends E> c) |	It is used to build an array list that is initialized with the elements of the collection c. |
+| ArrayList(int capacity) |	It is used to build an array list that has the specified initial capacity. |
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+# Java Non-generic Vs. Generic Collection
+Java collection framework was non-generic before JDK 1.5. Since 1.5, it is generic.
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+Java new generic collection allows you to have only one type of object in a collection. Now it is type safe so typecasting is not required at runtime.
 
-- ## [Arrays](Arrays/README.md)
+# Java LinkedList class
+Java LinkedList class uses a doubly linked list to store the elements. It provides a linked-list data structure. It inherits the AbstractList class and implements List and Deque interfaces.
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+The important points about Java LinkedList are:
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+- Java LinkedList class can contain duplicate elements.
+- Java LinkedList class maintains insertion order.
+- Java LinkedList class is non synchronized.
+- In Java LinkedList class, manipulation is fast because no shifting needs to occur.
+- Java LinkedList class can be used as a list, stack or queue.
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
+## Doubly Linked List
+In the case of a doubly linked list, we can add or remove elements from both sides.
 
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
+## Constructors of Java LinkedList
+| Constructor |	Description |
+| ----------- | ----------- |
+| LinkedList() |	It is used to construct an empty list. |
+| LinkedList(Collection<? extends E> c) |	It is used to construct a list containing the elements of the specified collection, in the order, they are returned by the collection's iterator. |
 
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
+# Difference between ArrayList and LinkedList
 
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Synchronization](Synchronization/README.md)
-   - ### Methods
-     - ### [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
-- ## [Garbage Collection](GC/README.md)
-
-- ## Java Networking
-   - ### [Networking Concepts](Network/Consept/README.md)
-   - ### [URL class](Network/URL/README.md)
-   - ### [URLConnection class](Network/Connection/README.md)
-   - ### [HttpURLConnection class](Network/HTTP/README.md)
- 
-- ## Java I/O
-   - ### [Java Input/Output](IO/JavaIO/README.md)
-   - ### [File Input/Output Stream](IO/FileIOStream/README.md)
-   - ### [Buffered Input/Output Stream](IO/BufferedIOStream/README.md)
-   - ### [Writer/Reader](IO/WriterReader/README.md)
-   - ### [File Writer/Reader](IO/FileWR/README.md)
-   - ### [Buffered Writer/Reader](IO/BufferedWR/README.md)
-   - ### [File](IO/File/README.md)
-   - ### [Serialization](IO/Serialization/README.md)
-  
-- ## Java Collections
-   - ### [Collection Framework](Collections/CollectionFramework/README.md)
+| ArrayList |	LinkedList |
+| --------- | ---------- |
+| ArrayList internally uses a dynamic array to store the elements. |	LinkedList internally uses a doubly linked list to store the elements. |
+| Manipulation with ArrayList is slow because it internally uses an array. If any element is removed from the array, all the bits are shifted in memory. |	Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list, so no bit shifting is required in memory. |
+| An ArrayList class can act as a list only because it implements List only. |	LinkedList class can act as a list and queue both because it implements List and Deque interfaces. |
+4) ArrayList is better for storing and accessing data.	LinkedList is better for manipulating data.
