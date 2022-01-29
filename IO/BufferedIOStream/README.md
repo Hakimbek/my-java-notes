@@ -1,93 +1,76 @@
-# Java Core
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java BufferedOutputStream Class
+Java BufferedOutputStream class
+is used for buffering an output stream. It internally uses buffer to store data. It adds more efficiency than to write data directly into a stream. So, it makes the performance fast.
 
-- ## [Variables](Variables/README.md)
+## Java BufferedOutputStream class constructors
+| Constructor |	Description |
+| ----------- | ----------- |
+| BufferedOutputStream(OutputStream os) |	It creates the new buffered output stream which is used for writing the data to the specified output stream. |
+| BufferedOutputStream(OutputStream os, int size) |	It creates the new buffered output stream which is used for writing the data to the specified output stream with a specified buffer size. |
 
-- ## [Data_Types](Data_Types/README.md)
+## Java BufferedOutputStream class methods
+| Method |	Description |
+| ------ | ----------- |
+| void write(int b) |	It writes the specified byte to the buffered output stream. |
+| void write(byte[] b, int off, int len) |	It write the bytes from the specified byte-input stream into a specified byte array, starting with the given offset |
+| void flush() |	It flushes the buffered output stream. |
 
-- ## [Operators](Operators/README.md)
+```java
+public class BufferedOutputStreamExample {    
+   public static void main(String args[])throws Exception {    
+       FileOutputStream fout = new FileOutputStream("D:\\testout.txt");    
+       BufferedOutputStream bout = new BufferedOutputStream(fout);    
+       String s = "Welcome to javaTpoint.";    
+       byte b[] = s.getBytes();    
+       bout.write(b);    
+       bout.flush();    
+       bout.close();    
+       fout.close();    
+       System.out.println("success");    
+   }    
+}  
+```
 
-- ## [Keywords](Keywords/README.md)
+# Java BufferedInputStream Class
+Java BufferedInputStream class is used to read information from stream. It internally uses buffer mechanism to make the performance fast.
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+The important points about BufferedInputStream are:
+- When the bytes from the stream are skipped or read, the internal buffer automatically refilled from the contained input stream, many bytes at a time.
+- When a BufferedInputStream is created, an internal buffer array is created.
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+## Java BufferedInputStream class constructors
+| Constructor |	Description |
+| ----------- | ----------- |
+| BufferedInputStream(InputStream IS) |	It creates the BufferedInputStream and saves it argument, the input stream IS, for later use. |
+| BufferedInputStream(InputStream IS, int size) |	It creates the BufferedInputStream with a specified buffer size and saves it argument, the input stream IS, for later use. |
 
-- ## [Arrays](Arrays/README.md)
+## Java BufferedInputStream class methods
+| Method |	Description |
+| ------ | ----------- |
+| int available() |	It returns an estimate number of bytes that can be read from the input stream without blocking by the next invocation method for the input stream. |
+| int read() |	It read the next byte of data from the input stream. |
+| int read(byte[] b, int off, int ln) |	It read the bytes from the specified byte-input stream into a specified byte array, starting with the given offset. |
+| void close() |	It closes the input stream and releases any of the system resources associated with the stream. |
+| void reset() |	It repositions the stream at a position the mark method was last called on this input stream. |
+| void mark(int readlimit) |	It sees the general contract of the mark method for the input stream. |
+| long skip(long x) |	It skips over and discards x bytes of data from the input stream. |
+| boolean markSupported() |	It tests for the input stream to support the mark and reset methods. |
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
-
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
-
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
-
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
-
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
-
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Synchronization](Synchronization/README.md)
-   - ### Methods
-     - ### [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
-- ## [Garbage Collection](GC/README.md)
-
-- ## Java Networking
-   - ### [Networking Concepts](Network/Consept/README.md)
-   - ### [URL class](Network/URL/README.md)
-   - ### [URLConnection class](Network/Connection/README.md)
+```java
+public class BufferedInputStreamExample {    
+   public static void main(String args[]) {    
+     try{    
+       FileInputStream fin = new FileInputStream("D:\\testout.txt");    
+       BufferedInputStream bin = new BufferedInputStream(fin);    
+       int i;    
+       while((i = bin.read()) != -1) {    
+          System.out.print((char) i);    
+       }    
+       bin.close();    
+       fin.close();    
+      } atch(Exception e) 
+         System.out.println(e);
+      }    
+   }    
+}  
+```
