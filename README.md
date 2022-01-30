@@ -119,3 +119,5 @@
 - ## [Lambda Expressions](Lambda/README.md)
 - ## [Java Methods Reference](MethodReference/README.md)
 - ## [Functional Interfaces](FunctionalInterfaces/README.md)
+- ## [Optional class](Optional/README.md)
+- ## [Stream](Stream/README.md)
