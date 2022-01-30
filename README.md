@@ -111,3 +111,5 @@
    - ### [Map](Collections/Map/README.md)
    - ### [Collections class](Collections/Collections/README.md)
    - ### [Iterator](Collections/Iterator/README.md)
+
+- ## [Generics](Generics/REAMDE.md)
