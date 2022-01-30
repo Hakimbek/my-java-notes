@@ -1,119 +1,55 @@
-# Java
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java Functional Interfaces
+An Interface that contains exactly one abstract method is known as functional interface. It can have any number of default, static methods but can contain only one abstract method. It can also declare methods of object class.
 
-- ## [Variables](Variables/README.md)
+Functional Interface is also known as Single Abstract Method Interfaces or SAM Interfaces. It is a new feature in Java, which helps to achieve functional programming approach.
 
-- ## [Data_Types](Data_Types/README.md)
+# Java Predefined-Functional Interfaces
+Java provides predefined functional interfaces to deal with functional programming by using lambda and method references.
 
-- ## [Operators](Operators/README.md)
+You can also define your own custom functional interface. Following is the list of functional interface which are placed in java.util.function package.
 
-- ## [Keywords](Keywords/README.md)
-
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
-
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
-
-- ## [Arrays](Arrays/README.md)
-
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
-
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
-
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
-
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
-
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
-
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Synchronization](Synchronization/README.md)
-   - ### Methods
-     - ### [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
-- ## [Garbage Collection](GC/README.md)
-
-- ## Java Networking
-   - ### [Networking Concepts](Network/Consept/README.md)
-   - ### [URL class](Network/URL/README.md)
-   - ### [URLConnection class](Network/Connection/README.md)
-   - ### [HttpURLConnection class](Network/HTTP/README.md)
- 
-- ## Java I/O
-   - ### [Java Input/Output](IO/JavaIO/README.md)
-   - ### [File Input/Output Stream](IO/FileIOStream/README.md)
-   - ### [Buffered Input/Output Stream](IO/BufferedIOStream/README.md)
-   - ### [Writer/Reader](IO/WriterReader/README.md)
-   - ### [File Writer/Reader](IO/FileWR/README.md)
-   - ### [Buffered Writer/Reader](IO/BufferedWR/README.md)
-   - ### [File](IO/File/README.md)
-   - ### [Serialization](IO/Serialization/README.md)
-  
-- ## Java Collections
-   - ### [Collection Framework](Collections/CollectionFramework/README.md)
-   - ### [List](Collections/List/README.md)
-   - ### [Set](Collections/Set/README.md)
-   - ### [Queue, Deque](Collections/Queue/README.md)
-   - ### [Map](Collections/Map/README.md)
-   - ### [Collections class](Collections/Collections/README.md)
-   - ### [Iterator](Collections/Iterator/README.md)
-
-- ## [Generics](Generics/README.md)
-- ## [Annotations](Annotations/README.md)
-- ## [Enums](Enums/README.md)
-- ## [Variable Arguments](VarArg/README.md)
-- ## [Lambda Expressions](Lambda/README.md)
+| Interface |	Description |
+| --------- | ----------- |
+| BiConsumer<T, U> | It represents an operation that accepts two input arguments and returns no result. |
+| Consumer<T> | It represents an operation that accepts a single argument and returns no result. |
+| Function<T, R> | It represents a function that accepts one argument and returns a result. |
+| Predicate<T> | It represents a predicate (boolean-valued function) of one argument. |
+| BiFunction<T, U, R> |	It represents a function that accepts two arguments and returns a a result. |
+| BinaryOperator<T> |	It represents an operation upon two operands of the same data type. It returns a result of the same type as the operands. |
+| BiPredicate<T, U> |	It represents a predicate (boolean-valued function) of two arguments. |
+| BooleanSupplier |	It represents a supplier of boolean-valued results. |
+| DoubleBinaryOperator |	It represents an operation upon two double type operands and returns a double type value. |
+| DoubleConsumer |	It represents an operation that accepts a single double type argument and returns no result. |
+| DoubleFunction<R> |	It represents a function that accepts a double type argument and produces a result. |
+| DoublePredicate |	It represents a predicate (boolean-valued function) of one double type argument. |
+| DoubleSupplier |	It represents a supplier of double type results. |
+| DoubleToIntFunction |	It represents a function that accepts a double type argument and produces an int type result. |
+| DoubleToLongFunction |	It represents a function that accepts a double type argument and produces a long type result. |
+| DoubleUnaryOperator |	It represents an operation on a single double type operand that produces a double type result. |
+| IntBinaryOperator |	It represents an operation upon two int type operands and returns an int type result. |
+| IntConsumer |	It represents an operation that accepts a single integer argument and returns no result. |
+| IntFunction<R> |	It represents a function that accepts an integer argument and returns a result. |
+| IntPredicate |	It represents a predicate (boolean-valued function) of one integer argument. |
+| IntSupplier |	It represents a supplier of integer type. |
+| IntToDoubleFunction |	It represents a function that accepts an integer argument and returns a double. |
+| IntToLongFunction |	It represents a function that accepts an integer argument and returns a long. |
+| IntUnaryOperator |	It represents an operation on a single integer operand that produces an integer result. |
+| LongBinaryOperator |	It represents an operation upon two long type operands and returns a long type result. |
+| LongConsumer |	It represents an operation that accepts a single long type argument and returns no result. |
+| LongFunction<R> |	It represents a function that accepts a long type argument and returns a result. |
+| LongPredicate |	It represents a predicate (boolean-valued function) of one long type argument. |
+| LongSupplier |	It represents a supplier of long type results. |
+| LongToDoubleFunction |	It represents a function that accepts a long type argument and returns a result of double type. |
+| LongToIntFunction |	It represents a function that accepts a long type argument and returns an integer result. |
+| LongUnaryOperator |	It represents an operation on a single long type operand that returns a long type result. |
+| ObjDoubleConsumer<T> |	It represents an operation that accepts an object and a double argument, and returns no result. |
+| ObjIntConsumer<T> |	It represents an operation that accepts an object and an integer argument. It does not return result. |
+| ObjLongConsumer<T> |	It represents an operation that accepts an object and a long argument, it returns no result. |
+| Supplier<T> |	It represents a supplier of results. |
+| ToDoubleBiFunction<T,U> |	It represents a function that accepts two arguments and produces a double type result. |
+| ToDoubleFunction<T> |	It represents a function that returns a double type result. |
+| ToIntBiFunction<T,U> |	It represents a function that accepts two arguments and returns an integer. |
+| ToIntFunction<T> |	It represents a function that returns an integer. |
+| ToLongBiFunction<T,U> |	It represents a function that accepts two arguments and returns a result of long type. |
+| ToLongFunction<T> |	It represents a function that returns a result of long type. |
+| UnaryOperator<T> |	It represents an operation on a single operand that returnsa a result of the same type as its operand. |
