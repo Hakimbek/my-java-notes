@@ -118,3 +118,4 @@
 - ## [Variable Arguments](VarArg/README.md)
 - ## [Lambda Expressions](Lambda/README.md)
 - ## [Java Methods Reference](MethodReference/README.md)
+- ## [Functional Interfaces](FunctionalInterfaces/README.md)
