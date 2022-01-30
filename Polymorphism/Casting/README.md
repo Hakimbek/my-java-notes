@@ -83,7 +83,7 @@ class Dog extends Animal {
        System.out.println("ok downcasting performed");  
     }  
     
-   public static void main (String [] args) {  
+    public static void main (String [] args) {  
       Animal a = new Dog();  
       Dog.method(a);  
     }  
