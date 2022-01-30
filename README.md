@@ -112,4 +112,4 @@
    - ### [Collections class](Collections/Collections/README.md)
    - ### [Iterator](Collections/Iterator/README.md)
 
-- ## [Generics](Generics/REAMDE.md)
+- ## [Generics](Generics/README.md)
