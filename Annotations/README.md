@@ -56,7 +56,7 @@ int value();
 We can provide the default value also. For example:
 ```java
 @interface MyAnnotation{  
-int value() default 0;  
+    int value() default 0;  
 }  
 ```
 
