@@ -39,13 +39,13 @@ Java Custom annotations or Java User-defined annotations are easy to create and 
 # Types of Annotation
 There are three types of annotations.
 
-## Marker Annotation
+## 1. Marker Annotation
 An annotation that has no method, is called marker annotation.
 ```java
 @interface MyAnnotation{}  
 ```
 
-## Single-Value Annotation
+## 2. Single-Value Annotation
 An annotation that has one method, is called single-value annotation.
 ```java
 @interface MyAnnotation{  
@@ -66,7 +66,7 @@ Let's see the code to apply the single value annotation.
 @MyAnnotation(value=10)  
 ```
 
-## Multi-Value Annotation
+## 3. Multi-Value Annotation
 An annotation that has more than one method, is called Multi-Value annotation. For example:
 ```java
 @interface MyAnnotation {  
