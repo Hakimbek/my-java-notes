@@ -1,116 +1,118 @@
-# Java
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Java Enums
+The Enum in Java is a data type which contains a fixed set of constants.
 
-- ## [Variables](Variables/README.md)
+It can be used for days of the week (SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, and SATURDAY) , directions (NORTH, SOUTH, EAST, and WEST), season (SPRING, SUMMER, WINTER, and AUTUMN or FALL), colors (RED, YELLOW, BLUE, GREEN, WHITE, and BLACK) etc. According to the Java naming conventions, we should have all constants in capital letters. So, we have enum constants in capital letters.
 
-- ## [Data_Types](Data_Types/README.md)
+Java Enums can be thought of as classes which have a fixed set of constants (a variable that does not change). The Java enum constants are static and final implicitly. It is available since JDK 1.5.
 
-- ## [Operators](Operators/README.md)
+Enums are used to create our own data type like classes. The enum data type (also known as Enumerated Data Type) is used to define an enum in Java. 
 
-- ## [Keywords](Keywords/README.md)
+Java Enum internally inherits the Enum class, so it cannot inherit any other class, but it can implement many interfaces. We can have fields, constructors, methods, and main methods in Java enum.
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+# Points to remember for Java Enum
+- Enum improves type safety
+- Enum can be easily used in switch
+- Enum can be traversed
+- Enum can have fields, constructors and methods
+- Enum may implement many interfaces but cannot extend any class because it internally extends Enum class
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+```java
+class EnumExample {  
+   //defining the enum inside the class  
+   public enum Season {WINTER, SPRING, SUMMER, FALL}  
+   //main method  
+   public static void main(String[] args) {  
+      //traversing the enum  
+      for (Season s : Season.values())  
+         System.out.println(s);  
+   }
+}  
+```
 
-- ## [Arrays](Arrays/README.md)
+### Output:
+```
+WINTER
+SPRING
+SUMMER
+FALL
+```
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+## Note
+Java compiler internally adds values(), valueOf() and ordinal() methods within the enum at compile time. It internally creates a static and final class for the enum.
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+## What is the purpose of the values() method in the enum?
+The Java compiler internally adds the values() method when it creates an enum. The values() method returns an array containing all the values of the enum.
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
+## What is the purpose of the valueOf() method in the enum?
+The Java compiler internally adds the valueOf() method when it creates an enum. The valueOf() method returns the value of given constant enum.
 
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
+## What is the purpose of the ordinal() method in the enum?
+The Java compiler internally adds the ordinal() method when it creates an enum. The ordinal() method returns the index of the enum value.
 
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
+# Defining Java Enum
+The enum can be defined within or outside the class because it is similar to a class. The semicolon (;) at the end of the enum constants are optional. For example:
+```java
+enum Season {WINTER, SPRING, SUMMER, FALL}  
+```
+Or,
+```java
+enum Season {WINTER, SPRING, SUMMER, FALL;}  
+```
 
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Synchronization](Synchronization/README.md)
-   - ### Methods
-     - ### [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
-- ## [Garbage Collection](GC/README.md)
+## Java Enum Example: Defined outside class
+```java
+enum Season { WINTER, SPRING, SUMMER, FALL }  
+class EnumExample {  
+   public static void main(String[] args) {  
+      Season s = Season.WINTER;  
+      System.out.println(s);  
+   }
+}   
+```
 
-- ## Java Networking
-   - ### [Networking Concepts](Network/Consept/README.md)
-   - ### [URL class](Network/URL/README.md)
-   - ### [URLConnection class](Network/Connection/README.md)
-   - ### [HttpURLConnection class](Network/HTTP/README.md)
- 
-- ## Java I/O
-   - ### [Java Input/Output](IO/JavaIO/README.md)
-   - ### [File Input/Output Stream](IO/FileIOStream/README.md)
-   - ### [Buffered Input/Output Stream](IO/BufferedIOStream/README.md)
-   - ### [Writer/Reader](IO/WriterReader/README.md)
-   - ### [File Writer/Reader](IO/FileWR/README.md)
-   - ### [Buffered Writer/Reader](IO/BufferedWR/README.md)
-   - ### [File](IO/File/README.md)
-   - ### [Serialization](IO/Serialization/README.md)
+## Java Enum Example: Defined inside class
+```java
+class EnumExample {  
+   enum Season { WINTER, SPRING, SUMMER, FALL; }  //semicolon(;) is optional here  
+   public static void main(String[] args) {  
+      Season s = Season.WINTER; //enum type is required to access WINTER  
+      System.out.println(s);  
+   }
+}  
+```
+
+# Initializing specific values to the enum constants
+The enum constants have an initial value which starts from 0, 1, 2, 3, and so on. But, we can initialize the specific value to the enum constants by defining fields and constructors. As specified earlier, Enum can have fields, constructors, and methods.
+
+## Example of specifying initial value to the enum constants
+```java
+class EnumExample {  
+   enum Season {   
+      WINTER(5), SPRING(10), SUMMER(15), FALL(20);   
   
-- ## Java Collections
-   - ### [Collection Framework](Collections/CollectionFramework/README.md)
-   - ### [List](Collections/List/README.md)
-   - ### [Set](Collections/Set/README.md)
-   - ### [Queue, Deque](Collections/Queue/README.md)
-   - ### [Map](Collections/Map/README.md)
-   - ### [Collections class](Collections/Collections/README.md)
-   - ### [Iterator](Collections/Iterator/README.md)
+      private int value;  
+      private Season(int value) {  
+         this.value=value;  
+      }  
+   }
+   
+   public static void main(String args[]){  
+      for (Season s : Season.values())  
+         System.out.println(s + " " + s.value);  
+   }
+}  
+```
 
-- ## [Generics](Generics/README.md)
-- ## [Annotations](Annotations/README.md)
+### Output:
+```
+WINTER 5
+SPRING 10
+SUMMER 15
+FALL 20
+```
+
+## Can we create the instance of Enum by new keyword?
+No, because it contains private constructors only.
+
+## Can we have an abstract method in the Enum?
+Yes, Of course! we can have abstract methods and can provide the implementation of these methods.
