@@ -1,113 +1,298 @@
-# Java
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+# Generics in Java
+The Java Generics programming is introduced in J2SE 5 to deal with type-safe objects. It makes the code stable by detecting the bugs at compile time.
 
-- ## [Variables](Variables/README.md)
+Before generics, we can store any type of objects in the collection, i.e., non-generic. Now generics force the java programmer to store a specific type of objects.
 
-- ## [Data_Types](Data_Types/README.md)
+# Advantage of Java Generics
+## Type-safety
+We can hold only a single type of objects in generics. It does not allow to store other objects.
 
-- ## [Operators](Operators/README.md)
+```java
+List list = new ArrayList();    
+list.add(10);  
+list.add("10");  
 
-- ## [Keywords](Keywords/README.md)
+// With Generics, it is required to specify the type of object we need to store.  
 
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
+List<Integer> list = new ArrayList<Integer>();    
+list.add(10);  
+list.add("10"); // compile-time error  
+```
 
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
+## Type casting is not required
+There is no need to typecast the object.
 
-- ## [Arrays](Arrays/README.md)
+```java
+List list = new ArrayList();    
+list.add("hello");    
+String s = (String) list.get(0); //typecasting    
 
-- ## Object Orianted Programming
-   - ### [Class](OOP/Class/README.md)
-   - ### [Object](OOP/Object/README.md)
-   - ### [Difference between Object and Class](OOP/Difference/README.md)
-   - ### [This keyword](OOP/This_Keyword/README.md)
-   - ### [Static keyword](OOP/Static/README.md)
-   - ### [Inheritance](OOP/Inheritance/README.md)
-   - ### Polymorphism
-     - ### [Method Overloading](Polymorphism/Method_Overloading//README.md)
-     - ### [Method Overriding](Polymorphism/Method_Overriding/README.md)
-     - ### [Difference between Overriding and Overloading](Polymorphism/Difference/README.md)
-     - ### [Super Keyword](Polymorphism/Super_Keyword/README.md)
-     - ### [Initializer block](Polymorphism/Initializer_Block/README.md)
-     - ### [Final Keyword](Polymorphism/Final_Keyword/README.md)
-     - ### [Casting](Polymorphism/Casting/README.md)
-     - ### [Binding](Polymorphism/Binding/README.md)
+// After Generics, we don't need to typecast the object.  
 
-   - ### Abstraction
-     - ### [Abstract class](OOP/Abstraction/Abstract_Class/README.md)
-     - ### [Interface](OOP/Abstraction/Interface/README.md)
-     - ### [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
-   
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+List<String> list = new ArrayList<String>();    
+list.add("hello");    
+String s = list.get(0);    
+```
 
-- ## [Object class](Object_Class/README.md)
-- ## [Math class](Math/README.md)
-- ## [Wrapper Class](Wrapper_Class/README.md)
-- ## [Misc](Misc/README.md)
+## Compile-Time Checking
+It is checked at compile time so problem will not occur at runtime. The good programming strategy says it is far better to handle the problem at compile time than runtime.
 
-- ## String
-   - ### [Immutable String](String/Immutable_String/README.md)
-   - ### [String Builder, String Buffer](String/Builder/README.md)
-   - ### [String Methods](String/Methods/README.md)
-   - ### [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
+```java
+List<String> list = new ArrayList<String>();    
+list.add("hello");    
+list.add(32); //Compile Time Error    
+```
 
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
+# Generic class
+A class that can refer to any type is known as a generic class. Here, we are using the *T* type parameter to create the generic class of specific type.
 
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
-     - ### [sleep()](Multithreading/Methods/Sleep/README.md)
-     - ### [run()](Multithreading/Methods/Run/README.md)
-     - ### [join()](Multithreading/Methods/Join/README.md)
-     - ### [name](Multithreading/Methods/Name/README.md)
-     - ### [priority](Multithreading/Priority/README.md)
-     - ### [deamon](Multithreading/Deamon/README.md)
-     - ### [pool](Multithreading/Pool/README.md)
-- ## [Synchronization](Synchronization/README.md)
-   - ### Methods
-     - ### [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
-- ## [Garbage Collection](GC/README.md)
+```java
+class MyGen<T> {  
+  T obj;  
 
-- ## Java Networking
-   - ### [Networking Concepts](Network/Consept/README.md)
-   - ### [URL class](Network/URL/README.md)
-   - ### [URLConnection class](Network/Connection/README.md)
-   - ### [HttpURLConnection class](Network/HTTP/README.md)
- 
-- ## Java I/O
-   - ### [Java Input/Output](IO/JavaIO/README.md)
-   - ### [File Input/Output Stream](IO/FileIOStream/README.md)
-   - ### [Buffered Input/Output Stream](IO/BufferedIOStream/README.md)
-   - ### [Writer/Reader](IO/WriterReader/README.md)
-   - ### [File Writer/Reader](IO/FileWR/README.md)
-   - ### [Buffered Writer/Reader](IO/BufferedWR/README.md)
-   - ### [File](IO/File/README.md)
-   - ### [Serialization](IO/Serialization/README.md)
+  void add(T obj) {
+     this.obj = obj;
+  }  
   
-- ## Java Collections
-   - ### [Collection Framework](Collections/CollectionFramework/README.md)
-   - ### [List](Collections/List/README.md)
-   - ### [Set](Collections/Set/README.md)
-   - ### [Queue, Deque](Collections/Queue/README.md)
-   - ### [Map](Collections/Map/README.md)
-   - ### [Collections class](Collections/Collections/README.md)
-   - ### [Iterator](Collections/Iterator/README.md)
+  T get() {
+     return obj;
+  }  
+}  
+```
+
+The T type indicates that it can refer to any type (like String, Integer, and Employee). The type you specify for the class will be used to store and retrieve the data.
+
+```java
+class TestGenerics {  
+   public static void main(String args[]) {
+      MyGen<Integer> m = new MyGen<Integer>();  
+      m.add(2);  
+      //m.add("vivek");  //Compile time error  
+      System.out.println(m.get());  
+   }
+}  
+```
+
+### Output:
+```
+2
+```
+
+# Type Parameters
+The type parameters naming conventions are important to learn generics thoroughly. The common type parameters are as follows:
+- T - Type
+- E - Element
+- K - Key
+- N - Number
+- V - Value
+
+# Generic Method
+Like the generic class, we can create a generic method that can accept any type of arguments. Here, the scope of arguments is limited to the method where it is declared. It allows static as well as non-static methods.
+
+```java
+public class TestGenerics {  
+   public static <E> void printArray(E[] elements) {  
+        for ( E element : elements) {          
+            System.out.println(element );  
+        }  
+        System.out.println();  
+   }
+   
+   public static void main(String args[]) {  
+        Integer[] intArray = {10, 20, 30, 40, 50};  
+        Character[] charArray = {'J', 'A', 'V', 'A', 'T', 'P', 'O', 'I', 'N', 'T'};  
+  
+        System.out.println("Printing Integer Array");  
+        printArray(intArray);   
+  
+        System.out.println("Printing Character Array");  
+        printArray(charArray);   
+   }   
+} 
+```
+
+### Output:
+```
+Printing Integer Array
+10
+20
+30
+40
+50
+Printing Character Array
+J
+A
+V
+A
+T
+P
+O
+I
+N
+T
+```
+
+# Wildcard in Java Generics
+The ? (question mark) symbol represents the wildcard element. It means any type. If we write \<? extends Number>, it means any child class of Number, e.g., Integer, Float, and double. Now we can call the method of Number class through any child class object.
+
+We can use a wildcard as a type of a parameter, field, return type, or local variable. However, it is not allowed to use a wildcard as a type argument for a generic method invocation, a generic class instance creation, or a supertype.
+
+```java
+abstract class Shape {  
+   abstract void draw();  
+}  
+
+class Rectangle extends Shape {  
+   void draw() {
+      System.out.println("drawing rectangle");
+   }  
+}  
+
+class Circle extends Shape {  
+   void draw() {
+      System.out.println("drawing circle");
+   }  
+}  
+
+class GenericTest {  
+   //creating a method that accepts only child class of Shape  
+   public static void drawShapes(List<? extends Shape> lists) {  
+      for(Shape s : lists) {  
+         s.draw(); //calling method of Shape class by child class instance  
+      }  
+   }  
+   
+   public static void main(String args[]) {  
+      List<Rectangle> list1 = new ArrayList<Rectangle>();  
+      list1.add(new Rectangle());  
+  
+      List<Circle> list2 = new ArrayList<Circle>();  
+      list2.add(new Circle());  
+      list2.add(new Circle());  
+  
+      drawShapes(list1);  
+      drawShapes(list2);  
+   }
+}  
+```
+
+### Output:
+```
+drawing rectangle
+drawing circle
+drawing circle
+```
+
+# Upper Bounded Wildcards
+The purpose of upper bounded wildcards is to decrease the restrictions on a variable. It restricts the unknown type to be a specific type or a subtype of that type. It is used by declaring wildcard character ("?") followed by the extends (in case of, class) or implements (in case of, interface) keyword, followed by its upper bound.
+
+### Syntax
+```
+List<? extends Number>  
+```
+
+```java
+public class UpperBoundWildcard { 
+    private static Double add(ArrayList<? extends Number> num) {
+        double sum = 0.0;   
+        for (Number n : num) {  
+            sum = sum + n.doubleValue();  
+        } 
+        return sum;  
+    }  
+  
+    public static void main(String[] args) {  
+        ArrayList<Integer> l1 = new ArrayList<Integer>();  
+        l1.add(10);  
+        l1.add(20);  
+        System.out.println("displaying the sum =" + add(l1));  
+          
+        ArrayList<Double> l2 = new ArrayList<Double>();  
+        l2.add(30.0);  
+        l2.add(40.0);  
+        System.out.println("displaying the sum =" + add(l2));  
+    }  
+}  
+```
+### Output:
+```
+displaying the sum = 30.0
+displaying the sum = 70.0
+```
+
+# Unbounded Wildcards
+The unbounded wildcard type represents the list of an unknown type such as List\<?>. This approach can be useful in the following scenarios: -
+
+When the given method is implemented by using the functionality provided in the Object class.
+When the generic class contains the methods that don't depend on the type parameter.
+
+```java
+public class UnboundedWildcard {  
+  public static void display(List<?> list) {  
+        for (Object o : list) {  
+           System.out.println(o);  
+        }  
+  }  
+  
+  public static void main(String[] args) {        
+     List<Integer> l1 = Arrays.asList(1, 2, 3);  
+     System.out.println("displaying the Integer values");  
+     display(l1);  
+     List<String> l2 = Arrays.asList("One", "Two", "Three");  
+     System.out.println("displaying the String values");  
+     display(l2);  
+  }  
+}  
+```
+
+### Output:
+```
+displaying the Integer values
+1
+2
+3
+displaying the String values
+One
+Two
+Three
+```
+
+# Lower Bounded Wildcards
+The purpose of lower bounded wildcards is to restrict the unknown type to be a specific type or a supertype of that type. It is used by declaring wildcard character ("?") followed by the super keyword, followed by its lower bound.
+
+### Syntax
+```
+List<? super Integer>  
+```
+
+```java
+public class LowerBoundWildcard {  
+    public static void addNumbers(List<? super Integer> list) {  
+        for(Object n : list) {  
+            System.out.println(n);  
+        }  
+    }  
+    
+    public static void main(String[] args) {    
+       List<Integer> l1 = Arrays.asList(1, 2, 3);  
+       System.out.println("displaying the Integer values");  
+       addNumbers(l1);  
+      
+       List<Number> l2 = Arrays.asList(1.0, 2.0, 3.0);  
+       System.out.println("displaying the Number values");  
+       addNumbers(l2);  
+   }  
+}  
+```
+
+### Output:
+```
+displaying the Integer values
+1
+2
+3
+displaying the Number values
+1.0
+2.0
+3.0
+```
