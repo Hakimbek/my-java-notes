@@ -18,3 +18,7 @@ Optional is a container object used to contain not-null objects. Optional object
 | T orElseGet(Supplier<? extends T> other) | Returns the value if present, otherwise invokes other and returns the result of that invocation. |
 | <X extends Throwable> T orElseThrow(Supplier<? extends X> exceptionSupplier) | Returns the contained value, if present, otherwise throws an exception to be created by the provided supplier. |
 | String toString() | Returns a non-empty string representation of this Optional suitable for debugging. |
+
+Java 11 introduced new method to Optional class as isEmpty() to check if value is present. isEmpty() returns false if value is present otherwise true.
+
+It can be used as an alternative of isPresent() method which often needs to negate to check if value is not present.
