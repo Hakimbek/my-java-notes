@@ -1,28 +1,20 @@
-# Java
-- ## [What is Java?](What_is_Java/README.md)
- 
-- ## [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+## Java Core
+ - [What is Java?](What_is_Java/README.md)
+ - [JVM, JRE, JDK](JVM_JRE_JDK/README.md)
+ - [Variables](Variables/README.md)
+ - [Data_Types](Data_Types/README.md)
+ - [Operators](Operators/README.md)
+ - [Keywords](Keywords/README.md)
+ - ### Java Control Statements
+   - [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
+   - [Loop statements](Control_Statements/Loop_Statements/README.md)
+   - [Jump statements](Control_Statements/Jump_Statements/README.md) 
 
-- ## [Variables](Variables/README.md)
+ - [Comments](Comments/README.md)
+ - [Java Naming Convention](Convention/README.md)
+ - [Arrays](Arrays/README.md)
 
-- ## [Data_Types](Data_Types/README.md)
-
-- ## [Operators](Operators/README.md)
-
-- ## [Keywords](Keywords/README.md)
-
-- ## Java Control Statements
-   - ### [Decision-making statements](Control_Statements/Decision_Making_Statements/README.md)
-   - ### [Loop statements](Control_Statements/Loop_Statements/README.md)
-   - ### [Jump statements](Control_Statements/Jump_Statements/README.md) 
-
-- ## [Comments](Comments/README.md)
- 
-- ## [Java Naming Convention](Convention/README.md)
-
-- ## [Arrays](Arrays/README.md)
-
-- ## Object Orianted Programming
+## Object Orianted Programming
    - ### [Class](OOP/Class/README.md)
    - ### [Object](OOP/Object/README.md)
    - ### [Difference between Object and Class](OOP/Difference/README.md)
