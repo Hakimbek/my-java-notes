@@ -9,17 +9,17 @@ A class in Java can contain:
 - Blocks
 - Nested class and interface
 
-## Instance variable in Java
+# Instance variable in Java
 A variable which is created inside the class but outside the method is known as an instance variable. Instance variable doesn't get memory at compile time. It gets memory at runtime when an object or instance is created. That is why it is known as an instance variable.
 
-## Method in Java
+# Method in Java
 In Java, a method is like a function which is used to expose the behavior of an object.
 
 Advantage of Method
 - Code Reusability
 - Code Optimization
 
-## Constructors in Java
+# Constructors in Java
 In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling constructor, memory for the object is allocated in the memory.
 
 It is a special type of method which is used to initialize the object.
