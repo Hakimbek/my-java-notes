@@ -32,10 +32,10 @@ The Java compiler adds public and abstract keywords before the interface method.
 ## The relationship between classes and interfaces
 A class extends another class, an interface extends another interface, but a class implements an interface.
 
-# Multiple inheritance in Java by interface
+## Multiple inheritance in Java by interface
 If a class implements multiple interfaces, or an interface extends multiple interfaces, it is known as multiple inheritance.
 
-## Multiple inheritance is not supported through class in java, but it is possible by an interface, why?
+### Multiple inheritance is not supported through class in java, but it is possible by an interface, why?
 As we have explained in the inheritance chapter, multiple inheritance is not supported in the case of class because of ambiguity. However, it is supported in case of an interface because there is no ambiguity. It is because its implementation is provided by the implementation class. For example:
 
 ```java
@@ -64,7 +64,7 @@ class TestInterface implements Printable, Showable {
 Hello
 ```
 
-# Java 8 Default Method in Interface
+## Java 8 Default Method in Interface
 Since Java 8, we can have method body in interface. But we need to make it default method. Let's see an example:
 
 ```java
@@ -97,7 +97,7 @@ drawing rectangle
 default method
 ```
 
-# Java 8 Static Method in Interface
+## Java 8 Static Method in Interface
 Since Java 8, we can have static method in interface. Let's see an example:
 
 ```java
