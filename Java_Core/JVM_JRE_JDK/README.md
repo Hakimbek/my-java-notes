@@ -65,6 +65,8 @@ Java Native Interface (JNI) is a framework which provides an interface to commun
 # JRE
 JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime.
 
+![JRE](/Java_Core/JVM_JRE_JDK/image/1.png)
+
 # JDK
 JDK is an acronym for Java Development Kit. The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets. It physically exists. It contains JRE + development tools.
 
@@ -75,4 +77,6 @@ JDK is an implementation of any one of the below given Java Platforms released b
 - Micro Edition Java Platform
 
 The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.
+
+![JDK](/Java_Core/JVM_JRE_JDK/image/2.png)
 
