@@ -2,7 +2,7 @@
 
 Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:
 
-## 1. Primitive data types
+# Primitive data types
  The primitive data types include **boolean, char, byte, short, int, long, float** and **double**.
 
 | Data Type |	Default Value |	Default size | Range(inclusive) | 
@@ -16,10 +16,10 @@ Data types specify the different sizes and values that can be stored in the vari
 | float |	0.0f |	4 byte |
 | double |	0.0d |	8 byte |
 
-### Unicode System
+## Unicode System
 Unicode is a universal international standard character encoding that is capable of representing most of the world's written languages.
 
-### Why java uses Unicode System?
+## Why java uses Unicode System?
 Before Unicode, there were many language standards:
 - ASCII (American Standard Code for Information Interchange) for the United States.
 - ISO 8859-1 for Western European Language.
