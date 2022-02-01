@@ -13,13 +13,13 @@ The extends keyword indicates that you are making a new class that derives from 
 
 ## Types of inheritance in java
 
-### Single Inheritance Example
+### 1. Single Inheritance Example
   When a class inherits another class, it is known as a single inheritance.
 
-### Multilevel Inheritance Example
+### 2. Multilevel Inheritance Example
   When there is a chain of inheritance, it is known as multilevel inheritance.
 
-### Hierarchical Inheritance Example
+### 3. Hierarchical Inheritance Example
 When two or more classes inherits a single class, it is known as hierarchical inheritance.
 
 ## Note
