@@ -10,4 +10,4 @@ Operator in Java is a symbol that is used to perform operations. There are many 
 | Bitwise | `&`  `^`  `\|` |
 | Logical | `&&`  `\|\|` |
 | Ternary | `?` `:` |
-| Assignment | `=` `+=` `-=` `*=` `/=` `%=` `&=` `^=` `|=` `<<=` `>>=` `>>>=` |
+| Assignment | `=` `+=` `-=` `*=` `/=` `%=` `&=` `^=` `\|=` `<<=` `>>=` `>>>=` |
