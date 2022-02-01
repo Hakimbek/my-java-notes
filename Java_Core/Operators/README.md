@@ -1,7 +1,5 @@
 # Operators in Java
-Operator in Java is a symbol that is used to perform operations. 
-
-There are many types of operators in Java which are given below:
+Operator in Java is a symbol that is used to perform operations. There are many types of operators in Java which are given below:
 
 | Operator Type | Precedence |
 | ------------- | ---------- |
