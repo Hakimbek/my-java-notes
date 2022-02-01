@@ -1,6 +1,4 @@
-We must understand the differences between JDK, JRE, and JVM before proceeding further to Java.
-
-## JVM
+# JVM
 JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that provides a runtime environment in which Java bytecode can be executed. It can also run those programs which are written in other languages and compiled to Java bytecode.
 
 JVMs are available for many hardware and software platforms. JVM, JRE, and JDK are platform dependent because the configuration of each OS
