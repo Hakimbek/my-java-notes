@@ -36,10 +36,10 @@
    - [Interface](OOP/Abstraction/Interface/README.md)
    - [Difference between abstract class and interface](OOP/Abstraction/Difference/README.md)
    
-   - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
-     - ### [Package](OOP/Encapsulation/Package/README.md)
-     - ### [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
-   - ### [Misc](OOP/Misc/README.md)
+ - ### [Encapsulation](OOP/Encapsulation/Encapsulation/README.md)
+   - [Package](OOP/Encapsulation/Package/README.md)
+   - [Access modifiers](OOP/Encapsulation/Access_Modifiers/README.md)
+ - ### [Misc](OOP/Misc/README.md)
 
 - ## [Object class](Object_Class/README.md)
 - ## [Math class](Math/README.md)
