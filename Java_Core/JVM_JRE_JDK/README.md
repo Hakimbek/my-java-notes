@@ -1,4 +1,3 @@
-# JDK, JRE, and JVM
 We must understand the differences between JDK, JRE, and JVM before proceeding further to Java.
 
 ## JVM
