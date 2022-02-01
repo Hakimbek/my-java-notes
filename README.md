@@ -51,16 +51,16 @@
  - [String Builder, String Buffer](String/Builder/README.md)
  - [String Methods](String/Methods/README.md)
  - [Immutable class](String/Buffer/README.md)
-- ## [Java Regex](Regex/README.md)
+## [Java Regex](Regex/README.md)
 
-- ## Exception Handling
-   - ### [Exceptions](Exception/Exceptions/README.md)
-   - ### [Try-catch block](Exception/Try_catch/README.md)
-   - ### [Throw and Throws](Exception/Throw/README.md)
-   - ### [Final, Finally and Finalize](Exception/fff/README.md)
-   - ### [Exception Handling with Method Overriding](Exception/Overriding/README.md)
-   - ### [Custom Exceptions](Exception/Custom/README.md)
-- ## [Inner class](Inner_class/README.md)
+## Exception Handling
+ - [Exceptions](Exception/Exceptions/README.md)
+ - [Try-catch block](Exception/Try_catch/README.md)
+ - [Throw and Throws](Exception/Throw/README.md)
+ - [Final, Finally and Finalize](Exception/fff/README.md)
+ - [Exception Handling with Method Overriding](Exception/Overriding/README.md)
+ - [Custom Exceptions](Exception/Custom/README.md)
+## [Inner class](Inner_class/README.md)
 
 - ## Mutithreading
    - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
