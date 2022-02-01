@@ -8,6 +8,6 @@ Operator in Java is a symbol that is used to perform operations. There are many 
 | Shift | `<<`  `>>`  `>>>` |
 | Relational | `<`  `>`  `<=`  `>=`  `instanceof`  `==`  `!=` |
 | Bitwise | `&`  `^`  `\|` |
-| Logical | `&&`  ```||``` |
-| Ternary | `?` ```:``` |
+| Logical | `&&`  `\|\|` |
+| Ternary | `?` `:` |
 | Assignment | `=` `+=` `-=` `*=` `/=` `%=` `&=` `^=` `|=` `<<=` `>>=` `>>>=` |
