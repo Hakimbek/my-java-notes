@@ -13,7 +13,7 @@ Let's understand the loop statements one by one.
 In Java, for loop is similar to C and C++. It enables us to initialize the loop variable, check the condition, and increment/decrement in a single line of code. We use the for loop only when we exactly know the number of times, we want to execute the block of code.
 
 ```java
-for(initialization, condition, increment/decrement) {    
+for (initialization, condition, increment/decrement) {    
    //block of statements    
 }    
 ```
@@ -22,7 +22,7 @@ for(initialization, condition, increment/decrement) {
 Java provides an enhanced for loop to traverse the data structures like array or collection. In the for-each loop, we don't need to update the loop variable. The syntax to use the for-each loop in java is given below.
 
 ```java
-for(data_type var : array_name/collection_name){    
+for (data_type var : array_name/collection_name){    
    //statements    
 } 
 ```
@@ -33,7 +33,7 @@ The while loop is also used to iterate over the number of statements multiple ti
 It is also known as the entry-controlled loop since the condition is checked at the start of the loop. If the condition is true, then the loop body will be executed; otherwise, the statements after the loop will be executed.
 
 ```java
-while(condition){    
+while (condition) {    
    //looping statements    
 }    
 ```
