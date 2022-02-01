@@ -1,7 +1,5 @@
 # Class
-A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
-
-It can't be physical.
+A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space. It can't be physical.
 
 A class in Java can contain:
 
