@@ -56,7 +56,7 @@ if (condition 1) {
 }  
 ```
 
-## Switch Statement:
+# Switch Statement:
 In Java, Switch statements are similar to if-else-if statements. The switch statement contains multiple blocks of code called cases and a single case is executed based on the variable which is being switched. The switch statement is easier to use instead of if-else-if statements. It also enhances the readability of the program.
 
 Points to be noted about switch statement:
