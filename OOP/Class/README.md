@@ -1,21 +1,3 @@
-# OOPs (Object-Oriented Programming System)
-Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:
-
-- Object
-- Class
-- Inheritance
-- Polymorphism
-- Abstraction
-- Encapsulation
-
-Apart from these concepts, there are some other terms which are used in Object-Oriented design:
-
-- Coupling
-- Cohesion
-- Association
-- Aggregation
-- Composition
-
 # Class
 A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
 
