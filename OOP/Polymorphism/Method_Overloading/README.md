@@ -111,7 +111,7 @@ main with String[]
 
 # Method Overloading and Type Promotion
 
-![Type Promotion](/Polymorphism/Method_Overloading/image/char.png)
+![Type Promotion](/OOP/Polymorphism/Method_Overloading//image/char.png)
 
 ## Example of Method Overloading with TypePromotion
 
