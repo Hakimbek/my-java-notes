@@ -10,10 +10,10 @@ You can see all the detail by typing the jconsole in the command prompt. The jco
 - Its life depends on user threads.
 - It is a low priority thread.
 
-# Why JVM terminates the daemon thread if there is no user thread?
+## Why JVM terminates the daemon thread if there is no user thread?
 The sole purpose of the daemon thread is that it provides services to user thread for background supporting task. If there is no user thread, why should JVM keep running this thread. That is why JVM terminates the daemon thread if there is no user thread.
 
-# Methods for Java Daemon thread by Thread class
+## Methods for Java Daemon thread by Thread class
 
 | No. |	Method |	Description |
 | 1 |	public void setDaemon(boolean status) |	is used to mark the current thread as daemon thread or user thread. |
