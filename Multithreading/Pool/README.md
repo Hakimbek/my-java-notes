@@ -13,10 +13,10 @@ In the case of a thread pool, a group of fixed-size threads is created. A thread
 ### newSingleThreadExecutor()
   - The method creates a new thread.
 
-# Advantage of Java Thread Pool
+## Advantage of Java Thread Pool
 Better performance It saves time because there is no need to create a new thread.
 
-# Real time usage
+## Real time usage
 It is used in Servlet and JSP where the container creates a thread pool to process the request.
 
 ### WorkerThread.java
