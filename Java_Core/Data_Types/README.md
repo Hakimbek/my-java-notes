@@ -34,6 +34,7 @@ This caused two problems:
 ### Solution
 To solve these problems, a new language standard was developed i.e. Unicode System. In unicode, character holds 2 byte, so java also uses 2 byte for characters.
 
+### Note:
 The Boolean data type specifies one bit of information, but its "size" can't be defined precisely.
 
 ## 2. Non-primitive data types
