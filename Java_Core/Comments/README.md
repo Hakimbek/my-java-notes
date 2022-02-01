@@ -27,7 +27,7 @@ Documentation comments are usually used to write large programs for a project or
 
 To create documentation API, we need to use the javadoc tool. The documentation comments are placed between /** and \*/.
 
-### javadoc tags
+## javadoc tags
 Some of the commonly used tags in documentation comments:
 
 | Tag |	Syntax | Description |
