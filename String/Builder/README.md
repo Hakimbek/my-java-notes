@@ -58,7 +58,7 @@ Java StringBuilder class is used to create mutable (modifiable) String. The Java
 | public String substring(int beginIndex) |	It is used to return the substring from the specified beginIndex. |
 | public String substring(int beginIndex, int endIndex) |	It is used to return the substring from the specified beginIndex and endIndex. |
 
-# Difference between String and StringBuffer
+## Difference between String and StringBuffer
 
 | No. |	String | StringBuffer |
 | --- | ------ | ------------ |
@@ -68,7 +68,7 @@ Java StringBuilder class is used to create mutable (modifiable) String. The Java
 | 4 |	String class is slower while performing concatenation operation. | StringBuffer class is faster while performing concatenation operation. |
 | 5 |	String class uses String constant pool. |	StringBuffer uses Heap memory |
 
-# Difference between StringBuffer and StringBuilder
+## Difference between StringBuffer and StringBuilder
 
 | No. |	StringBuffer | StringBuilder |
 | --- | ------------ | ------------- |
