@@ -7,7 +7,7 @@ Operator in Java is a symbol that is used to perform operations. There are many 
 | Arithmetic | `*`  `/`  `%`  `+`  `-` |
 | Shift | `<<`  `>>`  `>>>` |
 | Relational | `<`  `>`  `<=`  `>=`  `instanceof`  `==`  `!=` |
-| Bitwise | `&`  `^`  ```|``` |
+| Bitwise | `&`  `^`  `|` |
 | Logical | `&&`  ```||``` |
 | Ternary | `?` ```:``` |
 | Assignment | `=` `+=` `-=` `*=` `/=` `%=` `&=` `^=` `|=` `<<=` `>>=` `>>>=` |
