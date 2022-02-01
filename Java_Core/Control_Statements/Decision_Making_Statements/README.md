@@ -15,7 +15,7 @@ Let's understand the if-statements one by one.
 It is the most basic statement among all control flow statements in Java. It evaluates a Boolean expression and enables the program to enter a block of code if the expression evaluates to true.
 
 ```java
-if(condition) {    
+if (condition) {    
    statement 1; //executes when condition is true   
 }    
 ```
@@ -23,7 +23,7 @@ if(condition) {
 The if-else statement is an extension to the if-statement, which uses another block of code, i.e., else block. The else block is executed if the condition of the if-block is evaluated as false.
 
 ```java
-if(condition) {    
+if (condition) {    
    statement 1; //executes when condition is true   
 } else{  
    statement 2; //executes when condition is false   
@@ -33,7 +33,7 @@ if(condition) {
 The if-else-if statement contains the if-statement followed by multiple else-if statements. In other words, we can say that it is the chain of if-else statements that create a decision tree where the program may enter in the block of code where the condition is true. We can also define an else statement at the end of the chain.
 
 ```java
-if(condition 1) {    
+if (condition 1) {    
    statement 1; //executes when condition 1 is true   
 } else if(condition 2) {  
    statement 2; //executes when condition 2 is true   
@@ -46,7 +46,7 @@ if(condition 1) {
 In nested if-statements, the if statement can contain a if or if-else statement inside another if or else-if statement.
 
 ```java
-if(condition 1) {    
+if (condition 1) {    
    statement 1; //executes when condition 1 is true   
    if(condition 2) {  
       statement 2; //executes when condition 2 is true   
