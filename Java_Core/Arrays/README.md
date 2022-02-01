@@ -17,13 +17,13 @@ In Java, array is an object of a dynamically generated class. Java array inherit
 ### Size Limit
   - We can store only the fixed size of elements in the array. It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically.
 
-# Types of Array in java
+## Types of Array in java
 There are two types of array.
 
 - Single Dimensional Array
 - Multidimensional Array
 
-## Single Dimensional Array
+# Single Dimensional Array
 
 ### Syntax to Declare an Array in Java
 
@@ -51,7 +51,7 @@ arrayRefVar = new datatype[size];
 ### ArrayIndexOutOfBoundsException
   - The Java Virtual Machine (JVM) throws an ArrayIndexOutOfBoundsException if length of the array in negative, equal to the array size or greater than the array size while traversing the array.
 
-## Multidimensional Array
+# Multidimensional Array
 In such case, data is stored in row and column based index (also known as matrix form).
 
 ### Syntax to Declare Multidimensional Array in Java
@@ -69,5 +69,5 @@ dataType []arrayRefVar[];
 int[][] arr = new int[3][3]; //3 row and 3 column  
 ```
 
-## Jagged Array in Java
+# Jagged Array in Java
 If we are creating odd number of columns in a 2D array, it is known as a jagged array. In other words, it is an array of arrays with different number of columns.
