@@ -26,7 +26,7 @@ Multitasking is a process of executing multiple tasks simultaneously. We use mul
 - At least one process is required for each thread.
 - At a time one thread is executed only.
 
-# Java Thread class
+## Java Thread class
 Java provides Thread class to achieve thread programming. Thread class provides constructors and methods to create and perform operations on a thread. Thread class extends Object class and implements Runnable interface.
 
 | # |	Modifier and Type |	Method	Description |
