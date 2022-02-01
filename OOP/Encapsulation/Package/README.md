@@ -27,17 +27,17 @@ Output:
 Welcome to package
 ```
 
-# There are three ways to access the package from outside the package.
+## There are three ways to access the package from outside the package.
 
-## 1. Using packagename.\*
+### 1. Using packagename.\*
 If you use package.\* then all the classes and interfaces of this package will be accessible but not subpackages.
 
 The import keyword is used to make the classes and interface of another package accessible to the current package.
 
-## 2. Using packagename.classname
+### 2. Using packagename.classname
 If you import package.classname then only declared class of this package will be accessible.
 
-## 3. Using fully qualified name
+### 3. Using fully qualified name
 If you use fully qualified name then only declared class of this package will be accessible. Now there is no need to import. But you need to use fully qualified name every time when you are accessing the class or interface.
 
 ## Note: 
