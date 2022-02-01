@@ -68,7 +68,7 @@ Points to be noted about switch statement:
 - While using switch statements, we must notice that the case expression will be of the same type as the variable. However, it will also be a constant value.
 
 ```java
-switch (expression){  
+switch (expression) {  
     case value1:  
       statement1;  
       break;  
