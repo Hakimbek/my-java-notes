@@ -48,7 +48,7 @@ In nested if-statements, the if statement can contain a if or if-else statement 
 ```java
 if (condition 1) {    
    statement 1; //executes when condition 1 is true   
-   if(condition 2) {  
+   if (condition 2) {  
       statement 2; //executes when condition 2 is true   
    } else {  
       statement 2; //executes when condition 2 is false   
