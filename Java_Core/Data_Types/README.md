@@ -37,5 +37,5 @@ To solve these problems, a new language standard was developed i.e. Unicode Syst
 ### Note:
 The Boolean data type specifies one bit of information, but its "size" can't be defined precisely.
 
-## 2. Non-primitive data types
+# Non-primitive data types
 The non-primitive data types include **Classes, Interfaces**, and **Arrays**.
