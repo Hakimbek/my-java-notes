@@ -75,9 +75,9 @@
       - [deamon](Multithreading/Deamon/README.md)
       - [pool](Multithreading/Pool/README.md)
 ### [Synchronization](Synchronization/README.md)
-  - ### Methods
-      - [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
-## [Garbage Collection](GC/README.md)
+  - [notify(), notifyAll(), wait()](Synchronization/Methods/README.md)
+
+### [Garbage Collection](GC/README.md)
 
 - ## Java Networking
    - ### [Networking Concepts](Network/Consept/README.md)
