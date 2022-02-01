@@ -1,7 +1,5 @@
-# this keyword in Java
-There can be a lot of usage of Java this keyword. In Java, this is a reference variable that refers to the current object.
-
 # Usage of Java this keyword
+There can be a lot of usage of Java this keyword. In Java, this is a reference variable that refers to the current object.
 
 ## 1. this can be used to refer current class instance variable.
 
