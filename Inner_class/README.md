@@ -6,7 +6,7 @@ Java inner class or nested class is a class that is declared inside the class or
 2. Nested classes are used to develop more readable and maintainable code because it logically group classes and interfaces in one place only.
 3. Code Optimization: It requires less code to write.
 
-# Types of Nested classes
+## Types of Nested classes
 
 | Type |	Description |
 | ---- | ----------- |
