@@ -40,7 +40,7 @@ Aggregation is a way to achieve Association. Aggregation represents the relation
 - Code reuse is also best achieved by aggregation when there is no is-a relationship.
 - Inheritance should be used only if the relationship is-a is maintained throughout the lifetime of the objects involved; otherwise, aggregation is the best choice.
 
-### Composition
+## Composition
 The composition is also a way to achieve Association. The composition represents the relationship where one object contains other objects as a part of its state. There is a strong relationship between the containing object and the dependent object. It is the state where containing objects do not have an independent existence. If you delete the parent object, all the child objects will be deleted automatically.
 
 # Advantage of OOPs over Procedure-oriented programming language
