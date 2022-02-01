@@ -62,11 +62,11 @@
  - [Custom Exceptions](Exception/Custom/README.md)
 ## [Inner class](Inner_class/README.md)
 
-- ## Mutithreading
-   - ### [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
-   - ### [Life Cycle of Thread](Multithreading/Cycle/README.md)
-   - ### [How to create Thread in Java](Multithreading/Create/README.md)
-   - ### Methods
+## Mutithreading
+  - [What is Multithreading?](Multithreading/What_is_multithreading/README.md)
+  - [Life Cycle of Thread](Multithreading/Cycle/README.md)
+  - [How to create Thread in Java](Multithreading/Create/README.md)
+  - ### Methods
      - ### [sleep()](Multithreading/Methods/Sleep/README.md)
      - ### [run()](Multithreading/Methods/Run/README.md)
      - ### [join()](Multithreading/Methods/Join/README.md)
