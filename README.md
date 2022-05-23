@@ -142,7 +142,6 @@ The composition is also a way to achieve Association. The composition represents
 3. OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
 
 ## Object Orianted Programming
- - [What is OOP?](OOP/What_is_OOP/README.md)
  - [Class](OOP/Class/README.md)
  - [Object](OOP/Object/README.md)
  - [Difference between Object and Class](OOP/Difference/README.md)
