@@ -15,7 +15,7 @@ The primary objective of Java programming language creation was to make it porta
 ### Simple
 Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun Microsystem, Java language is a simple programming language because:
 
-- Java syntax is based on C++ (so easier for programmers to learn it after C++).
+- Java syntax is based on `C++` (so easier for programmers to learn it after `C++`).
 - Java has removed many complicated and rarely-used features, for example, explicit pointers, operator overloading, etc.
 - There is no need to remove unreferenced objects because there is an Automatic Garbage Collection in Java.
 
